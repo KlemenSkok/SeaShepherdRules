@@ -15,10 +15,12 @@
 #define LEVEL_2_ENEMY_COUNT 7
 #define LEVEL_3_ENEMY_COUNT 10
 
-#define WINDOW_WIDTH  //! TODO: set window width
-#define WINDOW_HEIGHT //! TODO: set window height
+#define WINDOW_WIDTH  800
+#define WINDOW_HEIGHT 600
 
 #define FPS 60
 #define FRAME_TARGET_TIME (1000 / FPS)
 #define MAX_FRAME_TIME 5 * FRAME_TARGET_TIME
 #define MIN_FRAME_TIME 1 * FRAME_TARGET_TIME
+
+#define NUMBER_OF_LEVELS 3

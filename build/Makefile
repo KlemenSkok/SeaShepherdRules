@@ -177,6 +177,30 @@ src/InputManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.s
 .PHONY : src/InputManager.cpp.s
 
+src/ResourceManager.obj: src/ResourceManager.cpp.obj
+.PHONY : src/ResourceManager.obj
+
+# target to build an object file
+src/ResourceManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.obj
+.PHONY : src/ResourceManager.cpp.obj
+
+src/ResourceManager.i: src/ResourceManager.cpp.i
+.PHONY : src/ResourceManager.i
+
+# target to preprocess a source file
+src/ResourceManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.i
+.PHONY : src/ResourceManager.cpp.i
+
+src/ResourceManager.s: src/ResourceManager.cpp.s
+.PHONY : src/ResourceManager.s
+
+# target to generate assembly for a file
+src/ResourceManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.s
+.PHONY : src/ResourceManager.cpp.s
+
 src/WindowManager.obj: src/WindowManager.cpp.obj
 .PHONY : src/WindowManager.obj
 
@@ -225,30 +249,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/test.obj: src/test.cpp.obj
-.PHONY : src/test.obj
-
-# target to build an object file
-src/test.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/test.cpp.obj
-.PHONY : src/test.cpp.obj
-
-src/test.i: src/test.cpp.i
-.PHONY : src/test.i
-
-# target to preprocess a source file
-src/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/test.cpp.i
-.PHONY : src/test.cpp.i
-
-src/test.s: src/test.cpp.s
-.PHONY : src/test.s
-
-# target to generate assembly for a file
-src/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/test.cpp.s
-.PHONY : src/test.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -264,15 +264,15 @@ help:
 	@echo ... src/InputManager.obj
 	@echo ... src/InputManager.i
 	@echo ... src/InputManager.s
+	@echo ... src/ResourceManager.obj
+	@echo ... src/ResourceManager.i
+	@echo ... src/ResourceManager.s
 	@echo ... src/WindowManager.obj
 	@echo ... src/WindowManager.i
 	@echo ... src/WindowManager.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
-	@echo ... src/test.obj
-	@echo ... src/test.i
-	@echo ... src/test.s
 .PHONY : help
 
 

@@ -10,9 +10,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Game.cpp" "CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj.d"
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/InputManager.cpp" "CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.obj.d"
+  "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/ResourceManager.cpp" "CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.obj.d"
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/WindowManager.cpp" "CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.obj.d"
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/main.cpp" "CMakeFiles/SeaShepherdRules.dir/src/main.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/main.cpp.obj.d"
-  "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/test.cpp" "CMakeFiles/SeaShepherdRules.dir/src/test.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/test.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

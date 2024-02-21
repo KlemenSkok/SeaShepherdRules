@@ -1,4 +1,6 @@
 
 // Utilities.hpp
 
-// Commonly used functions
+#pragma once
+
+// Commonly used functions and structures
