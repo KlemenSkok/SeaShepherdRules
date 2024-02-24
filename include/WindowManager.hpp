@@ -21,8 +21,10 @@ class WindowManager {
 
 public:
     WindowManager();
-    ~WindowManager();
+    ~WindowManager();   
 
+    static void windowMaximize(SDL_Window*);
+    static void windowFullscreen(SDL_Window*);
 
     //...
 };

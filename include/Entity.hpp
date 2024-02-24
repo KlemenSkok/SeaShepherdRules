@@ -3,20 +3,20 @@
 
 #pragma once
 
-#include <SDL2/SDL_Rect.h>
+#include <SDL2/SDL_rect.h>
 #include <SDL2/SDL_render.h>
 
 class Entity {
 
 protected:
-    SDL_Rect box;
+    SDL_Rect container, // tuki not gre slika/textura
+             hitbox; // mal manjsi kt container
+    SDL_Texture *texture;
 
 public:
-    Entity(); // Load Texture,...
-    ~Entity(); // Free Texture,...
 
     virtual void CheckCollisions() = 0;
     virtual void Update() = 0;
-    virtual void Render(SDL_Texture *texture) = 0;
+    virtual void Render() = 0;
     //...
 };

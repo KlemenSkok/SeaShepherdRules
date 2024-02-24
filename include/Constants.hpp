@@ -1,6 +1,8 @@
 
 // Constants.hpp
 
+#define GAME_TITLE "Sea Shepherd Rules"
+
 // player constants
 #define PLAYER_HEALTH 100
 #define PLAYER_SPEED 5
@@ -15,8 +17,8 @@
 #define LEVEL_2_ENEMY_COUNT 7
 #define LEVEL_3_ENEMY_COUNT 10
 
-#define WINDOW_WIDTH  800
-#define WINDOW_HEIGHT 600
+#define INITIAL_WINDOW_WIDTH  800
+#define INITIAL_WINDOW_HEIGHT 600
 
 #define FPS 60
 #define FRAME_TARGET_TIME (1000 / FPS)

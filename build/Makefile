@@ -129,6 +129,30 @@ SeaShepherdRules/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/build
 .PHONY : SeaShepherdRules/fast
 
+src/Enemy.obj: src/Enemy.cpp.obj
+.PHONY : src/Enemy.obj
+
+# target to build an object file
+src/Enemy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.obj
+.PHONY : src/Enemy.cpp.obj
+
+src/Enemy.i: src/Enemy.cpp.i
+.PHONY : src/Enemy.i
+
+# target to preprocess a source file
+src/Enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.i
+.PHONY : src/Enemy.cpp.i
+
+src/Enemy.s: src/Enemy.cpp.s
+.PHONY : src/Enemy.s
+
+# target to generate assembly for a file
+src/Enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.s
+.PHONY : src/Enemy.cpp.s
+
 src/Game.obj: src/Game.cpp.obj
 .PHONY : src/Game.obj
 
@@ -177,6 +201,30 @@ src/InputManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.s
 .PHONY : src/InputManager.cpp.s
 
+src/Player.obj: src/Player.cpp.obj
+.PHONY : src/Player.obj
+
+# target to build an object file
+src/Player.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.obj
+.PHONY : src/Player.cpp.obj
+
+src/Player.i: src/Player.cpp.i
+.PHONY : src/Player.i
+
+# target to preprocess a source file
+src/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
+
+src/Player.s: src/Player.cpp.s
+.PHONY : src/Player.s
+
+# target to generate assembly for a file
+src/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
+
 src/ResourceManager.obj: src/ResourceManager.cpp.obj
 .PHONY : src/ResourceManager.obj
 
@@ -200,6 +248,54 @@ src/ResourceManager.s: src/ResourceManager.cpp.s
 src/ResourceManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.s
 .PHONY : src/ResourceManager.cpp.s
+
+src/Utilities.obj: src/Utilities.cpp.obj
+.PHONY : src/Utilities.obj
+
+# target to build an object file
+src/Utilities.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.obj
+.PHONY : src/Utilities.cpp.obj
+
+src/Utilities.i: src/Utilities.cpp.i
+.PHONY : src/Utilities.i
+
+# target to preprocess a source file
+src/Utilities.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.i
+.PHONY : src/Utilities.cpp.i
+
+src/Utilities.s: src/Utilities.cpp.s
+.PHONY : src/Utilities.s
+
+# target to generate assembly for a file
+src/Utilities.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.s
+.PHONY : src/Utilities.cpp.s
+
+src/Vektor.obj: src/Vektor.cpp.obj
+.PHONY : src/Vektor.obj
+
+# target to build an object file
+src/Vektor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.obj
+.PHONY : src/Vektor.cpp.obj
+
+src/Vektor.i: src/Vektor.cpp.i
+.PHONY : src/Vektor.i
+
+# target to preprocess a source file
+src/Vektor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.i
+.PHONY : src/Vektor.cpp.i
+
+src/Vektor.s: src/Vektor.cpp.s
+.PHONY : src/Vektor.s
+
+# target to generate assembly for a file
+src/Vektor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.s
+.PHONY : src/Vektor.cpp.s
 
 src/WindowManager.obj: src/WindowManager.cpp.obj
 .PHONY : src/WindowManager.obj
@@ -258,15 +354,27 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... SeaShepherdRules
+	@echo ... src/Enemy.obj
+	@echo ... src/Enemy.i
+	@echo ... src/Enemy.s
 	@echo ... src/Game.obj
 	@echo ... src/Game.i
 	@echo ... src/Game.s
 	@echo ... src/InputManager.obj
 	@echo ... src/InputManager.i
 	@echo ... src/InputManager.s
+	@echo ... src/Player.obj
+	@echo ... src/Player.i
+	@echo ... src/Player.s
 	@echo ... src/ResourceManager.obj
 	@echo ... src/ResourceManager.i
 	@echo ... src/ResourceManager.s
+	@echo ... src/Utilities.obj
+	@echo ... src/Utilities.i
+	@echo ... src/Utilities.s
+	@echo ... src/Vektor.obj
+	@echo ... src/Vektor.i
+	@echo ... src/Vektor.s
 	@echo ... src/WindowManager.obj
 	@echo ... src/WindowManager.i
 	@echo ... src/WindowManager.s

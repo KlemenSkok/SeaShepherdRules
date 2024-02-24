@@ -3,8 +3,6 @@
 
 #pragma once
 
-#include <list>
-
 
 class InputManager {
 
