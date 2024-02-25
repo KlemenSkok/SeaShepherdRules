@@ -4,7 +4,7 @@
 #include "Game.hpp"
 #include "Constants.hpp"
 #include "Player.hpp"
-#include "Enemy.hpp"
+//#include "Enemy.hpp"
 
 #include <iostream>
 
@@ -37,7 +37,8 @@ void Game::run() {
     //check for collisions
     //render game state
 
-    Player player(ResourceManager::LoadPlayerTexture());
+    Player player;
+    player.Initialize();
 
 
     while(Game::_isRunning) { // main loop

@@ -10,17 +10,22 @@
 
 void update_movement(SDL_Rect &rect, int dest_x, int dest_y, int speed);
 
+SDL_Texture *LoadTexture(const char *path);
+
 
 // window management
 namespace Window {
         extern SDL_Window *window;
         extern SDL_Renderer *renderer;
-    
+
         void Create();
         void Destroy();
 
         void Maximize();
         void Fullscreen();
+
+        int Width();
+        int Height();
 }
 
 /*

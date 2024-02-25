@@ -1,15 +1,19 @@
 
 // Vektor.hpp
 
+#pragma once
+
+
 template <typename T>
 class Vektor {
     
-    Vektor *start;
-    Vektor *konc;
-    Vektor *next;
-    Vektor *prev;
-    
-    T data;    
+    struct Node {
+        T data;
+        Node *next;
+        Node *prev;
+    };
+
+    Node *start, *konc;
 
 public:
     Vektor();
@@ -21,6 +25,7 @@ public:
     void pop_front();
 
     void erase_at(int index);
+    void erase_id(int id);	
 
     void clear();
 
@@ -28,7 +33,13 @@ public:
 
     T& operator[](int index);
     T& at(int index);
+    T& front();
+    T& back();
 
 };
 
-template class Vektor<int>;
+
+#include "Enemy.hpp"
+
+template class Vektor<int>; // enable int template
+template class Vektor<Enemy*>; // enable Enemy* template

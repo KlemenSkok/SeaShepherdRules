@@ -1,6 +1,10 @@
 
 // WindowManager.hpp
 
+
+//! delete this file
+
+
 /*
 Deals with:
 - Creating and destroying the window

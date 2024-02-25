@@ -5,12 +5,21 @@
 #include "Utilities.hpp"
 
 #include <SDL2/SDL_events.h>
+#include <SDL2/SDL_image.h>
 #include <cmath>
 
 using namespace Window;
 
-Player::Player(SDL_Texture* texture) {
-    this->texture = texture;
+Player::Player() {
+
+}
+
+Player::~Player() {
+    SDL_DestroyTexture(texture);
+}
+
+void Player::Initialize() {
+    this->texture = LoadTexture("../assets/images/player.png");
     SDL_QueryTexture(texture, NULL, NULL, &container.w, &container.h); // get texture dimensions
     container.x = INITIAL_WINDOW_WIDTH / 2 - container.w / 2;
     container.y = INITIAL_WINDOW_HEIGHT / 2 - container.h / 2;
@@ -20,12 +29,12 @@ Player::Player(SDL_Texture* texture) {
     hitbox.y = container.y + (container.h - hitbox.h) / 2;
 }
 
-Player::~Player() {
-    SDL_DestroyTexture(texture);
-}
-
 void Player::CheckCollisions() {
     // check for collisions
+}
+
+void Player::CheckBorders() {
+    // check for borders
 }
 
 void Player::Update() {
@@ -67,4 +76,5 @@ void Player::Render() {
     SDL_RenderDrawRect(Window::renderer, &hitbox);
     SDL_SetRenderDrawColor(Window::renderer, 0xFF, 0xFF, 0xFF, 0xFF);
 }
+
 

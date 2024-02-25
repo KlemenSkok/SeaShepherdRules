@@ -13,13 +13,16 @@ class Player : public Entity {
 
 
 public:
-    Player(SDL_Texture *texture);
+    Player();
     ~Player();
 
+    void Initialize() override;
     void CheckCollisions() override;
+    void CheckBorders() override; // TO-DO
     void Update() override;
-    void UpdateMouseMovement();
     void Render() override;
+
+    void UpdateMouseMovement(); // TO-DO
 
     //...
 };

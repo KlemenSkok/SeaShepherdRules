@@ -3,7 +3,10 @@
 
 // kitolovci
 
+#pragma once
+
 #include "Entity.hpp"
+//#include "Vektor.hpp"
 
 
 class Enemy : public Entity {
@@ -13,12 +16,15 @@ class Enemy : public Entity {
 public:
     int enemy_ID;
 
-    Enemy(SDL_Texture *texture);
+    Enemy();
     ~Enemy();
 
+    void Initialize() override;
     void CheckCollisions() override;
+    void CheckBorders() override;
     void Update() override;
     void Render() override;
+
 
     //...
 };

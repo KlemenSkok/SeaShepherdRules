@@ -15,7 +15,9 @@ protected:
 
 public:
 
+    virtual void Initialize() = 0;
     virtual void CheckCollisions() = 0;
+    virtual void CheckBorders() = 0;
     virtual void Update() = 0;
     virtual void Render() = 0;
     //...

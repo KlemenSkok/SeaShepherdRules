@@ -2,6 +2,11 @@
 // WindowManager.cpp
 
 
+//! delete this file
+
+
+
+
 #include "WindowManager.hpp"
 
 WindowManager::WindowManager() {

@@ -5,6 +5,7 @@
 #include "Constants.hpp"
 
 #include <SDL2/SDL_render.h>
+#include <SDL2/SDL_image.h>
 #include <cmath>
 
 
@@ -24,15 +25,24 @@ namespace Window {
     }
 
     void Fullscreen() {
-/*         SDL_Rect window_data;
-        SDL_GetDisplayBounds(SDL_GetWindowDisplayIndex(window), &window_data);
-        SDL_SetWindowSize(window, window_data.w, window_data.h); */
         SDL_SetWindowFullscreen(window, SDL_WINDOW_FULLSCREEN_DESKTOP);
     }
 
     void Destroy() {
         SDL_DestroyRenderer(renderer);
         SDL_DestroyWindow(window);
+    }
+
+    int Width() {
+        int w;
+        SDL_GetWindowSize(window, &w, nullptr);
+        return w;
+    }
+
+    int Height() {
+        int h;
+        SDL_GetWindowSize(window, nullptr, &h);
+        return h;
     }
 
 }
@@ -50,3 +60,15 @@ void update_movement(SDL_Rect &rect, int dest_x, int dest_y, int speed) {
     rect.x += dx;
     rect.y += dy;
 }
+
+SDL_Texture* LoadTexture(const char* path) {
+    SDL_Surface* surface = IMG_Load(path);
+    SDL_Texture* texture = SDL_CreateTextureFromSurface(Window::renderer, surface);
+    SDL_FreeSurface(surface);
+    return texture;
+}
+
+
+struct testStruct {
+    int a;
+};
