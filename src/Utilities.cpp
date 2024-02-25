@@ -68,7 +68,10 @@ SDL_Texture* LoadTexture(const char* path) {
     return texture;
 }
 
-
-struct testStruct {
-    int a;
-};
+void format_path(char *path) { //replace \\ with /
+    int i = 0;
+    while(*(path + i) != '\0') {
+        if(*(path + i) == '\\')
+            *(path + i) = '/';
+    }
+}

@@ -3,9 +3,7 @@
 
 #define GAME_TITLE "Sea Shepherd Rules"
 
-//#define PROJECT_PATH "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/"
-#include <filesystem>
-#define PROJECT_PATH std::filesystem::current_path().string() + "\\"
+#define PROJECT_PATH std::filesystem::current_path().string() + "/"
 
 // player constants
 #define PLAYER_HEALTH 100
@@ -36,3 +34,7 @@
 #define PAUSE_MENU 2
 #define VICTORY_SCREEN 3
 #define DEFEAT_SCREEN 4
+
+#define EXIT_CODE_CONTINUE 0
+#define EXIT_CODE_RETRY 1
+#define EXIT_CODE_QUIT 2

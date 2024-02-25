@@ -2,11 +2,7 @@
 // Game.cpp
 
 #include "Game.hpp"
-#include "Constants.hpp"
-#include "Player.hpp"
-//#include "Enemy.hpp"
 
-#include <iostream>
 
 using namespace Window;
 
@@ -15,8 +11,8 @@ bool Game::_isRunning = false;
 int Game::_currentLevel = 1;
 
 
-Game::Game() { }
-Game::~Game() { }
+Game::Game() {}
+Game::~Game() {}
 
 
 void Game::init() {
@@ -29,7 +25,7 @@ void Game::init() {
     Window::Create();
 }
 
-void Game::run() {
+int Game::run(int level) {
     //main loop
 
     //check inputs, process events
@@ -60,6 +56,7 @@ void Game::run() {
 
         SDL_Delay(FRAME_TARGET_TIME);
     }
+    return EXIT_CODE_QUIT;
 }
 
 void Game::cleanup() {

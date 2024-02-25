@@ -17,12 +17,12 @@ int Enemy::ID_counter = 0;
 
 Enemy::Enemy() {
     texture = nullptr;
-    enemy_ID = Enemy::ID_counter;
+    object_ID = Enemy::ID_counter;
     Enemy::ID_counter++;
 }
 
 Enemy::~Enemy() {
-    std::cout << "Destroying enemy " << enemy_ID << std::endl;
+    std::cout << "Destroying enemy " << object_ID << std::endl;
     SDL_DestroyTexture(texture);
 }
 
@@ -66,7 +66,7 @@ void Vektor<Enemy*>::erase_id(int id) {
     }
     else {
         Node *tmp = start;
-        while(tmp != nullptr && tmp->data->enemy_ID != id) {
+        while(tmp != nullptr && tmp->data->object_ID != id) {
             tmp = tmp->next;
         }
         if(tmp == nullptr) {

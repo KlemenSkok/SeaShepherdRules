@@ -1,5 +1,5 @@
 
-// Enemy.hpp
+// Iceberg.hpp
 
 #pragma once
 
@@ -9,29 +9,26 @@
 
 /*
 About:
-    - Level 3
-    - TODO: preimenuj v Pirate
-    - igralca napadajo (v določenem radiju) in mu odvzamejo HP
-    - ko igralec ni v dosegu -> random movement / išče igralca
-    - igralec jih lahko uniči (kako?)
+    - Level 1
+    - počas (zlo počas) se premikajo po ekranu. 
+    - So ovira za igralca in kitolovce. 
+    - ko grejo iz polja se uničijo. 
+    - random položaj, smer, velikost. (hitrost?)
 */
 
-class Enemy : public Entity {
+class Iceberg : public Entity {
 
     static int ID_counter;
 
 public:
     int object_ID;
 
-    Enemy();
-    ~Enemy();
+    Iceberg();
+    ~Iceberg();
 
     void Initialize() override;
     void CheckCollisions() override;
     void CheckBorders() override;
     void Update() override;
     void Render() override;
-
-
-    //...
-};
+}

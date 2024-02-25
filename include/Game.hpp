@@ -6,12 +6,15 @@
 #include "ResourceManager.hpp"
 #include "Utilities.hpp"
 #include "Enemy.hpp"
-//#include "Player.hpp"
-//#include "Constants.hpp"
+#include "Player.hpp"
+#include "Constants.hpp"
+#include "Level.hpp"
 
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_render.h>
 #include <vector>
+#include <iostream>
+
 
 using namespace Window;
 
@@ -20,8 +23,6 @@ class Game {
 
     static bool _isRunning;
     static int _currentLevel;
-
-    std::vector<Enemy*> enemies;
 
     ResourceManager resourceManager();
 
@@ -35,6 +36,6 @@ public:
     ~Game();
 
     void init();
-    void run();
+    int run(int level);
     void cleanup();
 };

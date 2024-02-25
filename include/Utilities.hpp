@@ -12,6 +12,8 @@ void update_movement(SDL_Rect &rect, int dest_x, int dest_y, int speed);
 
 SDL_Texture *LoadTexture(const char *path);
 
+void format_path(char *path);
+
 
 // window management
 namespace Window {

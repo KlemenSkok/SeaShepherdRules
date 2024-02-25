@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj.d"
   "CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.obj"
   "CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.obj.d"
+  "CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.obj"
+  "CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.obj.d"
   "CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.obj"
   "CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.obj.d"
   "CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.obj"
