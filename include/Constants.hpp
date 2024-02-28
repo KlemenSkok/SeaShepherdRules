@@ -29,12 +29,14 @@
 
 #define NUMBER_OF_LEVELS 3
 
-#define MAIN_MENU 0
-#define GAME_SCREEN 1
-#define PAUSE_MENU 2
-#define VICTORY_SCREEN 3
-#define DEFEAT_SCREEN 4
+// main loop entry codes (positive numbers reserved for levels)
+#define ENTRY_CODE_MAIN_MENU 0
+#define ENTRY_CODE_GAME_SCREEN -1
+#define ENTRY_CODE_PAUSE_MENU -2
+#define ENTRY_CODE_VICTORY_SCREEN -3
+#define ENTRY_CODE_DEFEAT_SCREEN -4
 
+// main loop exit codes
 #define EXIT_CODE_CONTINUE 0
 #define EXIT_CODE_RETRY 1
 #define EXIT_CODE_QUIT 2

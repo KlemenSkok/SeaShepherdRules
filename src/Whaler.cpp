@@ -1,7 +1,7 @@
 
-// Enemy.cpp
+// Whaler.cpp
 
-#include "Enemy.hpp"
+#include "Whaler.hpp"
 #include "Constants.hpp"
 #include "Utilities.hpp"
 #include "Vektor.hpp"
@@ -13,20 +13,20 @@
 using namespace Window;
 
 
-int Enemy::ID_counter = 0;
+int Whaler::ID_counter = 0;
 
-Enemy::Enemy() {
+Whaler::Whaler() {
     texture = nullptr;
-    object_ID = Enemy::ID_counter;
-    Enemy::ID_counter++;
+    object_ID = Whaler::ID_counter;
+    Whaler::ID_counter++;
 }
 
-Enemy::~Enemy() {
-    std::cout << "Destroying enemy " << object_ID << std::endl;
+Whaler::~Whaler() {
+    Logger::Status("Destroying Whaler " + object_ID);
     SDL_DestroyTexture(texture);
 }
 
-void Enemy::Initialize() {
+void Whaler::Initialize() {
     this->texture = LoadTexture("../assets/images/player.png");
     // get texture width and height
     SDL_QueryTexture(texture, NULL, NULL, &container.w, &container.h);
@@ -38,21 +38,22 @@ void Enemy::Initialize() {
     hitbox.y = container.y + (container.h - hitbox.h) / 2;
 }
 
-void Enemy::CheckCollisions() {
-    // check for collisions
+void Whaler::CheckCollisions() {
+
 }
 
-void Enemy::CheckBorders() {
-    // check for borders
+void Whaler::CheckBorders() {
+
 }
 
-void Enemy::Update() {
-    // update movement
+void Whaler::Update() {
+
 }
 
-void Enemy::Render() {
-    // render enemy
+void Whaler::Render() {
+
 }
+
 
 //-------------------------------------------------//
 //              overloads for Vektor               //
@@ -61,7 +62,7 @@ void Enemy::Render() {
 #include "Vektor.hpp"
 
 template <>
-void Vektor<Enemy*>::erase_id(int id) {
+void Vektor<Whaler*>::erase_id(int id) {
     if(start == nullptr) {
         Logger::Warning("@ Vektor - cannot erase from empty list");
     }
@@ -102,7 +103,7 @@ void Vektor<Enemy*>::erase_id(int id) {
 }
 
 template <>
-void Vektor<Enemy*>::clear() {
+void Vektor<Whaler*>::clear() {
     while(start != nullptr) {
         Node *tmp = start;
         start = start->next;
@@ -113,12 +114,12 @@ void Vektor<Enemy*>::clear() {
 }
 
 template<>
-Vektor<Enemy*>::~Vektor() {
+Vektor<Whaler*>::~Vektor() {
     clear();
 }
 
 template <>
-void Vektor<Enemy*>::pop_back() {
+void Vektor<Whaler*>::pop_back() {
     if(start == nullptr) {
         Logger::Warning("@ Vektor - cannot erase from empty list");
     }
@@ -137,7 +138,7 @@ void Vektor<Enemy*>::pop_back() {
 }
 
 template <>
-void Vektor<Enemy*>::pop_front() {
+void Vektor<Whaler*>::pop_front() {
     if(start == nullptr) {
         Logger::Warning("@ Vektor - cannot erase from empty list");
     }
@@ -156,7 +157,7 @@ void Vektor<Enemy*>::pop_front() {
 }
 
 template <>
-void Vektor<Enemy*>::erase_at(int index) {
+void Vektor<Whaler*>::erase_at(int index) {
     if(start == nullptr) {
         Logger::Warning("@ Vektor - cannot erase from empty list");
     }

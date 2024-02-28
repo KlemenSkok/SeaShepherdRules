@@ -1,6 +1,12 @@
 [
 {
   "directory": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/build",
+  "command": "C:\\MinGW\\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SeaShepherdRules.dir\\src\\Atol.cpp.obj -c C:\\Users\\Klemen\\Documents\\Klemen\\Sola\\3.letnik\\RPA\\SeaShepherdRules\\src\\Atol.cpp",
+  "file": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Atol.cpp",
+  "output": "CMakeFiles/SeaShepherdRules.dir/src/Atol.cpp.obj"
+},
+{
+  "directory": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/build",
   "command": "C:\\MinGW\\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SeaShepherdRules.dir\\src\\Enemy.cpp.obj -c C:\\Users\\Klemen\\Documents\\Klemen\\Sola\\3.letnik\\RPA\\SeaShepherdRules\\src\\Enemy.cpp",
   "file": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Enemy.cpp",
   "output": "CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.obj"
@@ -13,6 +19,12 @@
 },
 {
   "directory": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/build",
+  "command": "C:\\MinGW\\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SeaShepherdRules.dir\\src\\Iceberg.cpp.obj -c C:\\Users\\Klemen\\Documents\\Klemen\\Sola\\3.letnik\\RPA\\SeaShepherdRules\\src\\Iceberg.cpp",
+  "file": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Iceberg.cpp",
+  "output": "CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.obj"
+},
+{
+  "directory": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/build",
   "command": "C:\\MinGW\\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SeaShepherdRules.dir\\src\\InputManager.cpp.obj -c C:\\Users\\Klemen\\Documents\\Klemen\\Sola\\3.letnik\\RPA\\SeaShepherdRules\\src\\InputManager.cpp",
   "file": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/InputManager.cpp",
   "output": "CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.obj"
@@ -22,6 +34,12 @@
   "command": "C:\\MinGW\\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SeaShepherdRules.dir\\src\\Level.cpp.obj -c C:\\Users\\Klemen\\Documents\\Klemen\\Sola\\3.letnik\\RPA\\SeaShepherdRules\\src\\Level.cpp",
   "file": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Level.cpp",
   "output": "CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.obj"
+},
+{
+  "directory": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/build",
+  "command": "C:\\MinGW\\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SeaShepherdRules.dir\\src\\Logger.cpp.obj -c C:\\Users\\Klemen\\Documents\\Klemen\\Sola\\3.letnik\\RPA\\SeaShepherdRules\\src\\Logger.cpp",
+  "file": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Logger.cpp",
+  "output": "CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.obj"
 },
 {
   "directory": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/build",
@@ -46,6 +64,12 @@
   "command": "C:\\MinGW\\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SeaShepherdRules.dir\\src\\Vektor.cpp.obj -c C:\\Users\\Klemen\\Documents\\Klemen\\Sola\\3.letnik\\RPA\\SeaShepherdRules\\src\\Vektor.cpp",
   "file": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Vektor.cpp",
   "output": "CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.obj"
+},
+{
+  "directory": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/build",
+  "command": "C:\\MinGW\\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SeaShepherdRules.dir\\src\\Whaler.cpp.obj -c C:\\Users\\Klemen\\Documents\\Klemen\\Sola\\3.letnik\\RPA\\SeaShepherdRules\\src\\Whaler.cpp",
+  "file": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Whaler.cpp",
+  "output": "CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj"
 },
 {
   "directory": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/build",

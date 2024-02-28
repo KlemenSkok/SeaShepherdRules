@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "Logger.hpp"
 
 template <typename T>
 class Vektor {
@@ -40,6 +41,8 @@ public:
 
 
 #include "Enemy.hpp"
+#include "Whaler.hpp"
 
 template class Vektor<int>; // enable int template
 template class Vektor<Enemy*>; // enable Enemy* template
+template class Vektor<Whaler*>; // enable Whaler* template

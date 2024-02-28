@@ -9,6 +9,13 @@
 
 //#include <SDL2/SDL_image.h>
 
+/*
+About:
+    - igralec lovi kitolovce
+    - ubije jih tako, da se jih dotakne
+    - če bo cajt -> orožje na delč??
+*/
+
 class Player : public Entity {
 
 

@@ -129,6 +129,30 @@ SeaShepherdRules/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/build
 .PHONY : SeaShepherdRules/fast
 
+src/Atol.obj: src/Atol.cpp.obj
+.PHONY : src/Atol.obj
+
+# target to build an object file
+src/Atol.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Atol.cpp.obj
+.PHONY : src/Atol.cpp.obj
+
+src/Atol.i: src/Atol.cpp.i
+.PHONY : src/Atol.i
+
+# target to preprocess a source file
+src/Atol.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Atol.cpp.i
+.PHONY : src/Atol.cpp.i
+
+src/Atol.s: src/Atol.cpp.s
+.PHONY : src/Atol.s
+
+# target to generate assembly for a file
+src/Atol.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Atol.cpp.s
+.PHONY : src/Atol.cpp.s
+
 src/Enemy.obj: src/Enemy.cpp.obj
 .PHONY : src/Enemy.obj
 
@@ -177,6 +201,30 @@ src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
+src/Iceberg.obj: src/Iceberg.cpp.obj
+.PHONY : src/Iceberg.obj
+
+# target to build an object file
+src/Iceberg.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.obj
+.PHONY : src/Iceberg.cpp.obj
+
+src/Iceberg.i: src/Iceberg.cpp.i
+.PHONY : src/Iceberg.i
+
+# target to preprocess a source file
+src/Iceberg.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.i
+.PHONY : src/Iceberg.cpp.i
+
+src/Iceberg.s: src/Iceberg.cpp.s
+.PHONY : src/Iceberg.s
+
+# target to generate assembly for a file
+src/Iceberg.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.s
+.PHONY : src/Iceberg.cpp.s
+
 src/InputManager.obj: src/InputManager.cpp.obj
 .PHONY : src/InputManager.obj
 
@@ -224,6 +272,30 @@ src/Level.s: src/Level.cpp.s
 src/Level.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.s
 .PHONY : src/Level.cpp.s
+
+src/Logger.obj: src/Logger.cpp.obj
+.PHONY : src/Logger.obj
+
+# target to build an object file
+src/Logger.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.obj
+.PHONY : src/Logger.cpp.obj
+
+src/Logger.i: src/Logger.cpp.i
+.PHONY : src/Logger.i
+
+# target to preprocess a source file
+src/Logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.i
+.PHONY : src/Logger.cpp.i
+
+src/Logger.s: src/Logger.cpp.s
+.PHONY : src/Logger.s
+
+# target to generate assembly for a file
+src/Logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.s
+.PHONY : src/Logger.cpp.s
 
 src/Player.obj: src/Player.cpp.obj
 .PHONY : src/Player.obj
@@ -321,6 +393,30 @@ src/Vektor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.s
 .PHONY : src/Vektor.cpp.s
 
+src/Whaler.obj: src/Whaler.cpp.obj
+.PHONY : src/Whaler.obj
+
+# target to build an object file
+src/Whaler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj
+.PHONY : src/Whaler.cpp.obj
+
+src/Whaler.i: src/Whaler.cpp.i
+.PHONY : src/Whaler.i
+
+# target to preprocess a source file
+src/Whaler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.i
+.PHONY : src/Whaler.cpp.i
+
+src/Whaler.s: src/Whaler.cpp.s
+.PHONY : src/Whaler.s
+
+# target to generate assembly for a file
+src/Whaler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.s
+.PHONY : src/Whaler.cpp.s
+
 src/WindowManager.obj: src/WindowManager.cpp.obj
 .PHONY : src/WindowManager.obj
 
@@ -378,18 +474,27 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... SeaShepherdRules
+	@echo ... src/Atol.obj
+	@echo ... src/Atol.i
+	@echo ... src/Atol.s
 	@echo ... src/Enemy.obj
 	@echo ... src/Enemy.i
 	@echo ... src/Enemy.s
 	@echo ... src/Game.obj
 	@echo ... src/Game.i
 	@echo ... src/Game.s
+	@echo ... src/Iceberg.obj
+	@echo ... src/Iceberg.i
+	@echo ... src/Iceberg.s
 	@echo ... src/InputManager.obj
 	@echo ... src/InputManager.i
 	@echo ... src/InputManager.s
 	@echo ... src/Level.obj
 	@echo ... src/Level.i
 	@echo ... src/Level.s
+	@echo ... src/Logger.obj
+	@echo ... src/Logger.i
+	@echo ... src/Logger.s
 	@echo ... src/Player.obj
 	@echo ... src/Player.i
 	@echo ... src/Player.s
@@ -402,6 +507,9 @@ help:
 	@echo ... src/Vektor.obj
 	@echo ... src/Vektor.i
 	@echo ... src/Vektor.s
+	@echo ... src/Whaler.obj
+	@echo ... src/Whaler.i
+	@echo ... src/Whaler.s
 	@echo ... src/WindowManager.obj
 	@echo ... src/WindowManager.i
 	@echo ... src/WindowManager.s

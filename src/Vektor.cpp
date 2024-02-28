@@ -1,12 +1,8 @@
 
 // Vektor.cpp
 
-//? TODO: implement catches for empty list and out of range index
-
-
 #include "Vektor.hpp"
 
-#include <iostream>
 
 
 
@@ -74,7 +70,7 @@ void Vektor<T>::push_front(T data) {
 template <typename T>
 void Vektor<T>::pop_back() {
     if(start == nullptr) {
-        std::cout << "[Vektor] Error: cannot pop from empty list\n";
+        Logger::Warning("@ Vektor - cannot erase from empty list");
     }
     else if(start == konc) {
         delete start;
@@ -91,8 +87,7 @@ void Vektor<T>::pop_back() {
 template <typename T>
 void Vektor<T>::pop_front() {
     if(start == nullptr) {
-        std::cout << "[Vektor] Error: cannot pop from empty list\n";
-    }
+        Logger::Warning("@ Vektor - cannot erase from empty list");    }
     else if(start == konc) {
         delete start;
         start = konc = nullptr;
@@ -108,10 +103,10 @@ void Vektor<T>::pop_front() {
 template <typename T>
 void Vektor<T>::erase_at(int index) {
     if(start == nullptr) {
-        std::cout << "[Vektor] Error: cannot erase from empty list" << std::endl;
+        Logger::Warning("@ Vektor - cannot erase from empty list");
     }
     else if(index < 0 || index >= size()) {
-        std::cout << "[Vektor] Error: index out of range" << std::endl;
+        Logger::Error("@ Vektor - index out of range");
     }
     else {
         Node *tmp = start;
@@ -135,20 +130,17 @@ void Vektor<T>::erase_at(int index) {
 
 template <typename T>
 void Vektor<T>::erase_id(int id) {
-    //throw std::runtime_error("[Vektor] Error: erase_id not implemented");
-    std::cout << "[Vektor] Error: erase_id not implemented for this data type\n";
+    Logger::Warning("@ Vektor - erase_id not implemented for this data type");
 }
 
 
 template <typename T>
 T& Vektor<T>::operator[](int index) {
     if(start == nullptr) {
-        //throw std::out_of_range("[Vektor] Error: cannot access empty list");
-        std::cout << "[Vektor] Error: cannot access empty list\n";
+        Logger::Warning("@ Vektor - cannot access empty list");
     }
     else if(index < 0 || index >= size()) {
-        //throw std::out_of_range("[Vektor] Error: index out of range");
-        std::cout << "[Vektor] Error: index out of range\n";
+        Logger::Error("@ Vektor - index out of range");
     }
     else {
         Node *tmp = start;
@@ -164,12 +156,10 @@ T& Vektor<T>::operator[](int index) {
 template <typename T>
 T& Vektor<T>::at(int index) {
     if(start == nullptr) {
-        //throw std::out_of_range("[Vektor] Error: cannot access empty list");
-        std::cout << "[Vektor] Error: cannot access empty list\n";
+        Logger::Warning("@ Vektor - cannot access empty list");
     }
     else if(index < 0 || index >= size()) {
-        //throw std::out_of_range("[Vektor] Error: index out of range");
-        std::cout << "[Vektor] Error: index out of range\n";
+        Logger::Error("@ Vektor - index out of range");
     }
     else {  
         Node *tmp = start;
@@ -195,8 +185,7 @@ void Vektor<T>::clear() {
 template <typename T>
 T& Vektor<T>::front() {
     if(start == nullptr) {
-        //throw std::out_of_range("[Vektor] Error: cannot access empty list");
-        std::cout << "[Vektor] Error: cannot access empty list\n";
+        Logger::Warning("@ Vektor - cannot access empty list");
     }
     return start->data;
 }
@@ -204,8 +193,7 @@ T& Vektor<T>::front() {
 template <typename T>
 T& Vektor<T>::back() {
     if(start == nullptr) {
-        //throw std::out_of_range("[Vektor] Error: cannot access empty list");
-        std::cout << "[Vektor] Error: cannot access empty list\n";
+        Logger::Warning("@ Vektor - cannot access empty list");
     }
     return konc->data;
 }
