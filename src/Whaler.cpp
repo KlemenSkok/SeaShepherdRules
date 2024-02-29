@@ -22,7 +22,7 @@ Whaler::Whaler() {
 }
 
 Whaler::~Whaler() {
-    Logger::Status("Destroying Whaler ");
+    Logger::Status("Destroying Whaler");
     SDL_DestroyTexture(texture);
 }
 

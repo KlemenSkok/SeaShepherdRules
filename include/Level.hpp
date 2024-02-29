@@ -21,6 +21,8 @@ class Level {
     
     Player player;
 
+    Vektor<Whaler*> whalers;
+
 public:
     Level(int levelNumber);
     ~Level();

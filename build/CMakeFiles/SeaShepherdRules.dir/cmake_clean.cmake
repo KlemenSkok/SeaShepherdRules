@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe"
-  "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe.manifest"
-  "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.pdb"
+  "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe"
+  "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe.manifest"
+  "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.pdb"
   "CMakeFiles/SeaShepherdRules.dir/src/Atol.cpp.obj"
   "CMakeFiles/SeaShepherdRules.dir/src/Atol.cpp.obj.d"
   "CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.obj"

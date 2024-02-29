@@ -298,29 +298,29 @@ SeaShepherdRules_OBJECTS = \
 # External object files for target SeaShepherdRules
 SeaShepherdRules_EXTERNAL_OBJECTS =
 
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Atol.cpp.obj
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.obj
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.obj
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.obj
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.obj
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.obj
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.obj
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.obj
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.obj
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.obj
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.obj
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/main.cpp.obj
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/build.make
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/linkLibs.rsp
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/objects1.rsp
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\bin\SeaShepherdRules.exe"
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Atol.cpp.obj
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.obj
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.obj
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.obj
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.obj
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.obj
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.obj
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.obj
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.obj
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.obj
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.obj
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/main.cpp.obj
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/build.make
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/linkLibs.rsp
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/objects1.rsp
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\bin\debug\SeaShepherdRules.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SeaShepherdRules.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/SeaShepherdRules.dir/build: C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe
+CMakeFiles/SeaShepherdRules.dir/build: C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe
 .PHONY : CMakeFiles/SeaShepherdRules.dir/build
 
 CMakeFiles/SeaShepherdRules.dir/clean:

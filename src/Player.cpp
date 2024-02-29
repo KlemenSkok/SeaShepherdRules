@@ -1,8 +1,10 @@
+
 // Player.cpp
 
 #include "Player.hpp"
 #include "Constants.hpp"
 #include "Utilities.hpp"
+#include "Logger.hpp"
 
 #include <SDL2/SDL_events.h>
 #include <SDL2/SDL_image.h>
@@ -15,11 +17,18 @@ Player::Player() {
 }
 
 Player::~Player() {
+    Logger::Status("Destroying player");
     SDL_DestroyTexture(texture);
 }
 
 void Player::Initialize() {
-    this->texture = LoadTexture("../assets/images/player.png");
+    // relativna pot do slike glede na output folder (po novem bin/debug)
+    this->texture = LoadTexture("../../assets/images/player.png");
+    if(this->texture != nullptr) {
+        Logger::Success("Loaded player texture");
+    }
+    else Logger::Error("Failed to load player texture");
+    
     SDL_QueryTexture(texture, NULL, NULL, &container.w, &container.h); // get texture dimensions
     container.x = INITIAL_WINDOW_WIDTH / 2 - container.w / 2;
     container.y = INITIAL_WINDOW_HEIGHT / 2 - container.h / 2;

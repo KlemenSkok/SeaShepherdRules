@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.exe"
+			"path" : "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe"
 		},
 		{
-			"path" : "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/SeaShepherdRules.pdb"
+			"path" : "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.pdb"
 		}
 	],
 	"backtrace" : 1,
