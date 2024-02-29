@@ -2700,12 +2700,15 @@ CMakeFiles/SeaShepherdRules.dir/src/main.cpp.obj: C:/Users/Klemen/Documents/Klem
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/sstream.tcc \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/std_abs.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_algobase.h \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_bvector.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_construct.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_function.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_iterator.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_iterator_base_types.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_pair.h \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_vector.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/streambuf.tcc \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/streambuf_iterator.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/string_view.tcc \
@@ -2714,6 +2717,7 @@ CMakeFiles/SeaShepherdRules.dir/src/main.cpp.obj: C:/Users/Klemen/Documents/Klem
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/uses_allocator.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/uses_allocator_args.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/utility.h \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/vector.tcc \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cctype \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cerrno \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/clocale \
@@ -2758,6 +2762,7 @@ CMakeFiles/SeaShepherdRules.dir/src/main.cpp.obj: C:/Users/Klemen/Documents/Klem
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/tuple \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/type_traits \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/typeinfo \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/vector \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -2934,7 +2939,12 @@ CMakeFiles/SeaShepherdRules.dir/src/main.cpp.obj: C:/Users/Klemen/Documents/Klem
   C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/include/Constants.hpp \
   C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/include/Enemy.hpp \
   C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/include/Entity.hpp \
+  C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/include/Game.hpp \
+  C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/include/Level.hpp \
   C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/include/Logger.hpp \
+  C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/include/Player.hpp \
+  C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/include/ResourceManager.hpp \
+  C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/include/Utilities.hpp \
   C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/include/Vektor.hpp \
   C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/include/Whaler.hpp
 

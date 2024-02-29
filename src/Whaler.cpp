@@ -22,7 +22,7 @@ Whaler::Whaler() {
 }
 
 Whaler::~Whaler() {
-    Logger::Status("Destroying Whaler " + object_ID);
+    Logger::Status("Destroying Whaler ");
     SDL_DestroyTexture(texture);
 }
 
@@ -59,8 +59,8 @@ void Whaler::Render() {
 //              overloads for Vektor               //
 //-------------------------------------------------//
 
-#include "Vektor.hpp"
-
+//#include "Vektor.hpp"
+/* 
 template <>
 void Vektor<Whaler*>::erase_id(int id) {
     if(start == nullptr) {
@@ -197,3 +197,4 @@ void Vektor<Whaler*>::erase_at(int index) {
         }
     }
 }
+ */

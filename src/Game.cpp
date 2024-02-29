@@ -45,6 +45,7 @@ int Game::run(int level) {
             }
         }
         player.Update();
+        player.CheckBorders();
 
         SDL_RenderClear(Window::renderer); // clear screen
         // render everything

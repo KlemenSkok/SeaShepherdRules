@@ -34,11 +34,25 @@ void Player::CheckCollisions() {
 }
 
 void Player::CheckBorders() {
-    // check for borders
+    if(hitbox.x < 0) {
+        hitbox.x = 0;
+    }
+    if(hitbox.x + hitbox.w > Window::Width()) {
+        hitbox.x = Window::Width() - hitbox.w;
+    }
+
+    if(hitbox.y < 0) {
+        hitbox.y = 0;
+    }
+    if(hitbox.y + hitbox.h > Window::Height()) {
+        hitbox.y = Window::Height() - hitbox.h;
+    }
+
 }
 
 void Player::Update() {
     const Uint8* keystate = SDL_GetKeyboardState(NULL);
+
     float deltas[2] = {0.0f, 0.0f}; // x, y
 
     if (keystate[SDL_SCANCODE_W] && !keystate[SDL_SCANCODE_S])

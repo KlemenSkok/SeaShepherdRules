@@ -3,10 +3,10 @@
 
 #include "Constants.hpp"
 #include "Logger.hpp"
-//#include "Enemy.hpp"
+#include "Enemy.hpp"
+//#include "Whaler.hpp"
 #include "Vektor.hpp"
-#include "Whaler.hpp"
-//#include "Game.hpp"
+#include "Game.hpp"
 
 
 #include <iostream>
@@ -14,12 +14,13 @@
 #include <filesystem>
 #include <string>
 
+#include <vector>
 
 
 int main(int argc, char* argv[]) {
     srand(time(NULL));
 
-/*     Game game;
+    Game game;
     int currLevel = 1;
     int prevCode = EXIT_CODE_CONTINUE;
 
@@ -40,9 +41,13 @@ int main(int argc, char* argv[]) {
         }
     }    
     
-    game.cleanup(); */
+    game.cleanup();
 
-    Vektor<Whaler*> v;
+
+    //std::vector<Whaler*> v;
+    //Vektor<Whaler*> k;
+
+/*     Vektor<Whaler*> v;
     for(int i = 0; i < 5; i++) {
         Whaler *tmp = new Whaler;
         tmp->Initialize();
@@ -53,8 +58,8 @@ int main(int argc, char* argv[]) {
     std::cout << v.size() << std::endl;
     v.erase_at(7);
     v.clear();
-    v.erase_at(7);
-
+    v.erase_at(7); */
+ 
 
 
     return 0;
