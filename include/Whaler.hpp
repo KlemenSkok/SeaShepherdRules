@@ -23,6 +23,13 @@ class Whaler : public Entity {
     static int ID_counter;
     //int health;
 
+    int dest_x, dest_y;
+    Uint64 ms_toWait;
+    Uint64 ms_atLastStop;
+    bool is_stopped;
+
+    void generate_dest_coords();
+
 public:
     int object_ID;
 

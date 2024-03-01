@@ -17,14 +17,14 @@ using namespace Window;
 class Level {
 
     SDL_Texture *background;
-    int numEnemies;
-    
-    Player player;
 
+    Player player;
+    
     Vektor<Whaler*> whalers;
+    int numWhalers;
 
 public:
-    Level(int levelNumber);
+    Level(int levelNum);
     ~Level();
 
     void Update();

@@ -25,16 +25,12 @@ void Game::init() {
     Window::Create();
 }
 
-int Game::run(int level) {
-    //main loop
+int Game::run(int levelNum) {
 
-    //check inputs, process events
-    //update game state
-    //check for collisions
-    //render game state
+// -- INITIATE EVERYTHING -- //
 
-    Player player;
-    player.Initialize();
+    Level level(levelNum);
+    
 
 
     while(Game::_isRunning) { // main loop
@@ -44,19 +40,22 @@ int Game::run(int level) {
                 Game::_isRunning = false;
             }
         }
-        player.Update();
-        player.CheckBorders();
+// -- UPDATE EVERYTHING -- //
+        level.Update();
 
         SDL_RenderClear(Window::renderer); // clear screen
-        // render everything
-        player.Render();
 
-        // refresh screen
-        SDL_RenderPresent(Window::renderer);
+// -- RENDER EVERYTHING -- //
+        level.Render();
 
+        SDL_RenderPresent(Window::renderer); // refresh screen
 
         SDL_Delay(FRAME_TARGET_TIME);
     }
+
+
+    level.Cleanup();
+
     return EXIT_CODE_QUIT;
 }
 

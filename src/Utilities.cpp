@@ -47,19 +47,29 @@ namespace Window {
 
 }
 
-void update_movement(SDL_Rect &rect, int dest_x, int dest_y, int speed) {
-    int dx = dest_x - rect.x;
-    int dy = dest_y - rect.y;
-    int hypotenuse = std::sqrt(dx * dx + dy * dy);
+void update_movement(SDL_Rect &rect, int dest_x, int dest_y, int input_speed) {//still needs calibration
+    int distance_x = dest_x - rect.x;
+    int distance_y = dest_y - rect.y;
 
-    if(hypotenuse != 0) {
-        dx = dx * speed / hypotenuse;
-        dy = dy * speed / hypotenuse;
+    double angle = atan2(distance_y, distance_x) * 180.0 / M_PI;
+
+    double speed = input_speed;
+    double speed_x = speed * cos(angle * M_PI / 180.0);
+    double speed_y = speed * sin(angle * M_PI / 180.0);
+
+    //std::cout << "speed_x: " << speed_x << "\nspeed_y: " << speed_y << std::endl;
+    
+    if(std::abs(distance_x) <= std::abs(speed_x) && std::abs(distance_y) <= std::abs(speed_y)) {
+        // da ostane pr mir k pride na cilj
+        rect.x = dest_x;
+        rect.y = dest_y;
     }
-
-    rect.x += dx;
-    rect.y += dy;
+    else {
+        rect.x += static_cast<int>(floor(speed_x));
+        rect.y += static_cast<int>(floor(speed_y));
+    }
 }
+
 
 SDL_Texture* LoadTexture(const char* path) {
     SDL_Surface* surface = IMG_Load(path);
@@ -75,3 +85,4 @@ void format_path(char *path) { //replace \\ with /
             *(path + i) = '/';
     }
 }
+

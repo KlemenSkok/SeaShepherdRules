@@ -2431,6 +2431,7 @@ CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj: C:/Users/Klemen/Documents/Kl
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/range_access.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/refwrap.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/requires_hosted.h \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/specfun.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/std_abs.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_algobase.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_construct.h \
@@ -2449,6 +2450,7 @@ CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj: C:/Users/Klemen/Documents/Kl
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cctype \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cerrno \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/clocale \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cmath \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstddef \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstdio \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstdlib \
@@ -2467,6 +2469,7 @@ CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj: C:/Users/Klemen/Documents/Kl
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/iosfwd \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/iostream \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/istream \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/limits \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/new \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ostream \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/pstl/pstl_config.h \
@@ -2476,6 +2479,18 @@ CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj: C:/Users/Klemen/Documents/Kl
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/string \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/string_view \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/system_error \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/tr1/beta_function.tcc \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/tr1/gamma.tcc \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/tr1/riemann_zeta.tcc \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/tr1/special_function_util.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/tuple \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/type_traits \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/typeinfo \
@@ -2570,6 +2585,7 @@ CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj: C:/Users/Klemen/Documents/Kl
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/locale.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/math.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/process.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/x86_64-w64-mingw32/include/pthread.h \

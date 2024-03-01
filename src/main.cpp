@@ -44,23 +44,5 @@ int main(int argc, char* argv[]) {
     game.cleanup();
 
 
-    //std::vector<Whaler*> v;
-    //Vektor<Whaler*> k;
-
-/*     Vektor<Whaler*> v;
-    for(int i = 0; i < 5; i++) {
-        Whaler *tmp = new Whaler;
-        tmp->Initialize();
-        v.push_front(tmp);
-    }
-    v.erase_id(3);
-    v.erase_at(0);
-    std::cout << v.size() << std::endl;
-    v.erase_at(7);
-    v.clear();
-    v.erase_at(7); */
- 
-
-
     return 0;
 }
