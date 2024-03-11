@@ -17,8 +17,8 @@ using namespace Window;
 int Whaler::ID_counter = 0;
 
 Whaler::Whaler() {
-    texture = nullptr;
-    object_ID = Whaler::ID_counter;
+    this->texture = nullptr;
+    this->object_ID = Whaler::ID_counter;
     Whaler::ID_counter++;
 	is_stopped = false;
 	ms_atLastStop = ms_toWait = 0;
@@ -26,7 +26,9 @@ Whaler::Whaler() {
 
 Whaler::~Whaler() {
     Logger::Status("Destroying Whaler");
-    SDL_DestroyTexture(texture);
+    if(texture != nullptr) {
+        SDL_DestroyTexture(texture);
+    }
 }
 
 void Whaler::Initialize() {
@@ -123,4 +125,8 @@ void Whaler::generate_dest_coords() {
     dest_x = rand() % (Window::Width() - hitbox.w);
     dest_y = rand() % (Window::Height() - hitbox.h);
 
+}
+
+SDL_Rect Whaler::get_hitbox() {
+    return this->hitbox;
 }

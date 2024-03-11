@@ -17,6 +17,9 @@
 // game constants
 #define BASE_WHALER_COUNT 4
 
+#define BASE_ICEBERG_COUNT 5
+#define ICEBERG_SPEED 2
+
 #define INITIAL_WINDOW_WIDTH  800
 #define INITIAL_WINDOW_HEIGHT 600
 
@@ -29,13 +32,15 @@
 #define NUMBER_OF_LEVELS 3
 
 // main loop entry codes (positive numbers reserved for levels)
-#define ENTRY_CODE_MAIN_MENU 0
-#define ENTRY_CODE_GAME_SCREEN -1
-#define ENTRY_CODE_PAUSE_MENU -2
-#define ENTRY_CODE_VICTORY_SCREEN -3
-#define ENTRY_CODE_DEFEAT_SCREEN -4
+#define STATE_GAME_SCREEN -1
+#define STATE_PAUSE_MENU -2
+#define STATE_MAIN_MENU -3
+#define STATE_VICTORY_SCREEN -4
+#define STATE_DEFEAT_SCREEN -5
 
 // main loop exit codes
 #define EXIT_CODE_CONTINUE 0
 #define EXIT_CODE_RETRY 1
 #define EXIT_CODE_QUIT 2
+
+// level exit codes

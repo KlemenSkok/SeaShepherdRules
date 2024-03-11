@@ -21,13 +21,16 @@ class Level {
     Player player;
     
     Vektor<Whaler*> whalers;
-    int numWhalers;
+    Vektor<Iceberg*> icebergs;
+    int initialWhalerCount;
+
+    void checkCollisions();
 
 public:
     Level(int levelNum);
     ~Level();
 
-    void Update();
+    int Update();
     void Render();
     void Cleanup();
 };

@@ -42,6 +42,8 @@ public:
     void Update() override;
     void Render() override;
 
+    SDL_Rect get_hitbox();
+
 };
 
 //#include "Vektor.hpp"

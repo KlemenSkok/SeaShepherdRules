@@ -36,10 +36,11 @@ int main(int argc, char* argv[]) {
         else if(prevCode == EXIT_CODE_CONTINUE) {
             currLevel++;
             if(currLevel > NUMBER_OF_LEVELS) {
-                currLevel = 1;
+                //currLevel = 1;
+                break;
             }
         }
-    }    
+    }
     
     game.cleanup();
 

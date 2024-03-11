@@ -6,22 +6,28 @@
 Level::Level(int levelNum) {
     player.Initialize();
 
+    // create whalers
+    initialWhalerCount = BASE_WHALER_COUNT + levelNum*2;
+    for(int i = 0; i < initialWhalerCount; i++) {
+        Whaler *w = new Whaler;
+        w->Initialize();
+        whalers.push_back(w);
+    }
+
     switch(levelNum) {
         case 1:
-            // create whalers
-            numWhalers = BASE_WHALER_COUNT + levelNum*2;
-            for(int i = 0; i < numWhalers; i++) {
-                Whaler *w = new Whaler;
-                w->Initialize();
-                whalers.push_back(w);
+            // generate icebergs
+            for(int i = 0; i < BASE_ICEBERG_COUNT; i++) {
+                Iceberg *l = new Iceberg;
+                l->Initialize();
+                icebergs.push_back(l);
             }
-
             break;
         case 2:
-
+            // generate atols
             break;
         case 3:
-
+            // generate pirates
             break;
         default:
             Logger::Error("@ Level - Invalid level number");
@@ -32,25 +38,49 @@ Level::~Level() {
     // destructor   
 }
 
-void Level::Update() {
+int Level::Update() {
+
+    checkCollisions();
+
     for(int i = 0; i < whalers.size(); i++) {
         whalers[i]->CheckBorders();
-        whalers[i]->CheckCollisions();
+        //whalers[i]->CheckCollisions();
         whalers[i]->Update();
     }
+    for(int i = 0; i < icebergs.size(); i++) {
+        icebergs[i]->CheckBorders();
+        icebergs[i]->Update();
+    }
     player.CheckBorders();
-    player.CheckCollisions();
+    //player.CheckCollisions();
     player.Update();
 
+    if(whalers.empty()) {
+        return STATE_VICTORY_SCREEN; // killed all whalers, won
+    }
+    return STATE_GAME_SCREEN; // not finished, continue playing
 }
 
 void Level::Render() {
     for(int i = 0; i < whalers.size(); i++) {
         whalers[i]->Render();
     }
+    for(int i = 0; i < icebergs.size(); i++) {
+        icebergs[i]->Render();
+    }
     player.Render();
 }
 
 void Level::Cleanup() {
     whalers.clear();
+    icebergs.clear();
+}
+
+void Level::checkCollisions() {
+    for(int i = 0; i < whalers.size(); i++) {
+        if(player == whalers[i]->get_hitbox()) {
+            whalers.erase_id(whalers[i]->object_ID);
+            i--;
+        }
+    }
 }

@@ -23,8 +23,8 @@ class Game {
 
     static bool _isRunning;
     static int _currentLevel;
+    static int _gameState;
 
-    ResourceManager resourceManager();
 
     void setScreen(int mode);
     void gameScreen(int level);

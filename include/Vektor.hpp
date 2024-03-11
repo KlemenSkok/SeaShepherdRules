@@ -29,6 +29,7 @@ public:
     void erase_id(int id);	
 
     void clear();
+    bool empty();
 
     int size();
 
@@ -42,7 +43,9 @@ public:
 
 #include "Enemy.hpp"
 #include "Whaler.hpp"
+#include "Iceberg.hpp"
 
 template class Vektor<int>; // enable int template
 template class Vektor<Enemy*>; // enable Enemy* template
 template class Vektor<Whaler*>; // enable Whaler* template
+template class Vektor<Iceberg*>; // enable Iceberg* template

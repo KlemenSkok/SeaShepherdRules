@@ -30,6 +30,7 @@ public:
     void Render() override;
 
     void UpdateMouseMovement(); // TO-DO
+    bool operator==(const SDL_Rect);
 
     //...
 };

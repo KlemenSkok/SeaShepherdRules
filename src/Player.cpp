@@ -100,4 +100,11 @@ void Player::Render() {
     SDL_SetRenderDrawColor(Window::renderer, 0xFF, 0xFF, 0xFF, 0xFF);
 }
 
-
+bool Player::operator==(const SDL_Rect rect) {
+    return (
+        (this->hitbox.x + this->hitbox.w >= rect.x) &&
+        (this->hitbox.y + this->hitbox.h >= rect.y) &&
+        (rect.x + rect.w >= this->hitbox.x) &&
+        (rect.y + rect.h >= this->hitbox.y)
+    );
+}

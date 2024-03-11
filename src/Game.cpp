@@ -9,6 +9,7 @@ using namespace Window;
 // define static variables
 bool Game::_isRunning = false;
 int Game::_currentLevel = 1;
+int Game::_gameState = STATE_MAIN_MENU;
 
 
 Game::Game() {}
@@ -16,21 +17,28 @@ Game::~Game() {}
 
 
 void Game::init() {
-    std::cout << "Initializing game" << std::endl;
     SDL_Init(SDL_INIT_VIDEO);
     IMG_Init(IMG_INIT_PNG);
 
     Game::_isRunning = true;
     
     Window::Create();
+
+    Logger::Success("Game initialized");
 }
 
 int Game::run(int levelNum) {
 
 // -- INITIATE EVERYTHING -- //
 
+    Logger::Status("Starting level");
+
     Level level(levelNum);
-    
+
+    Game::_gameState = STATE_GAME_SCREEN;
+
+    Uint32 lastUpdate, currentTime;
+    lastUpdate = currentTime = SDL_GetTicks();
 
 
     while(Game::_isRunning) { // main loop
@@ -40,21 +48,41 @@ int Game::run(int levelNum) {
                 Game::_isRunning = false;
             }
         }
-// -- UPDATE EVERYTHING -- //
-        level.Update();
 
-        SDL_RenderClear(Window::renderer); // clear screen
+        currentTime = SDL_GetTicks();
+        if(lastUpdate - currentTime >= FRAME_TARGET_TIME) {
 
-// -- RENDER EVERYTHING -- //
-        level.Render();
+    // -- UPDATE EVERYTHING -- //
+            Game::_gameState = level.Update();
 
-        SDL_RenderPresent(Window::renderer); // refresh screen
+            SDL_RenderClear(Window::renderer); // clear screen
 
-        SDL_Delay(FRAME_TARGET_TIME);
+    // -- RENDER EVERYTHING -- //
+            level.Render();
+
+            SDL_RenderPresent(Window::renderer); // refresh screen
+
+
+            lastUpdate = currentTime;
+        }
+
+        //SDL_Delay(FRAME_TARGET_TIME);
+
+        if(Game::_gameState == STATE_VICTORY_SCREEN)
+            break;
     }
 
 
     level.Cleanup();
+
+    switch(Game::_gameState) {
+        case STATE_VICTORY_SCREEN:
+            return EXIT_CODE_CONTINUE;
+            break;
+        case STATE_DEFEAT_SCREEN:
+            return EXIT_CODE_QUIT;
+            break;
+    }
 
     return EXIT_CODE_QUIT;
 }
