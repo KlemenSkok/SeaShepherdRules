@@ -8,7 +8,7 @@
 
 // Commonly used functions and structures
 
-void update_movement(SDL_Rect &rect, int dest_x, int dest_y, int speed);
+void update_movement(SDL_Rect &rect, int dest_x, int dest_y, double speed);
 
 SDL_Texture *LoadTexture(const char *path);
 

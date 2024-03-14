@@ -33,6 +33,12 @@ Whaler::~Whaler() {
 
 void Whaler::Initialize() {
     this->texture = LoadTexture("../../assets/images/whaler.png");
+    if(this->texture == nullptr) {
+        this->texture = LoadTexture("../assets/images/whaler.png");
+    }
+    if(this->texture == nullptr) {
+        Logger::Warning("Failed to load whaler texture");
+    }
     // get texture width and height
     SDL_QueryTexture(texture, NULL, NULL, &container.w, &container.h);
     container.x = rand() % (Window::Width() - container.w);
@@ -90,7 +96,7 @@ void Whaler::Update() {
 		// wait
 	}
 	else {
-		update_movement(hitbox, dest_x, dest_y, PLAYER_SPEED);
+		update_movement(hitbox, dest_x, dest_y, ENEMY_SPEED);
 	}
 
     // send changes to container 

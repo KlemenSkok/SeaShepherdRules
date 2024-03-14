@@ -40,7 +40,7 @@ public:
     void CheckCollisions() override;
     void CheckBorders() override;
     void Update() override;
-    void Render() override;
+void Render() override;
 
     SDL_Rect get_hitbox();
 

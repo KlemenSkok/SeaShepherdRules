@@ -3,9 +3,11 @@
 
 #include "Iceberg.hpp"
 
+#include <cstdlib>
 
 
-double Iceberg::direction = rand() % 360;
+
+double Iceberg::direction = 0;
 int Iceberg::ID_counter = 0;
 
 Iceberg::Iceberg() {
@@ -22,10 +24,16 @@ Iceberg::~Iceberg() {
 }
 
 void Iceberg::Initialize() {
+    // try loading texture from project directory (debugging)
     this->texture = LoadTexture("../../assets/images/level_1/iceberg.png");
+    // or try loading it from final directory (final compiled version)
+    if(this->texture == nullptr) {
+        this->texture = LoadTexture("../assets/images/level_1/iceberg.png");
+    }
     if(this->texture == nullptr) {
         Logger::Warning("Failed to load iceberg texture");
     }
+    
     SDL_QueryTexture(texture, NULL, NULL, &container.w, &container.h);
     container.x = rand() % (Window::Width() - container.w);
     container.y = rand() % (Window::Height() - container.h);
@@ -35,6 +43,8 @@ void Iceberg::Initialize() {
     hitbox.y = container.y + (container.h - hitbox.h) / 2;
 
     this->ticksCounter = 0;
+
+    std::cout << "Iceberg direction: " << Iceberg::direction <<std::endl;
 }
 
 void Iceberg::CheckCollisions() {
@@ -51,7 +61,7 @@ void Iceberg::Update() {
 
         if(ticksCounter % 5 == 0) { // usak peti frame
             double delta_x = ICEBERG_SPEED * cos(direction * M_PI / 180.0),
-                delta_y = ICEBERG_SPEED * sin(direction * M_PI / 180.0);
+                delta_y = -ICEBERG_SPEED * sin(direction * M_PI / 180.0);
 
             hitbox.x += static_cast<int>(delta_x);
             hitbox.y += static_cast<int>(delta_y);
@@ -67,4 +77,8 @@ void Iceberg::Render() {
 
 SDL_Rect Iceberg::get_hitbox() {
     return this->hitbox;
+}
+
+void Iceberg::setDirection(int d) {
+    Iceberg::direction = d % 360;
 }

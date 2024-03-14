@@ -42,5 +42,7 @@ public:
     void Update() override;
     void Render() override;
 
+    static void setDirection(int);
+
     SDL_Rect get_hitbox();
 };

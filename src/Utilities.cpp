@@ -47,7 +47,7 @@ namespace Window {
 
 }
 
-void update_movement(SDL_Rect &rect, int dest_x, int dest_y, int input_speed) {//still needs calibration
+void update_movement(SDL_Rect &rect, int dest_x, int dest_y, double input_speed) {//still needs calibration
     int distance_x = dest_x - rect.x;
     int distance_y = dest_y - rect.y;
 

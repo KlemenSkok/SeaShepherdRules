@@ -11,7 +11,7 @@
 
 // enemy constants
 #define ENEMY_HEALTH 50
-#define ENEMY_SPEED 2
+#define ENEMY_SPEED 3.5
 #define ENEMY_DAMAGE 20
 
 // game constants

@@ -16,6 +16,8 @@ Level::Level(int levelNum) {
 
     switch(levelNum) {
         case 1:
+            // set direction of the icebergs
+            Iceberg::setDirection(rand() % 360);
             // generate icebergs
             for(int i = 0; i < BASE_ICEBERG_COUNT; i++) {
                 Iceberg *l = new Iceberg;
