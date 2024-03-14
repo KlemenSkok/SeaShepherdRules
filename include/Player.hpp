@@ -19,8 +19,9 @@ About:
 class Player : public Entity {
 
 
+
 public:
-    Player();
+Player();
     ~Player();
 
     void Initialize() override;
@@ -31,6 +32,7 @@ public:
 
     void UpdateMouseMovement(); // TO-DO
     bool operator==(const SDL_Rect);
+    void avoid_iceberg(SDL_Rect);
 
     //...
 };

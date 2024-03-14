@@ -22,6 +22,7 @@ class Level {
     
     Vektor<Whaler*> whalers;
     Vektor<Iceberg*> icebergs;
+    Vektor<Atol*> atols;
     int initialWhalerCount;
 
     void checkCollisions();

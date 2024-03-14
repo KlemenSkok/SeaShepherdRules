@@ -4,8 +4,13 @@
 #pragma once
 
 #include "Entity.hpp"
+#include "Constants.hpp"
+#include "Utilities.hpp"
+#include "Logger.hpp"
 
 #include <SDL2/SDL_Image.h>
+#include <cstdlib>
+#include <cmath>
 
 /*
 About:
@@ -31,4 +36,4 @@ public:
     void CheckBorders() override;
     void Update() override;
     void Render() override;
-}
+};

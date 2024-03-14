@@ -27,6 +27,11 @@ Level::Level(int levelNum) {
             break;
         case 2:
             // generate atols
+            for(int i = 0; i < BASE_ATOL_COUNT; i++) {
+                Atol *a = new Atol;
+                a->Initialize();
+                atols.push_back(a);
+            }
             break;
         case 3:
             // generate pirates
@@ -53,6 +58,11 @@ int Level::Update() {
         icebergs[i]->CheckBorders();
         icebergs[i]->Update();
     }
+    for(int i = 0; i < atols.size(); i++) {
+        atols[i]->CheckBorders();
+        atols[i]->Update();
+    }
+
     player.CheckBorders();
     //player.CheckCollisions();
     player.Update();
@@ -79,10 +89,18 @@ void Level::Cleanup() {
 }
 
 void Level::checkCollisions() {
+    // check collision between player and whalers 
     for(int i = 0; i < whalers.size(); i++) {
         if(player == whalers[i]->get_hitbox()) {
             whalers.erase_id(whalers[i]->object_ID);
             i--;
         }
     }
+    //check collisions between player and icebergs
+    for(int i = 0; i < icebergs.size(); i++) {
+        if(player == icebergs[i]->get_hitbox()) {
+            player.avoid_iceberg(icebergs[i]->get_hitbox());
+        }
+    }
+
 }

@@ -44,8 +44,11 @@ public:
 #include "Enemy.hpp"
 #include "Whaler.hpp"
 #include "Iceberg.hpp"
+#include "Atol.hpp"
 
+// custom templates
 template class Vektor<int>; // enable int template
 template class Vektor<Enemy*>; // enable Enemy* template
 template class Vektor<Whaler*>; // enable Whaler* template
 template class Vektor<Iceberg*>; // enable Iceberg* template
+template class Vektor<Atol*>; // enable Atol* template

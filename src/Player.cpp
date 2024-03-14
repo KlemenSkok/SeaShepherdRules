@@ -36,6 +36,7 @@ void Player::Initialize() {
     hitbox.h = container.h * 0.85;
     hitbox.x = container.x + (container.w - hitbox.w) / 2;
     hitbox.y = container.y + (container.h - hitbox.h) / 2;
+
 }
 
 void Player::CheckCollisions() {
@@ -85,6 +86,8 @@ void Player::Update() {
     hitbox.x += deltas[0] * PLAYER_SPEED;
     hitbox.y += deltas[1] * PLAYER_SPEED;
 
+
+
     container.x = hitbox.x - (container.w - hitbox.w) / 2;
     container.y = hitbox.y - (container.h - hitbox.h) / 2;
 
@@ -107,4 +110,37 @@ bool Player::operator==(const SDL_Rect rect) {
         (rect.x + rect.w >= this->hitbox.x) &&
         (rect.y + rect.h >= this->hitbox.y)
     );
+}
+
+
+void Player::avoid_iceberg(SDL_Rect iceberg) {
+    // izračunamo prekrivanje na vsaki strani
+    int overlapLeft = hitbox.x + hitbox.w - iceberg.x;
+    int overlapRight = iceberg.x + iceberg.w - hitbox.x;
+    int overlapTop = hitbox.y + hitbox.h - iceberg.y;
+    int overlapBottom = iceberg.y + iceberg.h - hitbox.y;
+
+    // najdemo najmanjse prekrivanje
+    int minOverlapX = std::min(overlapLeft, overlapRight);
+    int minOverlapY = std::min(overlapTop, overlapBottom);
+
+    if (minOverlapX < minOverlapY) {
+        // Adjust horizontally
+        if (overlapLeft < overlapRight) {
+            // Move player to the left of the iceberg
+            hitbox.x -= overlapLeft;
+        } else {
+            // Move player to the right of the iceberg
+            hitbox.x += overlapRight;
+        }
+    } else {
+        // Adjust vertically
+        if (overlapTop < overlapBottom) {
+            // Move player above the iceberg
+            hitbox.y -= overlapTop;
+        } else {
+            // Move player below the iceberg
+            hitbox.y += overlapBottom;
+        }
+    }
 }
