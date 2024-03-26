@@ -109,6 +109,7 @@ CMakeFiles/SeaShepherdRules.dir/src/Atol.cpp.obj: C:/Users/Klemen/Documents/Klem
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstddef \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstdio \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstdlib \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ctime \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cwchar \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cwctype \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/debug/assertions.h \
@@ -435,6 +436,7 @@ CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.obj: C:/Users/Klemen/Documents/Kle
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstddef \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstdio \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstdlib \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ctime \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cwchar \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cwctype \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/debug/assertions.h \
@@ -770,6 +772,7 @@ CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj: C:/Users/Klemen/Documents/Klem
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstddef \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstdio \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstdlib \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ctime \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cwchar \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cwctype \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/debug/assertions.h \
@@ -1478,6 +1481,7 @@ CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.obj: C:/Users/Klemen/Documents/Kle
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstddef \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstdio \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstdlib \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ctime \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cwchar \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cwctype \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/debug/assertions.h \
@@ -2849,6 +2853,7 @@ CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.obj: C:/Users/Klemen/Documents/Kl
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstddef \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstdio \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstdlib \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ctime \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cwchar \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cwctype \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/debug/assertions.h \
@@ -3180,6 +3185,7 @@ CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj: C:/Users/Klemen/Documents/Kl
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstddef \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstdio \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstdlib \
+  C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ctime \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cwchar \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cwctype \
   C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/debug/assertions.h \
@@ -4120,6 +4126,10 @@ C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64
 
 C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstdlib:
 
+C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stddef.h:
+
+C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ctime:
+
 C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/fs_dir.h:
 
 C:/ProgLangs/cpp_libs/SDL2-2.28.5/x86_64-w64-mingw32/include/SDL2/SDL_render.h:
@@ -4321,10 +4331,6 @@ C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64
 C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/include/Iceberg.hpp:
 
 C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdarg.h:
-
-C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ctime:
-
-C:/MinGW/x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stddef.h:
 
 C:/ProgLangs/cpp_libs/SDL2-2.28.5/x86_64-w64-mingw32/include/SDL2/SDL_rect.h:
 

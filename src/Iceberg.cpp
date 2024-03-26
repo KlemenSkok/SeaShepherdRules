@@ -53,7 +53,22 @@ void Iceberg::CheckCollisions() {
 
 void Iceberg::CheckBorders() {
     // če ledena gora zaide s polja, navidezno izgine, nato se premakne na drugo stran in ponovi
-    //TODO
+    if(hitbox.x < -hitbox.w && direction > 90 && direction < 270) {
+        hitbox.x = Window::Width() + hitbox.w;
+        hitbox.y = rand() % (Window::Height() - hitbox.h);
+    }
+    if(hitbox.x > Window::Width() && (direction < 90 || direction > 270)) {
+        hitbox.x = -hitbox.w * 2;
+        hitbox.y = rand() % (Window::Height() - hitbox.h);
+    }
+    if(hitbox.y < -hitbox.h && direction > 0 && direction < 180) {
+        hitbox.y = Window::Height() + hitbox.h;
+        hitbox.x = rand() % (Window::Width() - hitbox.w);
+    }
+    if(hitbox.y > Window::Height() && direction > 180) {
+        hitbox.y = -hitbox.h * 2;
+        hitbox.x = rand() % (Window::Width() - hitbox.w);
+    }
 }
 
 void Iceberg::Update() {

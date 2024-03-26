@@ -34,4 +34,6 @@ public:
     int Update();
     void Render();
     void Cleanup();
+
+    SDL_Rect get_hitbox();
 };

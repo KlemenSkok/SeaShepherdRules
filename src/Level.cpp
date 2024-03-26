@@ -52,6 +52,7 @@ int Level::Update() {
     for(int i = 0; i < whalers.size(); i++) {
         whalers[i]->CheckBorders();
         //whalers[i]->CheckCollisions();
+        whalers[i]->CheckPlayerDistance(player.get_hitbox());
         whalers[i]->Update();
     }
     for(int i = 0; i < icebergs.size(); i++) {
@@ -80,12 +81,16 @@ void Level::Render() {
     for(int i = 0; i < icebergs.size(); i++) {
         icebergs[i]->Render();
     }
+    for(int i = 0; i < atols.size(); i++) {
+        atols[i]->Render();
+    }
     player.Render();
 }
 
 void Level::Cleanup() {
     whalers.clear();
     icebergs.clear();
+    atols.clear();
 }
 
 void Level::checkCollisions() {

@@ -27,6 +27,7 @@ class Whaler : public Entity {
     Uint64 ms_toWait;
     Uint64 ms_atLastStop;
     bool is_stopped;
+    bool is_chased;
 
     void generate_dest_coords();
 
@@ -40,10 +41,11 @@ public:
     void CheckCollisions() override;
     void CheckBorders() override;
     void Update() override;
-void Render() override;
+    void Render() override;
+
+    void CheckPlayerDistance(SDL_Rect);
 
     SDL_Rect get_hitbox();
-
 };
 
 //#include "Vektor.hpp"

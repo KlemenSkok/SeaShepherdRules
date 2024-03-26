@@ -144,3 +144,7 @@ void Player::avoid_iceberg(SDL_Rect iceberg) {
         }
     }
 }
+
+SDL_Rect Player::get_hitbox() {
+    return this->hitbox;
+}

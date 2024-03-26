@@ -34,5 +34,6 @@ Player();
     bool operator==(const SDL_Rect);
     void avoid_iceberg(SDL_Rect);
 
+    SDL_Rect get_hitbox();
     //...
 };

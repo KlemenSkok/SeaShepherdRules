@@ -11,6 +11,7 @@
 #include <SDL2/SDL_Image.h>
 #include <cstdlib>
 #include <cmath>
+#include <ctime>
 
 /*
 About:
@@ -25,6 +26,12 @@ class Atol : public Entity {
 
     static int ID_counter;
 
+    Uint32 ticksCounter;
+    Uint32 waitTimer;
+    bool isVanishing;
+    Uint8 textureOpacity;
+    bool timeout;
+
 public:
     int object_ID;
 
@@ -36,4 +43,9 @@ public:
     void CheckBorders() override;
     void Update() override;
     void Render() override;
+
+    static void setSize(int);
+    bool operator==(const SDL_Rect&) const;
+
+    SDL_Rect get_hitbox();
 };

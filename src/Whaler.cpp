@@ -22,6 +22,7 @@ Whaler::Whaler() {
     Whaler::ID_counter++;
 	is_stopped = false;
 	ms_atLastStop = ms_toWait = 0;
+    is_chased = false;
 }
 
 Whaler::~Whaler() {
@@ -80,11 +81,15 @@ void Whaler::Update() {
         - ko cas potece, gre bool na false
         - generirajo se nove koordinate
     */
-
-   	if(is_stopped && (SDL_GetTicks64() - ms_atLastStop >= ms_toWait)) {
+    if(is_chased) {
+        // top priority
+        update_movement(hitbox, dest_x, dest_y, ENEMY_SPEED);
+        is_stopped = false;
+    }
+   	else if(is_stopped && (SDL_GetTicks64() - ms_atLastStop >= ms_toWait)) {
 		// the wait time is up, get new destination
 		is_stopped = false;
-		generate_dest_coords();
+        generate_dest_coords();
 	}
 	else if(!is_stopped && hitbox.x == dest_x && hitbox.y == dest_y) {
 		// got there, start waiting
@@ -135,4 +140,33 @@ void Whaler::generate_dest_coords() {
 
 SDL_Rect Whaler::get_hitbox() {
     return this->hitbox;
+}
+
+void Whaler::CheckPlayerDistance(SDL_Rect player) {
+    if(std::hypot(this->hitbox.x - player.x, this->hitbox.y - player.y) < 200.0) {
+        // player is close -> RUN
+        is_chased = true;
+
+        // destination is opposite of player
+        dest_x = 2 * hitbox.x - player.x;
+        dest_y = 2 * hitbox.y - player.y;
+
+        // make sure they dont get stuck in the borders
+        if(dest_x < 0) {
+            dest_x = 0;
+        }
+        if(dest_x + hitbox.w > Window::Width()) {
+            dest_x = Window::Width() - hitbox.w;
+        }
+        if(dest_y < 0) {
+            dest_y = 0;
+        }
+        if(dest_y + hitbox.h > Window::Height()) {
+            dest_y = Window::Height() - hitbox.h;
+        }
+    }
+    else {
+        // move normally
+        is_chased = false;
+    }
 }
