@@ -40,6 +40,8 @@ int Game::run(int levelNum) {
     Uint32 lastUpdate, currentTime;
     lastUpdate = currentTime = SDL_GetTicks();
 
+    Logger::Success("--- START ---");
+
 
     while(Game::_isRunning) { // main loop
         SDL_Event event;

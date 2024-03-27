@@ -107,5 +107,10 @@ void Level::checkCollisions() {
             player.avoid_iceberg(icebergs[i]->get_hitbox());
         }
     }
-
+    //check collisions between player and atols
+    for(int i = 0; i < atols.size(); i++) {
+        if(atols[i]->get_hitbox() != nullptr && player == *atols[i]->get_hitbox()) {
+            player.avoid_atol(atols[i]->get_hitbox());
+        }
+    }
 }

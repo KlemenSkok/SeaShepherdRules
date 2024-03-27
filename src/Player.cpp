@@ -145,6 +145,42 @@ void Player::avoid_iceberg(SDL_Rect iceberg) {
     }
 }
 
+void Player::avoid_atol(SDL_Rect *atol) {
+    
+    if(atol == nullptr) // ce je timeout lahko ignoriras
+        return;
+    
+    // izračunamo prekrivanje na vsaki strani
+    int overlapLeft = hitbox.x + hitbox.w - atol->x;
+    int overlapRight = atol->x + atol->w - hitbox.x;
+    int overlapTop = hitbox.y + hitbox.h - atol->y;
+    int overlapBottom = atol->y + atol->h - hitbox.y;
+
+    // najdemo najmanjse prekrivanje
+    int minOverlapX = std::min(overlapLeft, overlapRight);
+    int minOverlapY = std::min(overlapTop, overlapBottom);
+
+    if (minOverlapX < minOverlapY) {
+        // Adjust horizontally
+        if (overlapLeft < overlapRight) {
+            // Move player to the left of the iceberg
+            hitbox.x -= overlapLeft;
+        } else {
+            // Move player to the right of the iceberg
+            hitbox.x += overlapRight;
+        }
+    } else {
+        // Adjust vertically
+        if (overlapTop < overlapBottom) {
+            // Move player above the iceberg
+            hitbox.y -= overlapTop;
+        } else {
+            // Move player below the iceberg
+            hitbox.y += overlapBottom;
+        }
+    }
+}
+
 SDL_Rect Player::get_hitbox() {
     return this->hitbox;
 }

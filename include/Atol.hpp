@@ -27,9 +27,9 @@ class Atol : public Entity {
     static int ID_counter;
 
     Uint32 ticksCounter;
-    Uint32 waitTimer;
     bool isVanishing;
     Uint8 textureOpacity;
+    Uint8 maxSize; // width
     bool timeout;
 
 public:
@@ -47,5 +47,5 @@ public:
     static void setSize(int);
     bool operator==(const SDL_Rect&) const;
 
-    SDL_Rect get_hitbox();
+    SDL_Rect* get_hitbox();
 };
