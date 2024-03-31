@@ -83,26 +83,11 @@ CMakeFiles/SeaShepherdRules.dir/src/Atol.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SeaShepherdRules.dir/src/Atol.cpp.s"
 	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Atol.cpp -o CMakeFiles\SeaShepherdRules.dir\src\Atol.cpp.s
 
-CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.obj: CMakeFiles/SeaShepherdRules.dir/flags.make
-CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.obj: CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp
-CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.obj: C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Enemy.cpp
-CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.obj: CMakeFiles/SeaShepherdRules.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.obj"
-	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.obj -MF CMakeFiles\SeaShepherdRules.dir\src\Enemy.cpp.obj.d -o CMakeFiles\SeaShepherdRules.dir\src\Enemy.cpp.obj -c C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Enemy.cpp
-
-CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.i"
-	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Enemy.cpp > CMakeFiles\SeaShepherdRules.dir\src\Enemy.cpp.i
-
-CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.s"
-	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Enemy.cpp -o CMakeFiles\SeaShepherdRules.dir\src\Enemy.cpp.s
-
 CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj: CMakeFiles/SeaShepherdRules.dir/flags.make
 CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj: CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp
 CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj: C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Game.cpp
 CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj: CMakeFiles/SeaShepherdRules.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj"
 	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj -MF CMakeFiles\SeaShepherdRules.dir\src\Game.cpp.obj.d -o CMakeFiles\SeaShepherdRules.dir\src\Game.cpp.obj -c C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Game.cpp
 
 CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.i: cmake_force
@@ -117,7 +102,7 @@ CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.obj: CMakeFiles/SeaShepherdRules
 CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.obj: CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp
 CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.obj: C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Iceberg.cpp
 CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.obj: CMakeFiles/SeaShepherdRules.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.obj"
 	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.obj -MF CMakeFiles\SeaShepherdRules.dir\src\Iceberg.cpp.obj.d -o CMakeFiles\SeaShepherdRules.dir\src\Iceberg.cpp.obj -c C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Iceberg.cpp
 
 CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.i: cmake_force
@@ -128,26 +113,11 @@ CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.s"
 	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Iceberg.cpp -o CMakeFiles\SeaShepherdRules.dir\src\Iceberg.cpp.s
 
-CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.obj: CMakeFiles/SeaShepherdRules.dir/flags.make
-CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.obj: CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp
-CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.obj: C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/InputManager.cpp
-CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.obj: CMakeFiles/SeaShepherdRules.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.obj"
-	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.obj -MF CMakeFiles\SeaShepherdRules.dir\src\InputManager.cpp.obj.d -o CMakeFiles\SeaShepherdRules.dir\src\InputManager.cpp.obj -c C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\InputManager.cpp
-
-CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.i"
-	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\InputManager.cpp > CMakeFiles\SeaShepherdRules.dir\src\InputManager.cpp.i
-
-CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.s"
-	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\InputManager.cpp -o CMakeFiles\SeaShepherdRules.dir\src\InputManager.cpp.s
-
 CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.obj: CMakeFiles/SeaShepherdRules.dir/flags.make
 CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.obj: CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp
 CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.obj: C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Level.cpp
 CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.obj: CMakeFiles/SeaShepherdRules.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.obj"
 	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.obj -MF CMakeFiles\SeaShepherdRules.dir\src\Level.cpp.obj.d -o CMakeFiles\SeaShepherdRules.dir\src\Level.cpp.obj -c C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Level.cpp
 
 CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.i: cmake_force
@@ -162,7 +132,7 @@ CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.obj: CMakeFiles/SeaShepherdRules.
 CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.obj: CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp
 CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.obj: C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Logger.cpp
 CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.obj: CMakeFiles/SeaShepherdRules.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.obj"
 	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.obj -MF CMakeFiles\SeaShepherdRules.dir\src\Logger.cpp.obj.d -o CMakeFiles\SeaShepherdRules.dir\src\Logger.cpp.obj -c C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Logger.cpp
 
 CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.i: cmake_force
@@ -173,11 +143,26 @@ CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.s"
 	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Logger.cpp -o CMakeFiles\SeaShepherdRules.dir\src\Logger.cpp.s
 
+CMakeFiles/SeaShepherdRules.dir/src/Pirate.cpp.obj: CMakeFiles/SeaShepherdRules.dir/flags.make
+CMakeFiles/SeaShepherdRules.dir/src/Pirate.cpp.obj: CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp
+CMakeFiles/SeaShepherdRules.dir/src/Pirate.cpp.obj: C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Pirate.cpp
+CMakeFiles/SeaShepherdRules.dir/src/Pirate.cpp.obj: CMakeFiles/SeaShepherdRules.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/Pirate.cpp.obj"
+	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SeaShepherdRules.dir/src/Pirate.cpp.obj -MF CMakeFiles\SeaShepherdRules.dir\src\Pirate.cpp.obj.d -o CMakeFiles\SeaShepherdRules.dir\src\Pirate.cpp.obj -c C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Pirate.cpp
+
+CMakeFiles/SeaShepherdRules.dir/src/Pirate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SeaShepherdRules.dir/src/Pirate.cpp.i"
+	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Pirate.cpp > CMakeFiles\SeaShepherdRules.dir\src\Pirate.cpp.i
+
+CMakeFiles/SeaShepherdRules.dir/src/Pirate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SeaShepherdRules.dir/src/Pirate.cpp.s"
+	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Pirate.cpp -o CMakeFiles\SeaShepherdRules.dir\src\Pirate.cpp.s
+
 CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.obj: CMakeFiles/SeaShepherdRules.dir/flags.make
 CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.obj: CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp
 CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.obj: C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Player.cpp
 CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.obj: CMakeFiles/SeaShepherdRules.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.obj"
 	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.obj -MF CMakeFiles\SeaShepherdRules.dir\src\Player.cpp.obj.d -o CMakeFiles\SeaShepherdRules.dir\src\Player.cpp.obj -c C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Player.cpp
 
 CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.i: cmake_force
@@ -188,26 +173,11 @@ CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.s"
 	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Player.cpp -o CMakeFiles\SeaShepherdRules.dir\src\Player.cpp.s
 
-CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.obj: CMakeFiles/SeaShepherdRules.dir/flags.make
-CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.obj: CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp
-CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.obj: C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/ResourceManager.cpp
-CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.obj: CMakeFiles/SeaShepherdRules.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.obj"
-	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.obj -MF CMakeFiles\SeaShepherdRules.dir\src\ResourceManager.cpp.obj.d -o CMakeFiles\SeaShepherdRules.dir\src\ResourceManager.cpp.obj -c C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\ResourceManager.cpp
-
-CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.i"
-	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\ResourceManager.cpp > CMakeFiles\SeaShepherdRules.dir\src\ResourceManager.cpp.i
-
-CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.s"
-	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\ResourceManager.cpp -o CMakeFiles\SeaShepherdRules.dir\src\ResourceManager.cpp.s
-
 CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.obj: CMakeFiles/SeaShepherdRules.dir/flags.make
 CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.obj: CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp
 CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.obj: C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Utilities.cpp
 CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.obj: CMakeFiles/SeaShepherdRules.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.obj"
 	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.obj -MF CMakeFiles\SeaShepherdRules.dir\src\Utilities.cpp.obj.d -o CMakeFiles\SeaShepherdRules.dir\src\Utilities.cpp.obj -c C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Utilities.cpp
 
 CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.i: cmake_force
@@ -222,7 +192,7 @@ CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.obj: CMakeFiles/SeaShepherdRules.
 CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.obj: CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp
 CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.obj: C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Vektor.cpp
 CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.obj: CMakeFiles/SeaShepherdRules.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.obj"
 	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.obj -MF CMakeFiles\SeaShepherdRules.dir\src\Vektor.cpp.obj.d -o CMakeFiles\SeaShepherdRules.dir\src\Vektor.cpp.obj -c C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Vektor.cpp
 
 CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.i: cmake_force
@@ -237,7 +207,7 @@ CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj: CMakeFiles/SeaShepherdRules.
 CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj: CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp
 CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj: C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Whaler.cpp
 CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj: CMakeFiles/SeaShepherdRules.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj"
 	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj -MF CMakeFiles\SeaShepherdRules.dir\src\Whaler.cpp.obj.d -o CMakeFiles\SeaShepherdRules.dir\src\Whaler.cpp.obj -c C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Whaler.cpp
 
 CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.i: cmake_force
@@ -248,26 +218,11 @@ CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.s"
 	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\Whaler.cpp -o CMakeFiles\SeaShepherdRules.dir\src\Whaler.cpp.s
 
-CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.obj: CMakeFiles/SeaShepherdRules.dir/flags.make
-CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.obj: CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp
-CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.obj: C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/WindowManager.cpp
-CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.obj: CMakeFiles/SeaShepherdRules.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.obj"
-	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.obj -MF CMakeFiles\SeaShepherdRules.dir\src\WindowManager.cpp.obj.d -o CMakeFiles\SeaShepherdRules.dir\src\WindowManager.cpp.obj -c C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\WindowManager.cpp
-
-CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.i"
-	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\WindowManager.cpp > CMakeFiles\SeaShepherdRules.dir\src\WindowManager.cpp.i
-
-CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.s"
-	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\WindowManager.cpp -o CMakeFiles\SeaShepherdRules.dir\src\WindowManager.cpp.s
-
 CMakeFiles/SeaShepherdRules.dir/src/main.cpp.obj: CMakeFiles/SeaShepherdRules.dir/flags.make
 CMakeFiles/SeaShepherdRules.dir/src/main.cpp.obj: CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp
 CMakeFiles/SeaShepherdRules.dir/src/main.cpp.obj: C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/main.cpp
 CMakeFiles/SeaShepherdRules.dir/src/main.cpp.obj: CMakeFiles/SeaShepherdRules.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SeaShepherdRules.dir/src/main.cpp.obj"
 	C:\MinGW\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SeaShepherdRules.dir/src/main.cpp.obj -MF CMakeFiles\SeaShepherdRules.dir\src\main.cpp.obj.d -o CMakeFiles\SeaShepherdRules.dir\src\main.cpp.obj -c C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\src\main.cpp
 
 CMakeFiles/SeaShepherdRules.dir/src/main.cpp.i: cmake_force
@@ -281,42 +236,36 @@ CMakeFiles/SeaShepherdRules.dir/src/main.cpp.s: cmake_force
 # Object files for target SeaShepherdRules
 SeaShepherdRules_OBJECTS = \
 "CMakeFiles/SeaShepherdRules.dir/src/Atol.cpp.obj" \
-"CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.obj" \
 "CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj" \
 "CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.obj" \
-"CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.obj" \
 "CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.obj" \
 "CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.obj" \
+"CMakeFiles/SeaShepherdRules.dir/src/Pirate.cpp.obj" \
 "CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.obj" \
-"CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.obj" \
 "CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.obj" \
 "CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.obj" \
 "CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj" \
-"CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.obj" \
 "CMakeFiles/SeaShepherdRules.dir/src/main.cpp.obj"
 
 # External object files for target SeaShepherdRules
 SeaShepherdRules_EXTERNAL_OBJECTS =
 
 C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Atol.cpp.obj
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.obj
 C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj
 C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.obj
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.obj
 C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.obj
 C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.obj
+C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Pirate.cpp.obj
 C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.obj
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.obj
 C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.obj
 C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.obj
 C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj
-C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.obj
 C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/src/main.cpp.obj
 C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/build.make
 C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/linkLibs.rsp
 C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/objects1.rsp
 C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/bin/debug/SeaShepherdRules.exe: CMakeFiles/SeaShepherdRules.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\bin\debug\SeaShepherdRules.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\bin\debug\SeaShepherdRules.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SeaShepherdRules.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

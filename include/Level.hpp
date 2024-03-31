@@ -4,7 +4,7 @@
 #pragma once
 
 #include "Player.hpp"
-#include "Enemy.hpp"
+#include "Pirate.hpp"
 #include "Vektor.hpp"
 #include "Constants.hpp"
 #include "Utilities.hpp"
@@ -23,6 +23,7 @@ class Level {
     Vektor<Whaler*> whalers;
     Vektor<Iceberg*> icebergs;
     Vektor<Atol*> atols;
+    Vektor<Pirate*> pirates;
     int initialWhalerCount;
 
     void checkCollisions();

@@ -12,19 +12,26 @@ About:
     - Level 3
     - TODO: preimenuj v Pirate
     - igralca napadajo (v določenem radiju) in mu odvzamejo HP
+        -> pridejo zelo hitro, se pipnejo igralca in zbežijož
+        -> igralec jih ne more uničt
     - ko igralec ni v dosegu -> random movement / išče igralca
-    - igralec jih lahko uniči (kako?)
 */
 
-class Enemy : public Entity {
+class Pirate : public Entity {
 
     static int ID_counter;
+
+    int dest_x, dest_y;
+    Uint64 ms_toWait;
+    Uint64 ms_atLastStop;
+    bool is_stopped;
+    bool player_detected;
 
 public:
     int object_ID;
 
-    Enemy();
-    ~Enemy();
+    Pirate();
+    ~Pirate();
 
     void Initialize() override;
     void CheckCollisions() override;
@@ -32,6 +39,8 @@ public:
     void Update() override;
     void Render() override;
 
+    void generate_dest_coords();
+    void CheckPlayerDistance(SDL_Rect);
 
     //...
 };

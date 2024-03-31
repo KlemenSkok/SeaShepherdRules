@@ -1,20 +1,11 @@
 
 // main.cpp
 
-#include "Constants.hpp"
-#include "Logger.hpp"
-#include "Enemy.hpp"
-//#include "Whaler.hpp"
-#include "Vektor.hpp"
 #include "Game.hpp"
 
 
 #include <iostream>
 #include <ctime>
-#include <filesystem>
-#include <string>
-
-#include <vector>
 
 
 int main(int argc, char* argv[]) {
@@ -26,7 +17,7 @@ int main(int argc, char* argv[]) {
 
     game.init();
 
-/*     while(prevCode != EXIT_CODE_QUIT) {
+    while(prevCode != EXIT_CODE_QUIT) {
 
         prevCode = game.run(currLevel);
 
@@ -40,12 +31,11 @@ int main(int argc, char* argv[]) {
                 break;
             }
         }
-    } */
+    }
 
-    game.run(2);
+    //game.run(3);
     
     game.cleanup();
-
 
     return 0;
 }

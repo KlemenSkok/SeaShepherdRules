@@ -34,11 +34,11 @@ void Iceberg::Initialize() {
         Logger::Warning("Failed to load iceberg texture");
     }
     
-    SDL_QueryTexture(texture, NULL, NULL, &container.w, &container.h);
+    generateSize();
+
     container.x = rand() % (Window::Width() - container.w);
     container.y = rand() % (Window::Height() - container.h);
-    hitbox.w = container.w * 0.85;
-    hitbox.h = container.h * 0.85;
+
     hitbox.x = container.x + (container.w - hitbox.w) / 2;
     hitbox.y = container.y + (container.h - hitbox.h) / 2;
 
@@ -54,18 +54,22 @@ void Iceberg::CheckCollisions() {
 void Iceberg::CheckBorders() {
     // če ledena gora zaide s polja, navidezno izgine, nato se premakne na drugo stran in ponovi
     if(hitbox.x < -hitbox.w && direction > 90 && direction < 270) {
+        generateSize();
         hitbox.x = Window::Width() + hitbox.w;
         hitbox.y = rand() % (Window::Height() - hitbox.h);
     }
     if(hitbox.x > Window::Width() && (direction < 90 || direction > 270)) {
+        generateSize();
         hitbox.x = -hitbox.w * 2;
         hitbox.y = rand() % (Window::Height() - hitbox.h);
     }
     if(hitbox.y < -hitbox.h && direction > 0 && direction < 180) {
+        generateSize();
         hitbox.y = Window::Height() + hitbox.h;
         hitbox.x = rand() % (Window::Width() - hitbox.w);
     }
     if(hitbox.y > Window::Height() && direction > 180) {
+        generateSize();
         hitbox.y = -hitbox.h * 2;
         hitbox.x = rand() % (Window::Width() - hitbox.w);
     }
@@ -96,4 +100,13 @@ SDL_Rect Iceberg::get_hitbox() {
 
 void Iceberg::setDirection(int d) {
     Iceberg::direction = d % 360;
+}
+
+void Iceberg::generateSize() {
+    SDL_Rect tmp;
+    SDL_QueryTexture(texture, NULL, NULL, &tmp.w, &tmp.h);
+    container.w = rand() % 200 + 80;
+    container.h = container.w * tmp.h / tmp.w;
+    hitbox.w = container.w * 0.85;
+    hitbox.h = container.h * 0.85;
 }

@@ -102,10 +102,7 @@
 				7,
 				8,
 				9,
-				10,
-				11,
-				12,
-				13
+				10
 			]
 		}
 	],
@@ -182,10 +179,7 @@
 				7,
 				8,
 				9,
-				10,
-				11,
-				12,
-				13
+				10
 			]
 		}
 	],
@@ -195,12 +189,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/Atol.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/Enemy.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -218,12 +206,6 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/InputManager.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
 			"path" : "src/Level.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -236,13 +218,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/Player.cpp",
+			"path" : "src/Pirate.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/ResourceManager.cpp",
+			"path" : "src/Player.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -261,12 +243,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/Whaler.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/WindowManager.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

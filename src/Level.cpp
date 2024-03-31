@@ -34,7 +34,11 @@ Level::Level(int levelNum) {
             }
             break;
         case 3:
-            // generate pirates
+            for(int i = 0; i < BASE_PIRATE_COUNT; i++) {
+                Pirate *p = new Pirate;
+                p->Initialize();
+                pirates.push_back(p);
+            }
             break;
         default:
             Logger::Error("@ Level - Invalid level number");
@@ -63,9 +67,12 @@ int Level::Update() {
         atols[i]->CheckBorders();
         atols[i]->Update();
     }
+    for(int i = 0; i < pirates.size(); i++) {
+        pirates[i]->CheckBorders();
+        pirates[i]->Update();
+    }
 
     player.CheckBorders();
-    //player.CheckCollisions();
     player.Update();
 
     if(whalers.empty()) {
@@ -84,6 +91,10 @@ void Level::Render() {
     for(int i = 0; i < atols.size(); i++) {
         atols[i]->Render();
     }
+    for(int i = 0; i < pirates.size(); i++) {
+        pirates[i]->Render();
+    }
+
     player.Render();
 }
 
@@ -91,6 +102,7 @@ void Level::Cleanup() {
     whalers.clear();
     icebergs.clear();
     atols.clear();
+    pirates.clear();
 }
 
 void Level::checkCollisions() {

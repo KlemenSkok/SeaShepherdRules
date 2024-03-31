@@ -153,30 +153,6 @@ src/Atol.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Atol.cpp.s
 .PHONY : src/Atol.cpp.s
 
-src/Enemy.obj: src/Enemy.cpp.obj
-.PHONY : src/Enemy.obj
-
-# target to build an object file
-src/Enemy.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.obj
-.PHONY : src/Enemy.cpp.obj
-
-src/Enemy.i: src/Enemy.cpp.i
-.PHONY : src/Enemy.i
-
-# target to preprocess a source file
-src/Enemy.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.i
-.PHONY : src/Enemy.cpp.i
-
-src/Enemy.s: src/Enemy.cpp.s
-.PHONY : src/Enemy.s
-
-# target to generate assembly for a file
-src/Enemy.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Enemy.cpp.s
-.PHONY : src/Enemy.cpp.s
-
 src/Game.obj: src/Game.cpp.obj
 .PHONY : src/Game.obj
 
@@ -224,30 +200,6 @@ src/Iceberg.s: src/Iceberg.cpp.s
 src/Iceberg.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.s
 .PHONY : src/Iceberg.cpp.s
-
-src/InputManager.obj: src/InputManager.cpp.obj
-.PHONY : src/InputManager.obj
-
-# target to build an object file
-src/InputManager.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.obj
-.PHONY : src/InputManager.cpp.obj
-
-src/InputManager.i: src/InputManager.cpp.i
-.PHONY : src/InputManager.i
-
-# target to preprocess a source file
-src/InputManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.i
-.PHONY : src/InputManager.cpp.i
-
-src/InputManager.s: src/InputManager.cpp.s
-.PHONY : src/InputManager.s
-
-# target to generate assembly for a file
-src/InputManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/InputManager.cpp.s
-.PHONY : src/InputManager.cpp.s
 
 src/Level.obj: src/Level.cpp.obj
 .PHONY : src/Level.obj
@@ -297,6 +249,30 @@ src/Logger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.s
 .PHONY : src/Logger.cpp.s
 
+src/Pirate.obj: src/Pirate.cpp.obj
+.PHONY : src/Pirate.obj
+
+# target to build an object file
+src/Pirate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Pirate.cpp.obj
+.PHONY : src/Pirate.cpp.obj
+
+src/Pirate.i: src/Pirate.cpp.i
+.PHONY : src/Pirate.i
+
+# target to preprocess a source file
+src/Pirate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Pirate.cpp.i
+.PHONY : src/Pirate.cpp.i
+
+src/Pirate.s: src/Pirate.cpp.s
+.PHONY : src/Pirate.s
+
+# target to generate assembly for a file
+src/Pirate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Pirate.cpp.s
+.PHONY : src/Pirate.cpp.s
+
 src/Player.obj: src/Player.cpp.obj
 .PHONY : src/Player.obj
 
@@ -320,30 +296,6 @@ src/Player.s: src/Player.cpp.s
 src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
-
-src/ResourceManager.obj: src/ResourceManager.cpp.obj
-.PHONY : src/ResourceManager.obj
-
-# target to build an object file
-src/ResourceManager.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.obj
-.PHONY : src/ResourceManager.cpp.obj
-
-src/ResourceManager.i: src/ResourceManager.cpp.i
-.PHONY : src/ResourceManager.i
-
-# target to preprocess a source file
-src/ResourceManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.i
-.PHONY : src/ResourceManager.cpp.i
-
-src/ResourceManager.s: src/ResourceManager.cpp.s
-.PHONY : src/ResourceManager.s
-
-# target to generate assembly for a file
-src/ResourceManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/ResourceManager.cpp.s
-.PHONY : src/ResourceManager.cpp.s
 
 src/Utilities.obj: src/Utilities.cpp.obj
 .PHONY : src/Utilities.obj
@@ -417,30 +369,6 @@ src/Whaler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.s
 .PHONY : src/Whaler.cpp.s
 
-src/WindowManager.obj: src/WindowManager.cpp.obj
-.PHONY : src/WindowManager.obj
-
-# target to build an object file
-src/WindowManager.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.obj
-.PHONY : src/WindowManager.cpp.obj
-
-src/WindowManager.i: src/WindowManager.cpp.i
-.PHONY : src/WindowManager.i
-
-# target to preprocess a source file
-src/WindowManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.i
-.PHONY : src/WindowManager.cpp.i
-
-src/WindowManager.s: src/WindowManager.cpp.s
-.PHONY : src/WindowManager.s
-
-# target to generate assembly for a file
-src/WindowManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/WindowManager.cpp.s
-.PHONY : src/WindowManager.cpp.s
-
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -477,30 +405,24 @@ help:
 	@echo ... src/Atol.obj
 	@echo ... src/Atol.i
 	@echo ... src/Atol.s
-	@echo ... src/Enemy.obj
-	@echo ... src/Enemy.i
-	@echo ... src/Enemy.s
 	@echo ... src/Game.obj
 	@echo ... src/Game.i
 	@echo ... src/Game.s
 	@echo ... src/Iceberg.obj
 	@echo ... src/Iceberg.i
 	@echo ... src/Iceberg.s
-	@echo ... src/InputManager.obj
-	@echo ... src/InputManager.i
-	@echo ... src/InputManager.s
 	@echo ... src/Level.obj
 	@echo ... src/Level.i
 	@echo ... src/Level.s
 	@echo ... src/Logger.obj
 	@echo ... src/Logger.i
 	@echo ... src/Logger.s
+	@echo ... src/Pirate.obj
+	@echo ... src/Pirate.i
+	@echo ... src/Pirate.s
 	@echo ... src/Player.obj
 	@echo ... src/Player.i
 	@echo ... src/Player.s
-	@echo ... src/ResourceManager.obj
-	@echo ... src/ResourceManager.i
-	@echo ... src/ResourceManager.s
 	@echo ... src/Utilities.obj
 	@echo ... src/Utilities.i
 	@echo ... src/Utilities.s
@@ -510,9 +432,6 @@ help:
 	@echo ... src/Whaler.obj
 	@echo ... src/Whaler.i
 	@echo ... src/Whaler.s
-	@echo ... src/WindowManager.obj
-	@echo ... src/WindowManager.i
-	@echo ... src/WindowManager.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

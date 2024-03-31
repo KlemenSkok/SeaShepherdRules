@@ -83,7 +83,7 @@ void Whaler::Update() {
     */
     if(is_chased) {
         // top priority
-        update_movement(hitbox, dest_x, dest_y, ENEMY_SPEED);
+        update_movement(hitbox, dest_x, dest_y, WHALER_SPEED);
         is_stopped = false;
     }
    	else if(is_stopped && (SDL_GetTicks64() - ms_atLastStop >= ms_toWait)) {
@@ -101,7 +101,7 @@ void Whaler::Update() {
 		// wait
 	}
 	else {
-		update_movement(hitbox, dest_x, dest_y, ENEMY_SPEED);
+		update_movement(hitbox, dest_x, dest_y, WHALER_SPEED);
 	}
 
     // send changes to container 

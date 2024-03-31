@@ -3,9 +3,8 @@
 
 #pragma once
 
-#include "ResourceManager.hpp"
 #include "Utilities.hpp"
-#include "Enemy.hpp"
+#include "Pirate.hpp"
 #include "Player.hpp"
 #include "Constants.hpp"
 #include "Level.hpp"

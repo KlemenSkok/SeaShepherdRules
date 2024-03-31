@@ -41,14 +41,20 @@ public:
 };
 
 
-#include "Enemy.hpp"
+#include "Pirate.hpp"
 #include "Whaler.hpp"
 #include "Iceberg.hpp"
 #include "Atol.hpp"
 
+// default templates
+template class Vektor<int>;
+template class Vektor<float>;
+template class Vektor<char>;
+template class Vektor<std::string>;
+
+
 // custom templates
-template class Vektor<int>; // enable int template
-template class Vektor<Enemy*>; // enable Enemy* template
+template class Vektor<Pirate*>; // enable Pirate* template
 template class Vektor<Whaler*>; // enable Whaler* template
 template class Vektor<Iceberg*>; // enable Iceberg* template
 template class Vektor<Atol*>; // enable Atol* template

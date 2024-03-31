@@ -30,6 +30,8 @@ class Iceberg : public Entity {
 
     Uint32 ticksCounter;
 
+    void generateSize();
+
 public:
     int object_ID;
 
@@ -43,6 +45,7 @@ public:
     void Render() override;
 
     static void setDirection(int);
+
 
     SDL_Rect get_hitbox();
 };

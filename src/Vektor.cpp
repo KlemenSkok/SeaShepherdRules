@@ -646,3 +646,147 @@ void Vektor<Atol*>::erase_at(int index) {
         }
     }
 }
+
+
+//---------------------------------------------------//
+//               overloads for Pirate                //
+//---------------------------------------------------//
+
+#include "Pirate.hpp"
+
+template <>
+void Vektor<Pirate*>::erase_id(int id) {
+    if(start == nullptr) {
+        Logger::Warning("@ Vektor - cannot erase from empty list");
+    }
+    else {
+        Node *tmp = start;
+        while(tmp != nullptr && tmp->data->object_ID != id) {
+            tmp = tmp->next;
+        }
+        if(tmp == nullptr) {
+            Logger::Error("@ Vektor - id not found");
+        }
+        else if(tmp == start) { // first element
+            if(start == konc) { //only element
+                start = konc = nullptr;
+                delete tmp->data;
+                delete tmp;
+            }
+            else { // just first
+                start = start->next;
+                start->prev = nullptr;
+                delete tmp->data;
+                delete tmp;
+            }
+        }
+        else if(tmp == konc) { // last element
+            konc = konc->prev;
+            konc->next = nullptr;
+            delete tmp->data;
+            delete tmp;
+        }
+        else {
+            tmp->prev->next = tmp->next;
+            tmp->next->prev = tmp->prev;
+            delete tmp->data;
+            delete tmp;
+        }
+    }
+}
+
+template <>
+void Vektor<Pirate*>::clear() {
+    while(start != nullptr) {
+        Node *tmp = start;
+        start = start->next;
+        delete tmp->data;
+        delete tmp;
+    }
+    start = konc = nullptr;
+}
+
+template<>
+Vektor<Pirate*>::~Vektor() {
+    clear();
+}
+
+template <>
+void Vektor<Pirate*>::pop_back() {
+    if(start == nullptr) {
+        Logger::Warning("@ Vektor - cannot erase from empty list");
+    }
+    else if(start == konc) {
+        delete start->data;
+        delete start;
+        start = konc = nullptr;
+    }
+    else {
+        Node *tmp = konc;
+        konc = konc->prev;
+        konc->next = nullptr;
+        delete tmp->data;
+        delete tmp;
+    }
+}
+
+template <>
+void Vektor<Pirate*>::pop_front() {
+    if(start == nullptr) {
+        Logger::Warning("@ Vektor - cannot erase from empty list");
+    }
+    else if(start == konc) {
+        delete start->data;
+        delete start;
+        start = konc = nullptr;
+    }
+    else {
+        Node *tmp = konc;
+        start = start->next;
+        start->prev = nullptr;
+        delete tmp->data;
+        delete tmp;
+    }
+}
+
+template <>
+void Vektor<Pirate*>::erase_at(int index) {
+    if(start == nullptr) {
+        Logger::Warning("@ Vektor - cannot erase from empty list");
+    }
+    else if(index < 0 || index >= size()) {
+        Logger::Error("@ Vektor - index out of range");
+    }
+    else {
+        Node *tmp = start;
+        while(index > 0) {
+            tmp = tmp->next;
+            index--;
+        }
+        if(tmp == start) {
+            if(start == konc) {
+                start = konc = nullptr;
+                delete tmp->data;
+                delete tmp;
+            }
+            else {
+                start = start->next;
+                start->prev = nullptr;
+                delete tmp->data;
+                delete tmp;
+            }
+        }
+        else if(tmp == konc) {
+            konc = konc->prev;
+            konc->next = nullptr;
+            delete tmp->data;
+            delete tmp;
+        }
+        else {
+            tmp->prev->next = tmp->next;
+            tmp->next->prev = tmp->prev;
+            delete tmp->data;
+            delete tmp;
+        }
+    }
+}

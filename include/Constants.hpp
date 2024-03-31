@@ -9,17 +9,21 @@
 #define PLAYER_HEALTH 100
 #define PLAYER_SPEED 5
 
-// enemy constants
-#define ENEMY_HEALTH 50
-#define ENEMY_SPEED 3.5
-#define ENEMY_DAMAGE 20
+// pirate
+#define PIRATE_IDLE_SPEED 1.5
+#define PIRATE_ATTACK_SPEED 7
+#define PIRATE_DAMAGE 20
+#define BASE_PIRATE_COUNT 5
 
 // game constants
 #define BASE_WHALER_COUNT 4
+#define WHALER_SPEED 3.5
 
+// iceberg
 #define BASE_ICEBERG_COUNT 5
 #define ICEBERG_SPEED 2
 
+// atol
 #define BASE_ATOL_COUNT 5
 #define ATOL_GROW_SPEED 1
 
