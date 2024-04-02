@@ -69,6 +69,7 @@ int Level::Update() {
     }
     for(int i = 0; i < pirates.size(); i++) {
         pirates[i]->CheckBorders();
+        pirates[i]->CheckPlayerDistance(player.get_hitbox());
         pirates[i]->Update();
     }
 

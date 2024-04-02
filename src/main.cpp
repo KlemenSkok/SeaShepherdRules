@@ -17,7 +17,7 @@ int main(int argc, char* argv[]) {
 
     game.init();
 
-    while(prevCode != EXIT_CODE_QUIT) {
+/*     while(prevCode != EXIT_CODE_QUIT) {
 
         prevCode = game.run(currLevel);
 
@@ -31,9 +31,9 @@ int main(int argc, char* argv[]) {
                 break;
             }
         }
-    }
+    } */
 
-    //game.run(3);
+    game.run(3);
     
     game.cleanup();
 

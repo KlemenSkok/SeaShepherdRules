@@ -13,7 +13,7 @@
 About:
     - igralec lovi kitolovce
     - ubije jih tako, da se jih dotakne
-    - če bo cajt -> orožje na delč??
+    - če bo cajt -> orožje na delč?? --> edit: ne bo cajt
 */
 
 class Player : public Entity {
@@ -21,12 +21,12 @@ class Player : public Entity {
 
 
 public:
-Player();
+    Player();
     ~Player();
 
     void Initialize() override;
     void CheckCollisions() override;
-    void CheckBorders() override; // TO-DO
+    void CheckBorders() override;
     void Update() override;
     void Render() override;
 

@@ -22,10 +22,12 @@ class Pirate : public Entity {
     static int ID_counter;
 
     int dest_x, dest_y;
+    int prev_x, prev_y;
     Uint64 ms_toWait;
     Uint64 ms_atLastStop;
     bool is_stopped;
-    bool player_detected;
+    bool attack_player;
+    bool get_away;
 
 public:
     int object_ID;

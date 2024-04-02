@@ -22,7 +22,6 @@ Pirate::Pirate() {
     
     is_stopped = false;
     ms_atLastStop = ms_toWait = 0;
-    player_detected = false;
 }
 
 Pirate::~Pirate() {
@@ -53,8 +52,11 @@ void Pirate::Initialize() {
     hitbox.x = container.x + (container.w - hitbox.w) / 2;
     hitbox.y = container.y + (container.h - hitbox.h) / 2;
 
-    dest_x = hitbox.x;
-    dest_y = hitbox.y;
+    dest_x = prev_x = hitbox.x;
+    dest_y = prev_y = hitbox.y;
+
+    attack_player = false;
+    get_away = false;
 
 }
 
@@ -77,9 +79,7 @@ void Pirate::CheckBorders() {
         hitbox.y = Window::Height() - hitbox.h;
     }
 }
-
-void Pirate::Update() {
-    /*
+ /*
     About:
         - uporabi ze napisano funkcijo za sledenje koordinatam
         - ko igralca ne zazna:
@@ -93,12 +93,19 @@ void Pirate::Update() {
         - je hitrejši od igralca, zato se mu ne da uidt  
     */
 
-   if(player_detected) {
-        
-        // top priority
+void Pirate::Update() {
+   
+    if(attack_player || get_away) { // napadi ali se umakni, destination je nastiman ze prej
+        update_movement(hitbox, dest_y, dest_x, PIRATE_ATTACK_SPEED);
+
+        if(hitbox.x == dest_x && hitbox.y == dest_y && get_away) {
+            attack_player = false;
+            get_away = false;
+            is_stopped = false;
+        }
 
     }
-   	else if(is_stopped && (SDL_GetTicks64() - ms_atLastStop >= ms_toWait)) {
+    if(is_stopped && (SDL_GetTicks64() - ms_atLastStop >= ms_toWait)) {
 		// the wait time is up, get new destination
 		is_stopped = false;
         generate_dest_coords();
@@ -144,10 +151,41 @@ void Pirate::generate_dest_coords() {
 }
 
 void Pirate::CheckPlayerDistance(SDL_Rect player) {
-    if(std::hypot(hitbox.x - player.x, hitbox.y - player.y) < 75.0) {
-        player_detected = true;
+
+    double distance = std::hypot(hitbox.x - player.x, hitbox.y - player.y);
+
+    if(distance < 150.0) {
+        if(attack_player) { // če ga napada, to pac nadaljuje
+            dest_x = player.x;
+            dest_y = player.y;
+        }
+        else if(get_away) {
+            dest_x = prev_x;
+            dest_y = prev_y;
+        }
+        else { // ga prvič zazna
+            attack_player = true;
+            dest_x = player.x;
+            dest_y = player.y;
+            prev_x = hitbox.x;
+            prev_y = hitbox.y;
+        }
     }
-    else {
-        player_detected = false;
+    else { // igralc ni v dosegu
+        attack_player = false;
+        if (get_away && hitbox.x == dest_x && hitbox.y == dest_y) {
+            get_away = false;
+            is_stopped = true;
+            ms_atLastStop = SDL_GetTicks64();
+            ms_toWait = rand() % 2500 + 1500;
+        }
     }
+
+    if(SDL_HasIntersection(&hitbox, &player)) {
+        attack_player = false;
+        get_away = true;
+        dest_x = prev_x;
+        dest_y = prev_y;
+    }
+
 }
