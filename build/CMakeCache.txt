@@ -262,6 +262,9 @@ SDL2_DIR:PATH=C:/ProgLangs/cpp_libs/SDL2-2.28.5/x86_64-w64-mingw32/lib/cmake/SDL
 //The directory containing a CMake configuration file for SDL2_Image.
 SDL2_Image_DIR:PATH=C:/ProgLangs/cpp_libs/SDL2_image-2.6.3/x86_64-w64-mingw32/lib/cmake/SDL2_image
 
+//The directory containing a CMake configuration file for SDL2_ttf.
+SDL2_ttf_DIR:PATH=C:/ProgLangs/cpp_libs/SDL2_ttf-2.20.0/x86_64-w64-mingw32/lib/cmake/SDL2_ttf
+
 //Value Computed by CMake
 SeaShepherdRules_BINARY_DIR:STATIC=C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/build
 

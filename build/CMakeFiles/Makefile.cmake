@@ -11,6 +11,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/ProgLangs/cpp_libs/SDL2-2.28.5/x86_64-w64-mingw32/lib/cmake/SDL2/sdl2-config.cmake"
   "C:/ProgLangs/cpp_libs/SDL2_image-2.6.3/x86_64-w64-mingw32/lib/cmake/SDL2_image/sdl2_image-config-version.cmake"
   "C:/ProgLangs/cpp_libs/SDL2_image-2.6.3/x86_64-w64-mingw32/lib/cmake/SDL2_image/sdl2_image-config.cmake"
+  "C:/ProgLangs/cpp_libs/SDL2_ttf-2.20.0/x86_64-w64-mingw32/lib/cmake/SDL2_ttf/sdl2_ttf-config-version.cmake"
+  "C:/ProgLangs/cpp_libs/SDL2_ttf-2.20.0/x86_64-w64-mingw32/lib/cmake/SDL2_ttf/sdl2_ttf-config.cmake"
   "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"

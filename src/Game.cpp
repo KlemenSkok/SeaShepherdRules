@@ -19,6 +19,8 @@ Game::~Game() {}
 void Game::init() {
     SDL_Init(SDL_INIT_VIDEO);
     IMG_Init(IMG_INIT_PNG);
+    TTF_Init();
+    
 
     Game::_isRunning = true;
     
@@ -42,6 +44,19 @@ int Game::run(int levelNum) {
 
     Logger::Success("--- START ---");
 
+    auto drawLines = []() {
+        SDL_SetRenderDrawColor(Window::renderer, 200, 200, 200, 255);
+
+        for(int i = 1; i <= 20; i++) {
+            SDL_RenderDrawLine(Window::renderer, i * Window::Width() / 20, 0, i * Window::Width() / 20, Window::Height());
+        }
+        for(int i = 1; i <= 10; i++) {
+            SDL_RenderDrawLine(Window::renderer, 0, i * Window::Height() / 10, Window::Width(), i * Window::Height() / 10);
+        }
+
+        SDL_SetRenderDrawColor(Window::renderer, 255, 255, 255, 255);
+    };
+
 
     while(Game::_isRunning) { // main loop
         SDL_Event event;
@@ -54,15 +69,19 @@ int Game::run(int levelNum) {
         currentTime = SDL_GetTicks();
         if(lastUpdate - currentTime >= FRAME_TARGET_TIME) {
 
-    // -- UPDATE EVERYTHING -- //
+            // -- UPDATE EVERYTHING -- //
+
             Game::_gameState = level.Update();
 
             SDL_RenderClear(Window::renderer); // clear screen
 
-    // -- RENDER EVERYTHING -- //
+            // -- RENDER EVERYTHING -- //
+            
+            drawLines();
             level.Render();
 
             SDL_RenderPresent(Window::renderer); // refresh screen
+
 
 
             lastUpdate = currentTime;
@@ -93,4 +112,6 @@ void Game::cleanup() {
     std::cout << "Cleaning up game" << std::endl;
     Window::Destroy();
     SDL_Quit();
+    IMG_Quit();
+    TTF_Quit();
 }
