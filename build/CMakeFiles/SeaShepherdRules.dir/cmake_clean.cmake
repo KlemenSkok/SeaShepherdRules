@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SeaShepherdRules.dir/src/Atol.cpp.obj.d"
   "CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj"
   "CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj.d"
+  "CMakeFiles/SeaShepherdRules.dir/src/Hint.cpp.obj"
+  "CMakeFiles/SeaShepherdRules.dir/src/Hint.cpp.obj.d"
   "CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.obj"
   "CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.obj.d"
   "CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.obj"

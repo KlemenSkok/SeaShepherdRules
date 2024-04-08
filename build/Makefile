@@ -177,6 +177,30 @@ src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
+src/Hint.obj: src/Hint.cpp.obj
+.PHONY : src/Hint.obj
+
+# target to build an object file
+src/Hint.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Hint.cpp.obj
+.PHONY : src/Hint.cpp.obj
+
+src/Hint.i: src/Hint.cpp.i
+.PHONY : src/Hint.i
+
+# target to preprocess a source file
+src/Hint.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Hint.cpp.i
+.PHONY : src/Hint.cpp.i
+
+src/Hint.s: src/Hint.cpp.s
+.PHONY : src/Hint.s
+
+# target to generate assembly for a file
+src/Hint.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Hint.cpp.s
+.PHONY : src/Hint.cpp.s
+
 src/Iceberg.obj: src/Iceberg.cpp.obj
 .PHONY : src/Iceberg.obj
 
@@ -408,6 +432,9 @@ help:
 	@echo ... src/Game.obj
 	@echo ... src/Game.i
 	@echo ... src/Game.s
+	@echo ... src/Hint.obj
+	@echo ... src/Hint.i
+	@echo ... src/Hint.s
 	@echo ... src/Iceberg.obj
 	@echo ... src/Iceberg.i
 	@echo ... src/Iceberg.s

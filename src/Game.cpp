@@ -31,7 +31,7 @@ void Game::init() {
 
 int Game::run(int levelNum) {
 
-// -- INITIATE EVERYTHING -- //
+    // -- INITIALIZE EVERYTHING -- //
 
     Logger::Status("Starting level");
 
@@ -73,9 +73,8 @@ int Game::run(int levelNum) {
 
             Game::_gameState = level.Update();
 
-            SDL_RenderClear(Window::renderer); // clear screen
-
             // -- RENDER EVERYTHING -- //
+            SDL_RenderClear(Window::renderer); // clear screen
             
             drawLines();
             level.Render();
@@ -83,18 +82,46 @@ int Game::run(int levelNum) {
             SDL_RenderPresent(Window::renderer); // refresh screen
 
 
-
             lastUpdate = currentTime;
         }
 
-        //SDL_Delay(FRAME_TARGET_TIME);
 
-        if(Game::_gameState == STATE_VICTORY_SCREEN)
-            break;
+        if(Game::_gameState != STATE_GAME_SCREEN)
+            Game::_isRunning = false;
+        
     }
 
 
+
+/*     switch(Game::_gameState) {
+            
+        case STATE_VICTORY_SCREEN:
+            Logger::Status("Level completed!");
+            Game::_isRunning = false;
+            break;
+
+        case STATE_DEFEAT_SCREEN:
+            Logger::Status("Player died!");
+            Game::_isRunning = false;
+            break;
+
+        case STATE_MAIN_MENU:
+            Logger::Status("Entered main menu.");
+            Game::_isRunning = false;
+            break;
+
+        case STATE_PAUSE_MENU:
+            Logger::Status("Entered pause menu.");
+            Game::_isRunning = false;
+            break;
+        
+        default:
+            // do nothing
+    } */
+
     level.Cleanup();
+
+
 
     switch(Game::_gameState) {
         case STATE_VICTORY_SCREEN:

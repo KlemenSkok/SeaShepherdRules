@@ -13,6 +13,12 @@
 },
 {
   "directory": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/build",
+  "command": "C:\\MinGW\\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SeaShepherdRules.dir\\src\\Hint.cpp.obj -c C:\\Users\\Klemen\\Documents\\Klemen\\Sola\\3.letnik\\RPA\\SeaShepherdRules\\src\\Hint.cpp",
+  "file": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Hint.cpp",
+  "output": "CMakeFiles/SeaShepherdRules.dir/src/Hint.cpp.obj"
+},
+{
+  "directory": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/build",
   "command": "C:\\MinGW\\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SeaShepherdRules.dir\\src\\Iceberg.cpp.obj -c C:\\Users\\Klemen\\Documents\\Klemen\\Sola\\3.letnik\\RPA\\SeaShepherdRules\\src\\Iceberg.cpp",
   "file": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Iceberg.cpp",
   "output": "CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.obj"

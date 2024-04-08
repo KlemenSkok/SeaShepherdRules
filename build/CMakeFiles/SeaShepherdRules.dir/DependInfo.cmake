@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Atol.cpp" "CMakeFiles/SeaShepherdRules.dir/src/Atol.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/Atol.cpp.obj.d"
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Game.cpp" "CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.obj.d"
+  "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Hint.cpp" "CMakeFiles/SeaShepherdRules.dir/src/Hint.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/Hint.cpp.obj.d"
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Iceberg.cpp" "CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/Iceberg.cpp.obj.d"
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Level.cpp" "CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/Level.cpp.obj.d"
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Logger.cpp" "CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.obj.d"

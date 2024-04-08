@@ -189,3 +189,7 @@ void Pirate::CheckPlayerDistance(SDL_Rect player) {
     }
 
 }
+
+SDL_Rect Pirate::get_hitbox() {
+    return hitbox;
+}

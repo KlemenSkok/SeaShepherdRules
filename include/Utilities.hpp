@@ -1,21 +1,23 @@
 
 // Utilities.hpp
 
-//#pragma once
+#pragma once
 
 #include <SDL2/SDL_rect.h>
 #include <SDL2/SDL_render.h>
+#include <SDL2/SDL_ttf.h>
 
 // Commonly used functions and structures
 
 void update_movement(SDL_Rect &rect, int dest_x, int dest_y, double speed);
 
 SDL_Texture *LoadTexture(const char *path);
+SDL_Texture *RenderText(const char *text, TTF_Font *font, SDL_Color color);
+
 
 void format_path(char *path);
 
 
-// window management
 namespace Window {
         extern SDL_Window *window;
         extern SDL_Renderer *renderer;

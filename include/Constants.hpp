@@ -12,8 +12,8 @@
 // pirate
 #define PIRATE_IDLE_SPEED 1.5
 #define PIRATE_ATTACK_SPEED 7
-#define PIRATE_DAMAGE 20
-#define BASE_PIRATE_COUNT 5
+#define PIRATE_DAMAGE 5
+#define PIRATE_COUNT 5
 
 // game constants
 #define BASE_WHALER_COUNT 4
@@ -30,6 +30,11 @@
 #define INITIAL_WINDOW_WIDTH  800
 #define INITIAL_WINDOW_HEIGHT 600
 
+#define SECTOR_COUNT_X 20
+#define SECTOR_COUNT_Y 10
+
+#define HINT_TIME_TO_DISPLAY 450 // 300 ticks = ~5 seconds
+
 #define FPS 60
 #define FRAME_TARGET_TIME (1000 / FPS)
 
@@ -38,16 +43,16 @@
 
 #define NUMBER_OF_LEVELS 3
 
-// main loop entry codes (positive numbers reserved for levels)
-#define STATE_GAME_SCREEN -1
-#define STATE_PAUSE_MENU -2
-#define STATE_MAIN_MENU -3
-#define STATE_VICTORY_SCREEN -4
-#define STATE_DEFEAT_SCREEN -5
+// level exit codes
+#define STATE_GAME_SCREEN 0x00
+#define STATE_PAUSE_MENU 0x01
+#define STATE_MAIN_MENU 0x02
+#define STATE_VICTORY_SCREEN 0x03
+#define STATE_DEFEAT_SCREEN 0x04
 
 // main loop exit codes
-#define EXIT_CODE_CONTINUE 0
-#define EXIT_CODE_RETRY 1
-#define EXIT_CODE_QUIT 2
+#define EXIT_CODE_CONTINUE 0x10
+#define EXIT_CODE_RETRY 0x11
+#define EXIT_CODE_QUIT 0x12
 
-// level exit codes
+// other exit codes

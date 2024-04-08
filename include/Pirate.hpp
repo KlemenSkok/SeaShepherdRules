@@ -44,5 +44,7 @@ public:
     void generate_dest_coords();
     void CheckPlayerDistance(SDL_Rect);
 
+    SDL_Rect get_hitbox();
+
     //...
 };

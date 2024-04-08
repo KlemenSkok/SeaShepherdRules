@@ -37,6 +37,8 @@ void Player::Initialize() {
     hitbox.x = container.x + (container.w - hitbox.w) / 2;
     hitbox.y = container.y + (container.h - hitbox.h) / 2;
 
+    health = 100;
+
 }
 
 void Player::CheckCollisions() {
@@ -183,4 +185,12 @@ void Player::avoid_atol(SDL_Rect *atol) {
 
 SDL_Rect Player::get_hitbox() {
     return this->hitbox;
+}
+
+short Player::get_health() {
+    return this->health;
+}
+
+void Player::recieve_damage(short damage) {
+    this->health -= damage;
 }

@@ -18,7 +18,7 @@ About:
 
 class Player : public Entity {
 
-
+    short health;
 
 public:
     Player();
@@ -36,5 +36,7 @@ public:
     void avoid_atol(SDL_Rect*);
 
     SDL_Rect get_hitbox();
+    short get_health();
+    void recieve_damage(short);
     //...
 };

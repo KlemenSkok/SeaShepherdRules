@@ -8,6 +8,7 @@
 #include "Player.hpp"
 #include "Constants.hpp"
 #include "Level.hpp"
+#include "Hint.hpp"
 
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>

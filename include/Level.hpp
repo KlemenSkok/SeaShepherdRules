@@ -8,6 +8,7 @@
 #include "Vektor.hpp"
 #include "Constants.hpp"
 #include "Utilities.hpp"
+#include "Hint.hpp"
 
 #include <SDL2/SDL_image.h>
 
@@ -25,6 +26,10 @@ class Level {
     Vektor<Atol*> atols;
     Vektor<Pirate*> pirates;
     int initialWhalerCount;
+    Hint hint;
+
+    Uint64 ms_LastHint;
+    Uint64 ms_tillNestHint;
 
     void checkCollisions();
 

@@ -86,3 +86,13 @@ void format_path(char *path) { //replace \\ with /
     }
 }
 
+
+
+SDL_Texture *RenderText(const char *text, TTF_Font *font, SDL_Color color) {
+    
+    SDL_Surface *s = TTF_RenderText_Solid(font, text, color);
+    SDL_Texture *t = SDL_CreateTextureFromSurface(Window::renderer, s);
+    SDL_FreeSurface(s);
+
+    return t;
+}

@@ -34,7 +34,7 @@ Level::Level(int levelNum) {
             }
             break;
         case 3:
-            for(int i = 0; i < BASE_PIRATE_COUNT; i++) {
+            for(int i = 0; i < PIRATE_COUNT; i++) {
                 Pirate *p = new Pirate;
                 p->Initialize();
                 pirates.push_back(p);
@@ -75,9 +75,16 @@ int Level::Update() {
 
     player.CheckBorders();
     player.Update();
+    
+    if(hint.toRefresh) {
+        hint.Refresh(whalers[rand() % whalers.size()]->get_hitbox());
+    }
 
     if(whalers.empty()) {
         return STATE_VICTORY_SCREEN; // killed all whalers, won
+    }
+    else if(player.get_health() <= 0) {
+        return STATE_DEFEAT_SCREEN; // player died, lost
     }
     return STATE_GAME_SCREEN; // not finished, continue playing
 }
@@ -97,6 +104,7 @@ void Level::Render() {
     }
 
     player.Render();
+    hint.Render();
 }
 
 void Level::Cleanup() {
@@ -124,6 +132,12 @@ void Level::checkCollisions() {
     for(int i = 0; i < atols.size(); i++) {
         if(atols[i]->get_hitbox() != nullptr && player == *atols[i]->get_hitbox()) {
             player.avoid_atol(atols[i]->get_hitbox());
+        }
+    }
+    for(int i = 0; i < pirates.size(); i++) {
+        if(player == pirates[i]->get_hitbox()) {
+            player.recieve_damage(PIRATE_DAMAGE);
+            std::cout << "Player health: " << player.get_health() << std::endl;
         }
     }
 }
