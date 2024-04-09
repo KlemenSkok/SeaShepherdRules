@@ -49,6 +49,12 @@
 },
 {
   "directory": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/build",
+  "command": "C:\\MinGW\\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SeaShepherdRules.dir\\src\\Screen.cpp.obj -c C:\\Users\\Klemen\\Documents\\Klemen\\Sola\\3.letnik\\RPA\\SeaShepherdRules\\src\\Screen.cpp",
+  "file": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Screen.cpp",
+  "output": "CMakeFiles/SeaShepherdRules.dir/src/Screen.cpp.obj"
+},
+{
+  "directory": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/build",
   "command": "C:\\MinGW\\x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev1\\mingw64\\bin\\g++.exe  @CMakeFiles/SeaShepherdRules.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\SeaShepherdRules.dir\\src\\Utilities.cpp.obj -c C:\\Users\\Klemen\\Documents\\Klemen\\Sola\\3.letnik\\RPA\\SeaShepherdRules\\src\\Utilities.cpp",
   "file": "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Utilities.cpp",
   "output": "CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.obj"

@@ -321,6 +321,30 @@ src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
+src/Screen.obj: src/Screen.cpp.obj
+.PHONY : src/Screen.obj
+
+# target to build an object file
+src/Screen.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Screen.cpp.obj
+.PHONY : src/Screen.cpp.obj
+
+src/Screen.i: src/Screen.cpp.i
+.PHONY : src/Screen.i
+
+# target to preprocess a source file
+src/Screen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Screen.cpp.i
+.PHONY : src/Screen.cpp.i
+
+src/Screen.s: src/Screen.cpp.s
+.PHONY : src/Screen.s
+
+# target to generate assembly for a file
+src/Screen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Screen.cpp.s
+.PHONY : src/Screen.cpp.s
+
 src/Utilities.obj: src/Utilities.cpp.obj
 .PHONY : src/Utilities.obj
 
@@ -450,6 +474,9 @@ help:
 	@echo ... src/Player.obj
 	@echo ... src/Player.i
 	@echo ... src/Player.s
+	@echo ... src/Screen.obj
+	@echo ... src/Screen.i
+	@echo ... src/Screen.s
 	@echo ... src/Utilities.obj
 	@echo ... src/Utilities.i
 	@echo ... src/Utilities.s

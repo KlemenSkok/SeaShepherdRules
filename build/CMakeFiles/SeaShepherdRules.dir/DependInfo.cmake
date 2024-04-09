@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Logger.cpp" "CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/Logger.cpp.obj.d"
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Pirate.cpp" "CMakeFiles/SeaShepherdRules.dir/src/Pirate.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/Pirate.cpp.obj.d"
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Player.cpp" "CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.obj.d"
+  "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Screen.cpp" "CMakeFiles/SeaShepherdRules.dir/src/Screen.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/Screen.cpp.obj.d"
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Utilities.cpp" "CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.obj.d"
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Vektor.cpp" "CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.obj.d"
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Whaler.cpp" "CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj" "gcc" "CMakeFiles/SeaShepherdRules.dir/src/Whaler.cpp.obj.d"

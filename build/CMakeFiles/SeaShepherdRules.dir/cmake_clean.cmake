@@ -18,6 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SeaShepherdRules.dir/src/Pirate.cpp.obj.d"
   "CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.obj"
   "CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.obj.d"
+  "CMakeFiles/SeaShepherdRules.dir/src/Screen.cpp.obj"
+  "CMakeFiles/SeaShepherdRules.dir/src/Screen.cpp.obj.d"
   "CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.obj"
   "CMakeFiles/SeaShepherdRules.dir/src/Utilities.cpp.obj.d"
   "CMakeFiles/SeaShepherdRules.dir/src/Vektor.cpp.obj"

@@ -80,12 +80,12 @@ clean: CMakeFiles/SeaShepherdRules.dir/clean
 CMakeFiles/SeaShepherdRules.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target SeaShepherdRules"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target SeaShepherdRules"
 .PHONY : CMakeFiles/SeaShepherdRules.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SeaShepherdRules.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/SeaShepherdRules.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Klemen\Documents\Klemen\Sola\3.letnik\RPA\SeaShepherdRules\build\CMakeFiles 0
 .PHONY : CMakeFiles/SeaShepherdRules.dir/rule
