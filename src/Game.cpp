@@ -20,13 +20,14 @@ void Game::init() {
     SDL_Init(SDL_INIT_VIDEO);
     IMG_Init(IMG_INIT_PNG);
     TTF_Init();
-    
-
-    Game::_isRunning = true;
-    
+        
     Window::Create();
 
     Logger::Success("Game initialized");
+
+    // show main manu on start
+    screen.main_menu();
+
 }
 
 int Game::run(int levelNum) {
@@ -36,11 +37,12 @@ int Game::run(int levelNum) {
     Logger::Status("Starting level");
 
     Level level(levelNum);
-
     Game::_gameState = STATE_GAME_SCREEN;
+    Game::_isRunning = true;
 
     Uint32 lastUpdate, currentTime;
     lastUpdate = currentTime = SDL_GetTicks();
+    short return_code = -1;
 
     Logger::Success("--- START ---");
 
@@ -59,12 +61,7 @@ int Game::run(int levelNum) {
 
 
     while(Game::_isRunning) { // main loop
-        SDL_Event event;
-        while(SDL_PollEvent(&event)) {
-            if(event.type == SDL_QUIT) {
-                Game::_isRunning = false;
-            }
-        }
+
 
         currentTime = SDL_GetTicks();
         if(lastUpdate - currentTime >= FRAME_TARGET_TIME) {
@@ -83,56 +80,65 @@ int Game::run(int levelNum) {
 
 
             lastUpdate = currentTime;
+
+            std::cout << "Game state: " << Game::_gameState << std::endl;
         }
 
+        SDL_Event event;
+        while(SDL_PollEvent(&event)) {
+            if(event.type == SDL_QUIT) {
+                Game::_isRunning = false;
+                return_code = EXIT_CODE_QUIT;
+                break;
+            }
+            if(event.type == SDL_KEYDOWN) {
+                if(event.key.keysym.sym == SDLK_ESCAPE) {
+                    // override previous state
+                    Game::_gameState = STATE_PAUSE_MENU;
+                }
+            }
+        }
 
-        if(Game::_gameState != STATE_GAME_SCREEN)
-            Game::_isRunning = false;
+        switch(Game::_gameState) {
+
+            case STATE_PAUSE_MENU:
+                Logger::Status("Entered pause menu.");
+                screen.pause_menu();
+                break;
+
+            case STATE_GAME_SCREEN:
+                break;
+
+            default:
+                Game::_isRunning = false;
+            
+        }
         
     }
-
-
-
-/*     switch(Game::_gameState) {
-            
-        case STATE_VICTORY_SCREEN:
-            Logger::Status("Level completed!");
-            Game::_isRunning = false;
-            break;
-
-        case STATE_DEFEAT_SCREEN:
-            Logger::Status("Player died!");
-            Game::_isRunning = false;
-            break;
-
-        case STATE_MAIN_MENU:
-            Logger::Status("Entered main menu.");
-            Game::_isRunning = false;
-            break;
-
-        case STATE_PAUSE_MENU:
-            Logger::Status("Entered pause menu.");
-            Game::_isRunning = false;
-            break;
-        
-        default:
-            // do nothing
-    } */
 
     level.Cleanup();
 
 
-
     switch(Game::_gameState) {
+                        
         case STATE_VICTORY_SCREEN:
-            return EXIT_CODE_CONTINUE;
+            return_code = screen.victory_screen();
+            if(levelNum >= NUMBER_OF_LEVELS) {
+                return_code = EXIT_CODE_QUIT;
+            }
             break;
+
         case STATE_DEFEAT_SCREEN:
-            return EXIT_CODE_QUIT;
+            return_code = screen.defeat_screen();
+            break;
+    
+        case STATE_MAIN_MENU:
+            return_code = EXIT_CODE_RESTART;
+            screen.main_menu();
             break;
     }
 
-    return EXIT_CODE_QUIT;
+    return return_code;
 }
 
 void Game::cleanup() {

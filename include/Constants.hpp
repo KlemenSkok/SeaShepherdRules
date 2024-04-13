@@ -54,5 +54,6 @@
 #define EXIT_CODE_CONTINUE 0x10
 #define EXIT_CODE_RETRY 0x11
 #define EXIT_CODE_QUIT 0x12
+#define EXIT_CODE_RESTART 0x13
 
 // other exit codes

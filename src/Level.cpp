@@ -136,8 +136,19 @@ void Level::checkCollisions() {
     }
     for(int i = 0; i < pirates.size(); i++) {
         if(player == pirates[i]->get_hitbox()) {
-            player.recieve_damage(PIRATE_DAMAGE);
+            //player.recieve_damage(PIRATE_DAMAGE);
             std::cout << "Player health: " << player.get_health() << std::endl;
         }
+    }
+    for(int i = 0; i < whalers.size(); i++) {
+        for(int j = 0; j < icebergs.size(); j++) {
+            if(*whalers[i] == icebergs[j]->get_hitbox())
+                whalers[i]->avoidEntity(icebergs[j]->get_hitbox());
+        }
+        for(int j = 0; j < atols.size(); j++) {
+            if(*whalers[i] == *atols[j]->get_hitbox())
+                whalers[i]->avoidEntity(*atols[j]->get_hitbox());
+        }
+
     }
 }

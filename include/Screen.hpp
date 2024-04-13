@@ -28,7 +28,7 @@ public:
 
     void main_menu();
     void pause_menu();
-    void defeat_screen();
-    void victory_screen();
+    int defeat_screen();
+    int victory_screen();
 
 };

@@ -44,8 +44,12 @@ public:
     void Render() override;
 
     void CheckPlayerDistance(SDL_Rect);
+    void avoidEntity(const SDL_Rect&);
+
+    bool operator==(const SDL_Rect&);
 
     SDL_Rect get_hitbox();
+
 };
 
 //#include "Vektor.hpp"

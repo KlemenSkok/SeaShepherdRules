@@ -170,3 +170,39 @@ void Whaler::CheckPlayerDistance(SDL_Rect player) {
         is_chased = false;
     }
 }
+
+bool Whaler::operator==(const SDL_Rect& rect) {
+    return SDL_HasIntersection(&hitbox, &rect);
+}
+
+void Whaler::avoidEntity(const SDL_Rect& rect) {
+        // izračunamo prekrivanje na vsaki strani
+    int overlapLeft = hitbox.x + hitbox.w - rect.x;
+    int overlapRight = rect.x + rect.w - hitbox.x;
+    int overlapTop = hitbox.y + hitbox.h - rect.y;
+    int overlapBottom = rect.y + rect.h - hitbox.y;
+
+    // najdemo najmanjse prekrivanje
+    int minOverlapX = std::min(overlapLeft, overlapRight);
+    int minOverlapY = std::min(overlapTop, overlapBottom);
+
+    if (minOverlapX < minOverlapY) {
+        // Adjust horizontally
+        if (overlapLeft < overlapRight) {
+            // Move player to the left of the rect
+            hitbox.x -= overlapLeft;
+        } else {
+            // Move player to the right of the rect
+            hitbox.x += overlapRight;
+        }
+    } else {
+        // Adjust vertically
+        if (overlapTop < overlapBottom) {
+            // Move player above the rect
+            hitbox.y -= overlapTop;
+        } else {
+            // Move player below the rect
+            hitbox.y += overlapBottom;
+        }
+    }
+}

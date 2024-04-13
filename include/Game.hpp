@@ -9,6 +9,7 @@
 #include "Constants.hpp"
 #include "Level.hpp"
 #include "Hint.hpp"
+#include "Screen.hpp"
 
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
@@ -25,9 +26,7 @@ class Game {
     static int _currentLevel;
     static int _gameState;
 
-
-    void setScreen(int mode);
-    void gameScreen(int level);
+    Screen screen;
 
 
 public:

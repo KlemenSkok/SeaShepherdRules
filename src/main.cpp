@@ -17,23 +17,23 @@ int main(int argc, char* argv[]) {
 
     game.init();
 
-/*     while(prevCode != EXIT_CODE_QUIT) {
+    while(prevCode != EXIT_CODE_QUIT) {
 
         prevCode = game.run(currLevel);
-
-        if(prevCode == EXIT_CODE_RETRY) {
-            continue;
-        }
-        else if(prevCode == EXIT_CODE_CONTINUE) {
-            currLevel++;
-            if(currLevel > NUMBER_OF_LEVELS) {
-                //currLevel = 1;
+        
+        switch(prevCode) {
+            case EXIT_CODE_CONTINUE:
+                currLevel++;
                 break;
-            }
+            case EXIT_CODE_RESTART:
+                currLevel = 1;
+                break;
+            case EXIT_CODE_RETRY:
+                break;
         }
-    } */
+    }
 
-    game.run(3);
+    //game.run(3);
     
     game.cleanup();
 
