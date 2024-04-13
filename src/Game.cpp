@@ -46,16 +46,14 @@ int Game::run(int levelNum) {
 
     Logger::Success("--- START ---");
 
-    auto drawLines = []() {
+    auto drawLines = [=]() {
         SDL_SetRenderDrawColor(Window::renderer, 200, 200, 200, 255);
 
-        for(int i = 1; i <= 20; i++) {
+        for(int i = 1; i <= 20; i++)
             SDL_RenderDrawLine(Window::renderer, i * Window::Width() / 20, 0, i * Window::Width() / 20, Window::Height());
-        }
-        for(int i = 1; i <= 10; i++) {
+        for(int i = 1; i <= 10; i++)
             SDL_RenderDrawLine(Window::renderer, 0, i * Window::Height() / 10, Window::Width(), i * Window::Height() / 10);
-        }
-
+        
         SDL_SetRenderDrawColor(Window::renderer, 255, 255, 255, 255);
     };
 

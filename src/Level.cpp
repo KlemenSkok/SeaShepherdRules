@@ -125,13 +125,13 @@ void Level::checkCollisions() {
     //check collisions between player and icebergs
     for(int i = 0; i < icebergs.size(); i++) {
         if(player == icebergs[i]->get_hitbox()) {
-            player.avoid_iceberg(icebergs[i]->get_hitbox());
+            player.avoid_entity(icebergs[i]->get_hitbox());
         }
     }
     //check collisions between player and atols
     for(int i = 0; i < atols.size(); i++) {
         if(atols[i]->get_hitbox() != nullptr && player == *atols[i]->get_hitbox()) {
-            player.avoid_atol(atols[i]->get_hitbox());
+            player.avoid_entity(*atols[i]->get_hitbox());
         }
     }
     for(int i = 0; i < pirates.size(); i++) {

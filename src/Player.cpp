@@ -105,7 +105,7 @@ void Player::Render() {
     SDL_SetRenderDrawColor(Window::renderer, 0xFF, 0xFF, 0xFF, 0xFF);
 }
 
-bool Player::operator==(const SDL_Rect rect) {
+bool Player::operator==(const SDL_Rect& rect) {
     return (
         (this->hitbox.x + this->hitbox.w >= rect.x) &&
         (this->hitbox.y + this->hitbox.h >= rect.y) &&
@@ -114,13 +114,12 @@ bool Player::operator==(const SDL_Rect rect) {
     );
 }
 
-
-void Player::avoid_iceberg(SDL_Rect iceberg) {
+void Player::avoid_entity(const SDL_Rect& rect) {
     // izračunamo prekrivanje na vsaki strani
-    int overlapLeft = hitbox.x + hitbox.w - iceberg.x;
-    int overlapRight = iceberg.x + iceberg.w - hitbox.x;
-    int overlapTop = hitbox.y + hitbox.h - iceberg.y;
-    int overlapBottom = iceberg.y + iceberg.h - hitbox.y;
+    int overlapLeft = hitbox.x + hitbox.w - rect.x;
+    int overlapRight = rect.x + rect.w - hitbox.x;
+    int overlapTop = hitbox.y + hitbox.h - rect.y;
+    int overlapBottom = rect.y + rect.h - hitbox.y;
 
     // najdemo najmanjse prekrivanje
     int minOverlapX = std::min(overlapLeft, overlapRight);
@@ -129,55 +128,19 @@ void Player::avoid_iceberg(SDL_Rect iceberg) {
     if (minOverlapX < minOverlapY) {
         // Adjust horizontally
         if (overlapLeft < overlapRight) {
-            // Move player to the left of the iceberg
+            // Move player to the left of the rect
             hitbox.x -= overlapLeft;
         } else {
-            // Move player to the right of the iceberg
+            // Move player to the right of the rect
             hitbox.x += overlapRight;
         }
     } else {
         // Adjust vertically
         if (overlapTop < overlapBottom) {
-            // Move player above the iceberg
+            // Move player above the rect
             hitbox.y -= overlapTop;
         } else {
-            // Move player below the iceberg
-            hitbox.y += overlapBottom;
-        }
-    }
-}
-
-void Player::avoid_atol(SDL_Rect *atol) {
-    
-    if(atol == nullptr) // ce je timeout lahko ignoriras
-        return;
-    
-    // izračunamo prekrivanje na vsaki strani
-    int overlapLeft = hitbox.x + hitbox.w - atol->x;
-    int overlapRight = atol->x + atol->w - hitbox.x;
-    int overlapTop = hitbox.y + hitbox.h - atol->y;
-    int overlapBottom = atol->y + atol->h - hitbox.y;
-
-    // najdemo najmanjse prekrivanje
-    int minOverlapX = std::min(overlapLeft, overlapRight);
-    int minOverlapY = std::min(overlapTop, overlapBottom);
-
-    if (minOverlapX < minOverlapY) {
-        // Adjust horizontally
-        if (overlapLeft < overlapRight) {
-            // Move player to the left of the iceberg
-            hitbox.x -= overlapLeft;
-        } else {
-            // Move player to the right of the iceberg
-            hitbox.x += overlapRight;
-        }
-    } else {
-        // Adjust vertically
-        if (overlapTop < overlapBottom) {
-            // Move player above the iceberg
-            hitbox.y -= overlapTop;
-        } else {
-            // Move player below the iceberg
+            // Move player below the rect
             hitbox.y += overlapBottom;
         }
     }
@@ -194,3 +157,4 @@ short Player::get_health() {
 void Player::recieve_damage(short damage) {
     this->health -= damage;
 }
+

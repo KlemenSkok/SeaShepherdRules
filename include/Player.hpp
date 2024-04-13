@@ -31,9 +31,8 @@ public:
     void Render() override;
 
     void UpdateMouseMovement(); // TO-DO
-    bool operator==(const SDL_Rect);
-    void avoid_iceberg(SDL_Rect);
-    void avoid_atol(SDL_Rect*);
+    bool operator==(const SDL_Rect&);
+    void avoid_entity(const SDL_Rect&);
 
     SDL_Rect get_hitbox();
     short get_health();
