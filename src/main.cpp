@@ -32,8 +32,6 @@ int main(int argc, char* argv[]) {
                 break;
         }
     }
-
-    //game.run(3);
     
     game.cleanup();
 
