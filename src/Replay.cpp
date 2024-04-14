@@ -68,9 +68,8 @@ void Replay::StartPlayback() {
                 *iceberg_texture = LoadTexture("../../assets/images/Level_1/iceberg.png"),
                 *atol_texture = LoadTexture("../../assets/images/Level_2/atol.png"),
                 *pirate_texture = LoadTexture("../../assets/images/Level_3/pirate.png"),
-                *exit_text = RenderText("Press 'E' to exit replay", TTF_OpenFont("../../assets/fonts/Roboto-Regular.ttf", 24), {0, 0, 0, 255});
-    TTF_Font *font = TTF_OpenFont("../../assets/fonts/LilitaOne-Regular.ttf", 24);
-    exit_text = RenderText("Press 'E' to exit replay", font, {0, 0, 0, 255});
+                *exit_text = RenderText("Press 'E' to exit replay", TTF_OpenFont("../../assets/fonts/LilitaOne-Regular.ttf", 24), {0, 0, 0, 255});
+
     SDL_Rect exit_rect = {10, 10, 0, 0};
     SDL_QueryTexture(exit_text, NULL, NULL, &exit_rect.w, &exit_rect.h);
 

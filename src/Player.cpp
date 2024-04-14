@@ -100,9 +100,9 @@ void Player::Render() {
     SDL_RenderCopy(Window::renderer, texture, NULL, &container);
 
     // draw hitbox for debugging
-    SDL_SetRenderDrawColor(Window::renderer, 0x00, 0x00, 0xFF, 0xFF); // blue
+/*     SDL_SetRenderDrawColor(Window::renderer, 0x00, 0x00, 0xFF, 0xFF); // blue
     SDL_RenderDrawRect(Window::renderer, &hitbox);
-    SDL_SetRenderDrawColor(Window::renderer, 0xFF, 0xFF, 0xFF, 0xFF);
+    SDL_SetRenderDrawColor(Window::renderer, 0xFF, 0xFF, 0xFF, 0xFF); */
 }
 
 bool Player::operator==(const SDL_Rect& rect) {

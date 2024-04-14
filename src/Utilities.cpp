@@ -16,7 +16,7 @@ namespace Window {
     SDL_Renderer *renderer = nullptr;
 
     void Create() {
-        window = SDL_CreateWindow(GAME_TITLE, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, INITIAL_WINDOW_WIDTH, INITIAL_WINDOW_HEIGHT, SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE | SDL_WINDOW_MAXIMIZED);
+        window = SDL_CreateWindow(GAME_TITLE, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, INITIAL_WINDOW_WIDTH, INITIAL_WINDOW_HEIGHT, SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE);
         renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
         SDL_SetRenderDrawColor(renderer, 0xFF, 0xFF, 0xFF, 0xFF); //white
     }
@@ -113,3 +113,16 @@ void LoadWhaler(SDL_Texture* &texture, int lvl) {
             Logger::Error("Invalid level number in replay!");
     }
 }
+
+
+double distance(const SDL_Rect &a, const SDL_Rect &b) {
+    // gledamo s sredine prvokotnika
+    return std::hypot(abs((a.x - a.w/2) - (b.x - b.w/2)), abs((a.y - a.h/2) - (b.y - b.h/2)));
+}
+
+
+double distance(const SDL_Rect &a, const SDL_Rect* &b) {
+    // gledamo s sredine prvokotnika
+    return std::hypot(abs((a.x - a.w/2) - (b->x - b->w/2)), abs((a.y - a.h/2) - (b->y - b->h/2)));
+}
+

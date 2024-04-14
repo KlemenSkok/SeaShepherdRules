@@ -47,6 +47,6 @@ public:
     static void setSize(int);
     bool operator==(const SDL_Rect&) const;
 
-    SDL_Rect* get_hitbox();
+    SDL_Rect get_hitbox();
     struct ReplayObject dumpObject();
 };

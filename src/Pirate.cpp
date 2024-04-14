@@ -22,6 +22,7 @@ Pirate::Pirate() {
     
     is_stopped = false;
     ms_atLastStop = ms_toWait = 0;
+    ms_atLastAttack = 0;
 }
 
 Pirate::~Pirate() {
@@ -96,12 +97,15 @@ void Pirate::CheckBorders() {
 void Pirate::Update() {
    
     if(attack_player || get_away) { // napadi ali se umakni, destination je nastiman ze prej
-        update_movement(hitbox, dest_y, dest_x, PIRATE_ATTACK_SPEED);
+        update_movement(hitbox, dest_x, dest_y, PIRATE_ATTACK_SPEED);
 
-        if(hitbox.x == dest_x && hitbox.y == dest_y && get_away) {
+        if(hitbox.x == dest_x && hitbox.y == dest_y && get_away) { // prisel do dest
             attack_player = false;
             get_away = false;
-            is_stopped = false;
+            is_stopped = true;
+            ms_atLastStop = SDL_GetTicks64();
+            ms_toWait = rand() % 2500 + 1500;
+            ms_atLastAttack = SDL_GetTicks64();
         }
 
     }
@@ -137,9 +141,9 @@ void Pirate::Render() {
     }
 
     // hitbox for debugging
-    SDL_SetRenderDrawColor(Window::renderer, 255, 255, 0, 255);
+/*     SDL_SetRenderDrawColor(Window::renderer, 255, 255, 0, 255);
     SDL_RenderDrawRect(Window::renderer, &hitbox);
-    SDL_SetRenderDrawColor(Window::renderer, 255, 255, 255, 255);
+    SDL_SetRenderDrawColor(Window::renderer, 255, 255, 255, 255); */
 }
 
 
@@ -152,7 +156,7 @@ void Pirate::generate_dest_coords() {
 
 void Pirate::CheckPlayerDistance(SDL_Rect player) {
 
-    double distance = std::hypot(hitbox.x - player.x, hitbox.y - player.y);
+    double distance = std::hypot((hitbox.x - hitbox.w/2.0) - (player.x - player.w/2.0), (hitbox.y - hitbox.h/2.0) - (player.y - player.h/2.0));
 
     if(distance < 150.0) {
         if(attack_player) { // če ga napada, to pac nadaljuje
@@ -163,21 +167,12 @@ void Pirate::CheckPlayerDistance(SDL_Rect player) {
             dest_x = prev_x;
             dest_y = prev_y;
         }
-        else { // ga prvič zazna
+        else if(SDL_GetTicks64() - ms_atLastAttack >= ATTACK_COOLDOWN){ // ga prvič zazna
             attack_player = true;
             dest_x = player.x;
             dest_y = player.y;
             prev_x = hitbox.x;
             prev_y = hitbox.y;
-        }
-    }
-    else { // igralc ni v dosegu
-        attack_player = false;
-        if (get_away && hitbox.x == dest_x && hitbox.y == dest_y) {
-            get_away = false;
-            is_stopped = true;
-            ms_atLastStop = SDL_GetTicks64();
-            ms_toWait = rand() % 2500 + 1500;
         }
     }
 
@@ -187,7 +182,6 @@ void Pirate::CheckPlayerDistance(SDL_Rect player) {
         dest_x = prev_x;
         dest_y = prev_y;
     }
-
 }
 
 SDL_Rect Pirate::get_hitbox() {

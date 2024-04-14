@@ -92,20 +92,30 @@ int Level::Update() {
 
 void Level::Render() {
     for(int i = 0; i < whalers.size(); i++) {
-        whalers[i]->Render();
+        if(distance(player.get_hitbox(), whalers[i]->get_hitbox()) < VISIBILITY_RADIUS) {
+            whalers[i]->Render();
+        }
     }
     for(int i = 0; i < icebergs.size(); i++) {
-        icebergs[i]->Render();
+        if(distance(player.get_hitbox(), icebergs[i]->get_hitbox()) < VISIBILITY_RADIUS) {
+            icebergs[i]->Render();
+        }
     }
     for(int i = 0; i < atols.size(); i++) {
-        atols[i]->Render();
+        SDL_Rect r = atols[i]->get_hitbox();
+        if(distance(player.get_hitbox(), r) < VISIBILITY_RADIUS) {
+            atols[i]->Render();
+        }
     }
     for(int i = 0; i < pirates.size(); i++) {
-        pirates[i]->Render();
+        if(distance(player.get_hitbox(), pirates[i]->get_hitbox()) < VISIBILITY_RADIUS) {
+            pirates[i]->Render();
+        }
     }
 
     player.Render();
     hint.Render();
+
 }
 
 void Level::Cleanup() {
@@ -131,13 +141,13 @@ void Level::checkCollisions() {
     }
     //check collisions between player and atols
     for(int i = 0; i < atols.size(); i++) {
-        if(atols[i]->get_hitbox() != nullptr && player == *atols[i]->get_hitbox()) {
-            player.avoid_entity(*atols[i]->get_hitbox());
+        if(player == atols[i]->get_hitbox()) {
+            player.avoid_entity(atols[i]->get_hitbox());
         }
     }
     for(int i = 0; i < pirates.size(); i++) {
         if(player == pirates[i]->get_hitbox()) {
-            //player.recieve_damage(PIRATE_DAMAGE);
+            player.recieve_damage(PIRATE_DAMAGE);
             std::cout << "Player health: " << player.get_health() << std::endl;
         }
     }
@@ -147,8 +157,8 @@ void Level::checkCollisions() {
                 whalers[i]->avoidEntity(icebergs[j]->get_hitbox());
         }
         for(int j = 0; j < atols.size(); j++) {
-            if(*whalers[i] == *atols[j]->get_hitbox())
-                whalers[i]->avoidEntity(*atols[j]->get_hitbox());
+            if(*whalers[i] == atols[j]->get_hitbox())
+                whalers[i]->avoidEntity(atols[j]->get_hitbox());
         }
 
     }

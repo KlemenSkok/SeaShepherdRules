@@ -43,6 +43,14 @@ int Game::run(int levelNum) {
     Uint32 lastUpdate, currentTime;
     lastUpdate = currentTime = SDL_GetTicks();
     short return_code = -1;
+    SDL_Texture *grid_signs[30];
+    for(int i = 0; i < 20; i++) {
+        grid_signs[i] = RenderText(std::to_string(i+1).c_str(), TTF_OpenFont("../../assets/fonts/LilitaOne-Regular.ttf", 20), {200, 200, 200, 255});
+    }
+    for(int i = 0; i < 10; i++) {
+        const char str[2] = {(char)(i + 'A'), '\0'};
+        grid_signs[i+20] = RenderText(str, TTF_OpenFont("../../assets/fonts/LilitaOne-Regular.ttf", 20), {200, 200, 200, 255});
+    }
 
     if(levelNum == 1) {
         // spuci prejsnji replay, ce obstaja
@@ -53,11 +61,25 @@ int Game::run(int levelNum) {
 
     auto drawLines = [=]() {
         SDL_SetRenderDrawColor(Window::renderer, 200, 200, 200, 255);
+        SDL_Rect textRect;
 
-        for(int i = 1; i <= 20; i++)
+        for(int i = 1; i <= 20; ++i)
             SDL_RenderDrawLine(Window::renderer, i * Window::Width() / 20, 0, i * Window::Width() / 20, Window::Height());
-        for(int i = 1; i <= 10; i++)
+        for(int i = 1; i <= 10; ++i)
             SDL_RenderDrawLine(Window::renderer, 0, i * Window::Height() / 10, Window::Width(), i * Window::Height() / 10);
+        // narisi se crke in stevilke x in y
+        for(int i = 1; i <= 20; ++i) {
+            SDL_QueryTexture(grid_signs[i-1], NULL, NULL, &textRect.w, &textRect.h);
+            textRect.x = i * Window::Width() / 20 - Window::Width() / 40 - textRect.w / 2;
+            textRect.y = Window::Height() - textRect.h - 5;
+            SDL_RenderCopy(Window::renderer, grid_signs[i-1], NULL, &textRect);
+        }
+        for(int i = 0; i < 10; ++i) {
+            SDL_QueryTexture(grid_signs[20+i], NULL, NULL, &textRect.w, &textRect.h);
+            textRect.x = 5;
+            textRect.y = Window::Height() - (i+1) * Window::Height() / 10 - textRect.h / 2 + Window::Height() / 20;
+            SDL_RenderCopy(Window::renderer, grid_signs[20+i], NULL, &textRect);
+        }
         
         SDL_SetRenderDrawColor(Window::renderer, 255, 255, 255, 255);
     };

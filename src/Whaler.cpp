@@ -6,7 +6,7 @@
 #include "Utilities.hpp"
 #include "Vektor.hpp"
 
-#include <SDL2/SDL_render.h>
+#include <SDL2/SDL.h>
 #include <cstdlib>
 #include <iostream>
 #include <cmath>
@@ -49,8 +49,8 @@ void Whaler::Initialize() {
     hitbox.h = container.h * 0.85;
     hitbox.x = container.x + (container.w - hitbox.w) / 2;
     hitbox.y = container.y + (container.h - hitbox.h) / 2;
-	dest_x = hitbox.x;
-	dest_y = hitbox.y;
+    dest_x = hitbox.x;
+    dest_y = hitbox.y;
 }
 
 void Whaler::CheckCollisions() {
@@ -116,9 +116,9 @@ void Whaler::Render() {
 	//std::cout << "Whaler " << object_ID << " destination coords: " << dest_x << ", " << dest_y << std::endl;
     
     // draw hitbox for debugging
-    SDL_SetRenderDrawColor(Window::renderer, 0xFF, 0x00, 0x00, 0xFF); // red
+/*     SDL_SetRenderDrawColor(Window::renderer, 0xFF, 0x00, 0x00, 0xFF); // red
     SDL_RenderDrawRect(Window::renderer, &hitbox);
-    SDL_SetRenderDrawColor(Window::renderer, 0xFF, 0xFF, 0xFF, 0xFF);
+    SDL_SetRenderDrawColor(Window::renderer, 0xFF, 0xFF, 0xFF, 0xFF); */
 }
 
 /*

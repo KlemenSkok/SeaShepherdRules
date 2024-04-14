@@ -46,6 +46,7 @@ public:
     void setLevel(int);
     void CheckPlayerDistance(SDL_Rect);
     void avoidEntity(const SDL_Rect&);
+    void CheckWhalerDistance(const SDL_Rect&);
 
     bool operator==(const SDL_Rect&);
 

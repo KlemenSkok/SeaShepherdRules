@@ -8,12 +8,14 @@
 // player constants
 #define PLAYER_HEALTH 100
 #define PLAYER_SPEED 5
+#define VISIBILITY_RADIUS 300
 
 // pirate
 #define PIRATE_IDLE_SPEED 1.5
 #define PIRATE_ATTACK_SPEED 7
-#define PIRATE_DAMAGE 5
-#define PIRATE_COUNT 5
+#define PIRATE_DAMAGE 3
+#define PIRATE_COUNT 4
+#define ATTACK_COOLDOWN 2000
 
 // game constants
 #define BASE_WHALER_COUNT 4
@@ -27,8 +29,8 @@
 #define BASE_ATOL_COUNT 5
 #define ATOL_GROW_SPEED 1
 
-#define INITIAL_WINDOW_WIDTH  800
-#define INITIAL_WINDOW_HEIGHT 600
+#define INITIAL_WINDOW_WIDTH  1024
+#define INITIAL_WINDOW_HEIGHT 576
 
 #define SECTOR_COUNT_X 20
 #define SECTOR_COUNT_Y 10

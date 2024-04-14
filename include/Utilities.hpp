@@ -14,6 +14,9 @@ SDL_Texture *LoadTexture(const char *path);
 void LoadWhaler(SDL_Texture *&, int); 
 SDL_Texture *RenderText(const char *text, TTF_Font *font, SDL_Color color);
 
+double distance(const SDL_Rect &a, const SDL_Rect &b);
+double distance(const SDL_Rect &a, const SDL_Rect* &b);
+
 
 void format_path(char *path);
 

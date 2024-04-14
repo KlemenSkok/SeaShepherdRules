@@ -121,6 +121,9 @@ void Atol::Update() {
                 ticksCounter = rand() % 500 + 1;
                 timeout = true;
                 textureOpacity = 255;
+                hitbox.h = hitbox.w = 0;
+                container.h = container.w = 0;
+                hitbox.x = hitbox.y = container.x = container.y = 0;
             }
             SDL_SetTextureAlphaMod(this->texture, textureOpacity);
         }
@@ -132,16 +135,17 @@ void Atol::Render() {
         SDL_RenderCopy(Window::renderer, this->texture, NULL, &container);
 
         // draw hitbox
-        SDL_SetRenderDrawColor(Window::renderer, 0, 255, 0, 255);
+/*         SDL_SetRenderDrawColor(Window::renderer, 0, 255, 0, 255);
         SDL_RenderDrawRect(Window::renderer, &hitbox);
-        SDL_SetRenderDrawColor(Window::renderer, 255, 255, 255, 255);
+        SDL_SetRenderDrawColor(Window::renderer, 255, 255, 255, 255); */
     }
 }
 
-SDL_Rect* Atol::get_hitbox() { // ce je ukloplen timeout, lahko player ignorira atol
-    if(!timeout)
+SDL_Rect Atol::get_hitbox() { // ce je ukloplen timeout, lahko player ignorira atol
+    /* if(!timeout)
         return &hitbox;
-    return nullptr;
+    return nullptr; */
+    return hitbox;
 }
 
 bool Atol::operator==(const SDL_Rect &rect) const {

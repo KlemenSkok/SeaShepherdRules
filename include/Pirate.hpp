@@ -10,9 +10,8 @@
 /*
 About:
     - Level 3
-    - TODO: preimenuj v Pirate
     - igralca napadajo (v določenem radiju) in mu odvzamejo HP
-        -> pridejo zelo hitro, se pipnejo igralca in zbežijož
+        -> pridejo zelo hitro, se pipnejo igralca in zbežijo
         -> igralec jih ne more uničt
     - ko igralec ni v dosegu -> random movement / išče igralca
 */
@@ -25,6 +24,8 @@ class Pirate : public Entity {
     int prev_x, prev_y;
     Uint64 ms_toWait;
     Uint64 ms_atLastStop;
+    Uint64 ms_atLastAttack;
+    
     bool is_stopped;
     bool attack_player;
     bool get_away;
