@@ -5,6 +5,7 @@
 #include "Utilities.hpp"
 #include "Constants.hpp"
 #include "Logger.hpp"
+#include "Replay.hpp"
 
 #include <SDL2/SDL.h>
 
@@ -133,14 +134,54 @@ int Screen::victory_screen() {
                 switch(e.key.keysym.sym) {
 
                     case SDLK_1:
+                        // return to main menu
+                        exit = true;
+                        Logger::Status("nazaj na main menu");
+                        return EXIT_CODE_RESTART;
+                        break;
+
+                    case SDLK_2: // view replay
+                        Replay::StartPlayback();
+                        break;
+                        
+                    case SDLK_3:
+                        // quit
+                        exit = true;
+                        Logger::Status("Quitam iz igre");
+                        return EXIT_CODE_QUIT;  
+                        break;
+                }
+            }
+        }
+        container = {0, 0, Window::Width(), Window::Height()};
+        SDL_RenderClear(Window::renderer);
+        SDL_RenderCopy(Window::renderer, texture, NULL, &container);
+        SDL_RenderPresent(Window::renderer);
+    }
+    return EXIT_CODE_QUIT;
+}
+
+
+int Screen::level_done() {
+    texture = LoadTexture("../../assets/images/menus/level_done.png");
+    bool exit = false;
+    SDL_Event e;
+
+    while(!exit) {
+        while(SDL_PollEvent(&e)) {
+            if(e.type == SDL_QUIT) {
+                exit = true;
+                // quit event se prenese v main loop da se lohk program zapre
+                return EXIT_CODE_QUIT;
+            }
+            else if(e.type == SDL_KEYDOWN) {
+                switch(e.key.keysym.sym) {
+
+                    case SDLK_1:
                         // continue
                         exit = true;
                         Logger::Status("grem na nov level");
                         return EXIT_CODE_CONTINUE;
-                        break;
-
-                    case SDLK_2: // view replay
-                        // ne vem se cist kaj tle
                         break;
                         
                     case SDLK_3:

@@ -110,3 +110,12 @@ void Iceberg::generateSize() {
     hitbox.w = container.w * 0.85;
     hitbox.h = container.h * 0.85;
 }
+
+
+struct ReplayObject Iceberg::dumpObject() {
+    struct ReplayObject obj;
+    obj.type = TYPE_ICEBERG;
+    obj.container = this->container;
+
+    return obj;
+}

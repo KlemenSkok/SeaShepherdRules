@@ -37,5 +37,6 @@ public:
     SDL_Rect get_hitbox();
     short get_health();
     void recieve_damage(short);
+    struct ReplayObject dumpObject();
     //...
 };

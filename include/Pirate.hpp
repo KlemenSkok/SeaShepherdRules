@@ -45,6 +45,7 @@ public:
     void CheckPlayerDistance(SDL_Rect);
 
     SDL_Rect get_hitbox();
+    struct ReplayObject dumpObject();
 
     //...
 };

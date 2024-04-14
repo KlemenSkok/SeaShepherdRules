@@ -56,4 +56,17 @@
 #define EXIT_CODE_QUIT 0x12
 #define EXIT_CODE_RESTART 0x13
 
-// other exit codes
+
+// types for replay system
+// struct ReplayObject
+
+// control types
+#define START_FRAME '6'
+#define END_FRAME '9'
+
+// object types
+#define TYPE_PLAYER 'P'
+#define TYPE_PIRATE 'g'
+#define TYPE_WHALER 'w'
+#define TYPE_ICEBERG 'i'
+#define TYPE_ATOL 'a'

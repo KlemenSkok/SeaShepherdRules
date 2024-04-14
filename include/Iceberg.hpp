@@ -46,6 +46,7 @@ public:
 
     static void setDirection(int);
 
-
     SDL_Rect get_hitbox();
+    struct ReplayObject dumpObject();
+
 };

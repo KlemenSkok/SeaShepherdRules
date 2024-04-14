@@ -3,6 +3,7 @@
 
 #include "Utilities.hpp"
 #include "Constants.hpp"
+#include "Logger.hpp"
 
 #include <SDL2/SDL_render.h>
 #include <SDL2/SDL_image.h>
@@ -95,4 +96,20 @@ SDL_Texture *RenderText(const char *text, TTF_Font *font, SDL_Color color) {
     SDL_FreeSurface(s);
 
     return t;
+}
+
+void LoadWhaler(SDL_Texture* &texture, int lvl) {
+    switch(lvl) {
+        case 1:
+            texture = LoadTexture("../../assets/images/Level_1/whaler1.png");
+            break;
+        case 2:
+            texture = LoadTexture("../../assets/images/Level_2/whaler2.png");
+            break;
+        case 3:
+            texture = LoadTexture("../../assets/images/Level_3/whaler3.png");
+            break;
+        default:
+            Logger::Error("Invalid level number in replay!");
+    }
 }

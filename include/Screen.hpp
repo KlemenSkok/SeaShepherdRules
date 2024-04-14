@@ -28,6 +28,7 @@ public:
 
     void main_menu();
     void pause_menu();
+    int level_done();
     int defeat_screen();
     int victory_screen();
 

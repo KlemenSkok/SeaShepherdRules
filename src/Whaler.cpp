@@ -32,11 +32,12 @@ Whaler::~Whaler() {
     }
 }
 
+void Whaler::setLevel(int lvl) {
+    this->lvl = lvl;
+}
+
 void Whaler::Initialize() {
-    this->texture = LoadTexture("../../assets/images/whaler.png");
-    if(this->texture == nullptr) {
-        this->texture = LoadTexture("../assets/images/whaler.png");
-    }
+    LoadWhaler(texture, lvl);
     if(this->texture == nullptr) {
         Logger::Warning("Failed to load whaler texture");
     }
@@ -205,4 +206,13 @@ void Whaler::avoidEntity(const SDL_Rect& rect) {
             hitbox.y += overlapBottom;
         }
     }
+}
+
+struct ReplayObject Whaler::dumpObject() {
+    struct ReplayObject obj;
+    obj.type = TYPE_WHALER;
+    obj.level = this->lvl;
+    obj.container = this->container;
+
+    return obj;
 }

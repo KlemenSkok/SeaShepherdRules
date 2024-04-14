@@ -10,6 +10,7 @@ Level::Level(int levelNum) {
     initialWhalerCount = BASE_WHALER_COUNT + levelNum*2;
     for(int i = 0; i < initialWhalerCount; i++) {
         Whaler *w = new Whaler;
+        w->setLevel(levelNum);
         w->Initialize();
         whalers.push_back(w);
     }
@@ -151,4 +152,24 @@ void Level::checkCollisions() {
         }
 
     }
+}
+
+Vektor<struct ReplayObject>* Level::dumpFrame() {
+    Vektor<struct ReplayObject> *frame = new Vektor<struct ReplayObject>;
+    frame->push_back(player.dumpObject());
+    for(int i = 0; i < whalers.size(); i++) {
+        struct ReplayObject obj = whalers[i]->dumpObject();
+        
+        frame->push_back(obj);
+    }
+    for(int i = 0; i < icebergs.size(); i++) {
+        frame->push_back(icebergs[i]->dumpObject());
+    }
+    for(int i = 0; i < atols.size(); i++) {
+        frame->push_back(atols[i]->dumpObject());
+    }
+    for(int i = 0; i < pirates.size(); i++) {
+        frame->push_back(pirates[i]->dumpObject());
+    }
+    return frame;
 }

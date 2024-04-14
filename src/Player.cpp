@@ -158,3 +158,10 @@ void Player::recieve_damage(short damage) {
     this->health -= damage;
 }
 
+struct ReplayObject Player::dumpObject() {
+    struct ReplayObject obj;
+    obj.type = TYPE_PLAYER;
+    obj.container = this->container;
+
+    return obj;
+}

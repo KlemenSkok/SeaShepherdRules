@@ -45,6 +45,7 @@ public:
 #include "Whaler.hpp"
 #include "Iceberg.hpp"
 #include "Atol.hpp"
+#include "Utilities.hpp"
 
 // default templates
 template class Vektor<int>;
@@ -58,3 +59,4 @@ template class Vektor<Pirate*>; // enable Pirate* template
 template class Vektor<Whaler*>; // enable Whaler* template
 template class Vektor<Iceberg*>; // enable Iceberg* template
 template class Vektor<Atol*>; // enable Atol* template
+template class Vektor<struct ReplayObject>; // enable ReplayObject template

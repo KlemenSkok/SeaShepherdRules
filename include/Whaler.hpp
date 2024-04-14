@@ -21,7 +21,6 @@ About:
 class Whaler : public Entity {
 
     static int ID_counter;
-    //int health;
 
     int dest_x, dest_y;
     Uint64 ms_toWait;
@@ -30,6 +29,7 @@ class Whaler : public Entity {
     bool is_chased;
 
     void generate_dest_coords();
+    uint8_t lvl;
 
 public:
     int object_ID;
@@ -43,15 +43,14 @@ public:
     void Update() override;
     void Render() override;
 
+    void setLevel(int);
     void CheckPlayerDistance(SDL_Rect);
     void avoidEntity(const SDL_Rect&);
 
     bool operator==(const SDL_Rect&);
 
+
+    struct ReplayObject dumpObject();
     SDL_Rect get_hitbox();
 
 };
-
-//#include "Vektor.hpp"
-
-//template class Vektor<Whaler*>;

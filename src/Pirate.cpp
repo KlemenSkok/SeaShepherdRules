@@ -193,3 +193,10 @@ void Pirate::CheckPlayerDistance(SDL_Rect player) {
 SDL_Rect Pirate::get_hitbox() {
     return hitbox;
 }
+struct ReplayObject Pirate::dumpObject() {
+    struct ReplayObject obj;
+    obj.type = TYPE_PIRATE;
+    obj.container = this->container;
+
+    return obj;
+}

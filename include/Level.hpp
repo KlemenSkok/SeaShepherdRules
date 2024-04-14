@@ -31,6 +31,7 @@ class Level {
     Uint64 ms_LastHint;
     Uint64 ms_tillNestHint;
 
+
     void checkCollisions();
 
 public:
@@ -40,6 +41,8 @@ public:
     int Update();
     void Render();
     void Cleanup();
+
+    Vektor<struct ReplayObject>* dumpFrame();
 
     SDL_Rect get_hitbox();
 };

@@ -44,6 +44,11 @@ int Game::run(int levelNum) {
     lastUpdate = currentTime = SDL_GetTicks();
     short return_code = -1;
 
+    if(levelNum == 1) {
+        // spuci prejsnji replay, ce obstaja
+        Replay::StartRecording();
+    }
+
     Logger::Success("--- START ---");
 
     auto drawLines = [=]() {
@@ -79,8 +84,10 @@ int Game::run(int levelNum) {
 
             lastUpdate = currentTime;
 
-            std::cout << "Game state: " << Game::_gameState << std::endl;
+            // shrani trenutni frame
+            Replay::AppendFrame(level.dumpFrame());
         }
+
 
         SDL_Event event;
         while(SDL_PollEvent(&event)) {
@@ -120,9 +127,11 @@ int Game::run(int levelNum) {
     switch(Game::_gameState) {
                         
         case STATE_VICTORY_SCREEN:
-            return_code = screen.victory_screen();
-            if(levelNum >= NUMBER_OF_LEVELS) {
-                return_code = EXIT_CODE_QUIT;
+            if(levelNum < NUMBER_OF_LEVELS) {
+                return_code = screen.level_done();
+            }
+            else {
+                return_code = screen.victory_screen();
             }
             break;
 

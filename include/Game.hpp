@@ -10,6 +10,7 @@
 #include "Level.hpp"
 #include "Hint.hpp"
 #include "Screen.hpp"
+#include "Replay.hpp"
 
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>

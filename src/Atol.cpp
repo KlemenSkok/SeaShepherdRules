@@ -152,3 +152,12 @@ bool Atol::operator==(const SDL_Rect &rect) const {
         (rect.y + rect.h >= this->hitbox.y)
     );
 }
+
+
+struct ReplayObject Atol::dumpObject() {
+    struct ReplayObject obj;
+    obj.type = TYPE_ATOL;
+    obj.container = this->container;
+
+    return obj;
+}
