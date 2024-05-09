@@ -76,6 +76,8 @@ int Level::Update() {
 
     player.CheckBorders();
     player.Update();
+
+    healthbar.Update(player.get_health());
     
     if(hint.toRefresh) {
         hint.Refresh(whalers[rand() % whalers.size()]->get_hitbox());
@@ -92,29 +94,31 @@ int Level::Update() {
 
 void Level::Render() {
     for(int i = 0; i < whalers.size(); i++) {
-        if(distance(player.get_hitbox(), whalers[i]->get_hitbox()) < VISIBILITY_RADIUS) {
+        //if(distance(player.get_hitbox(), whalers[i]->get_hitbox()) < VISIBILITY_RADIUS) {
             whalers[i]->Render();
-        }
+        //}
     }
     for(int i = 0; i < icebergs.size(); i++) {
-        if(distance(player.get_hitbox(), icebergs[i]->get_hitbox()) < VISIBILITY_RADIUS) {
+        //if(distance(player.get_hitbox(), icebergs[i]->get_hitbox()) < VISIBILITY_RADIUS) {
             icebergs[i]->Render();
-        }
+        //}
     }
     for(int i = 0; i < atols.size(); i++) {
         SDL_Rect r = atols[i]->get_hitbox();
-        if(distance(player.get_hitbox(), r) < VISIBILITY_RADIUS) {
+        //if(distance(player.get_hitbox(), r) < VISIBILITY_RADIUS) {
             atols[i]->Render();
-        }
+        //}
     }
     for(int i = 0; i < pirates.size(); i++) {
-        if(distance(player.get_hitbox(), pirates[i]->get_hitbox()) < VISIBILITY_RADIUS) {
+        //if(distance(player.get_hitbox(), pirates[i]->get_hitbox()) < VISIBILITY_RADIUS) {
             pirates[i]->Render();
-        }
+        //}
     }
 
     player.Render();
+
     hint.Render();
+    healthbar.Render();
 
 }
 
@@ -146,7 +150,7 @@ void Level::checkCollisions() {
         }
     }
     for(int i = 0; i < pirates.size(); i++) {
-        if(player == pirates[i]->get_hitbox()) {
+        if(player == pirates[i]->get_hitbox() && pirates[i]->CanDealDamage()) {
             player.recieve_damage(PIRATE_DAMAGE);
             std::cout << "Player health: " << player.get_health() << std::endl;
         }

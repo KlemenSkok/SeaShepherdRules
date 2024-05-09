@@ -177,6 +177,30 @@ src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
+src/Healthbar.obj: src/Healthbar.cpp.obj
+.PHONY : src/Healthbar.obj
+
+# target to build an object file
+src/Healthbar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Healthbar.cpp.obj
+.PHONY : src/Healthbar.cpp.obj
+
+src/Healthbar.i: src/Healthbar.cpp.i
+.PHONY : src/Healthbar.i
+
+# target to preprocess a source file
+src/Healthbar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Healthbar.cpp.i
+.PHONY : src/Healthbar.cpp.i
+
+src/Healthbar.s: src/Healthbar.cpp.s
+.PHONY : src/Healthbar.s
+
+# target to generate assembly for a file
+src/Healthbar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Healthbar.cpp.s
+.PHONY : src/Healthbar.cpp.s
+
 src/Hint.obj: src/Hint.cpp.obj
 .PHONY : src/Hint.obj
 
@@ -480,6 +504,9 @@ help:
 	@echo ... src/Game.obj
 	@echo ... src/Game.i
 	@echo ... src/Game.s
+	@echo ... src/Healthbar.obj
+	@echo ... src/Healthbar.i
+	@echo ... src/Healthbar.s
 	@echo ... src/Hint.obj
 	@echo ... src/Hint.i
 	@echo ... src/Hint.s

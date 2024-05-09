@@ -72,3 +72,8 @@
 #define TYPE_WHALER 'w'
 #define TYPE_ICEBERG 'i'
 #define TYPE_ATOL 'a'
+
+// constants for healthbar
+#define HEALTHBAR_WIDTH 400
+#define HEALTHBAR_HEIGHT 30
+#define HBAR_INNER_OFFSET 3

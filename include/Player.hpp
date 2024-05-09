@@ -19,6 +19,7 @@ About:
 class Player : public Entity {
 
     short health;
+    bool direction;
 
 public:
     Player();

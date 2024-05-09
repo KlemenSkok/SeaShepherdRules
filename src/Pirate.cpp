@@ -194,3 +194,7 @@ struct ReplayObject Pirate::dumpObject() {
 
     return obj;
 }
+
+bool Pirate::CanDealDamage() {
+    return (SDL_GetTicks64() - ms_atLastAttack >= ATTACK_COOLDOWN) ? true : false;
+}

@@ -44,6 +44,7 @@ public:
 
     void generate_dest_coords();
     void CheckPlayerDistance(SDL_Rect);
+    bool CanDealDamage();
 
     SDL_Rect get_hitbox();
     struct ReplayObject dumpObject();

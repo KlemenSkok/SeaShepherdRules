@@ -9,6 +9,7 @@
 #include "Constants.hpp"
 #include "Utilities.hpp"
 #include "Hint.hpp"
+#include "Healthbar.hpp"
 
 #include <SDL2/SDL_image.h>
 
@@ -26,7 +27,9 @@ class Level {
     Vektor<Atol*> atols;
     Vektor<Pirate*> pirates;
     int initialWhalerCount;
+
     Hint hint;
+    Healthbar healthbar;
 
     Uint64 ms_LastHint;
     Uint64 ms_tillNestHint;

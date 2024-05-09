@@ -88,16 +88,19 @@ void Player::Update() {
     hitbox.x += deltas[0] * PLAYER_SPEED;
     hitbox.y += deltas[1] * PLAYER_SPEED;
 
+    direction = (deltas[0] > 0) ? true : (deltas[0] < 0) ? false : direction;
 
 
     container.x = hitbox.x - (container.w - hitbox.w) / 2;
     container.y = hitbox.y - (container.h - hitbox.h) / 2;
 
-    // delete keystate; // free memory
 }
 
 void Player::Render() {
-    SDL_RenderCopy(Window::renderer, texture, NULL, &container);
+
+    SDL_RenderCopyEx(Window::renderer, texture, NULL, &container, 0, NULL, (direction) ? SDL_FLIP_NONE : SDL_FLIP_HORIZONTAL);
+
+    //SDL_RenderCopy(Window::renderer, texture, NULL, &container);
 
     // draw hitbox for debugging
 /*     SDL_SetRenderDrawColor(Window::renderer, 0x00, 0x00, 0xFF, 0xFF); // blue
