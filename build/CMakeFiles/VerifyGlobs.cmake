@@ -14,6 +14,7 @@ set(OLD_GLOB
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Logger.cpp"
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Pirate.cpp"
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Player.cpp"
+  "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/PlayerInfo.cpp"
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Replay.cpp"
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Screen.cpp"
   "C:/Users/Klemen/Documents/Klemen/Sola/3.letnik/RPA/SeaShepherdRules/src/Utilities.cpp"

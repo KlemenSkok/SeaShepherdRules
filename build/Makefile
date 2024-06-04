@@ -345,6 +345,30 @@ src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
+src/PlayerInfo.obj: src/PlayerInfo.cpp.obj
+.PHONY : src/PlayerInfo.obj
+
+# target to build an object file
+src/PlayerInfo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/PlayerInfo.cpp.obj
+.PHONY : src/PlayerInfo.cpp.obj
+
+src/PlayerInfo.i: src/PlayerInfo.cpp.i
+.PHONY : src/PlayerInfo.i
+
+# target to preprocess a source file
+src/PlayerInfo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/PlayerInfo.cpp.i
+.PHONY : src/PlayerInfo.cpp.i
+
+src/PlayerInfo.s: src/PlayerInfo.cpp.s
+.PHONY : src/PlayerInfo.s
+
+# target to generate assembly for a file
+src/PlayerInfo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SeaShepherdRules.dir\build.make CMakeFiles/SeaShepherdRules.dir/src/PlayerInfo.cpp.s
+.PHONY : src/PlayerInfo.cpp.s
+
 src/Replay.obj: src/Replay.cpp.obj
 .PHONY : src/Replay.obj
 
@@ -525,6 +549,9 @@ help:
 	@echo ... src/Player.obj
 	@echo ... src/Player.i
 	@echo ... src/Player.s
+	@echo ... src/PlayerInfo.obj
+	@echo ... src/PlayerInfo.i
+	@echo ... src/PlayerInfo.s
 	@echo ... src/Replay.obj
 	@echo ... src/Replay.i
 	@echo ... src/Replay.s

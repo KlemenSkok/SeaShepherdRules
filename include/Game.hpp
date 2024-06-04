@@ -11,6 +11,7 @@
 #include "Hint.hpp"
 #include "Screen.hpp"
 #include "Replay.hpp"
+#include "PlayerInfo.hpp"
 
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
@@ -28,6 +29,7 @@ class Game {
     static int _gameState;
 
     Screen screen;
+    PlayerInfo info;
 
 
 public:
@@ -38,4 +40,5 @@ public:
     void init();
     int run(int level);
     void cleanup();
+    void get_username();
 };

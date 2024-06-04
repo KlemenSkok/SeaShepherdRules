@@ -28,6 +28,8 @@ void Game::init() {
     // show main manu on start
     screen.main_menu();
 
+    info.Initialize();
+
 }
 
 int Game::run(int levelNum) {
@@ -35,6 +37,11 @@ int Game::run(int levelNum) {
     // -- INITIALIZE EVERYTHING -- //
 
     Logger::Status("Starting level");
+
+    info.Get();
+
+
+
 
     Level level(levelNum);
     Game::_gameState = STATE_GAME_SCREEN;
@@ -176,4 +183,62 @@ void Game::cleanup() {
     SDL_Quit();
     IMG_Quit();
     TTF_Quit();
+}
+
+
+void Game::get_username() {
+
+
+    SDL_Window *_window = SDL_CreateWindow("", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 250, 200, 
+        SDL_WINDOW_SHOWN /* |
+        SDL_WINDOW_ALWAYS_ON_TOP */);
+
+    SDL_Renderer *_renderer = SDL_CreateRenderer(_window, -1, SDL_RENDERER_ACCELERATED);
+    TTF_Font *_font = TTF_OpenFont("../../assets/fonts/LilitaOne-Regular.ttf", 20);
+    if(_font == nullptr) {
+        Logger::Error("Failed to load font");
+        return;
+    }
+
+    SDL_Texture *_IntroTextT = RenderText("Enter your username:", _font, {0, 0, 0, 255});
+    SDL_Rect IntroTextRect = {20, 20, 1, 1};
+    SDL_QueryTexture(_IntroTextT, NULL, NULL, &IntroTextRect.w, &IntroTextRect.h);
+
+    SDL_Rect inputRect = {20, 50, 210, 30};
+
+    bool exit = false;
+        while(!exit) {
+        SDL_Event e;
+        while(SDL_PollEvent(&e)) {
+            if(e.type == SDL_QUIT) {
+                exit = true;
+            }
+            else if(e.type == SDL_WINDOWEVENT) {
+                if(e.window.event == SDL_WINDOWEVENT_CLOSE) {
+                    if(e.window.windowID == SDL_GetWindowID(_window)) {
+                        exit = true;
+                    }
+                }
+            }
+        }
+        if(SDL_GetTicks() % FRAME_TARGET_TIME == 0) {
+            SDL_SetRenderDrawColor(_renderer, 255, 255, 255, 255);
+            SDL_RenderClear(_renderer);
+
+            SDL_RenderCopy(_renderer, _IntroTextT, NULL, &IntroTextRect);
+
+            SDL_SetRenderDrawColor(_renderer, 0, 0, 0, 255);
+            SDL_RenderDrawRect(_renderer, &inputRect);
+            
+
+            SDL_RenderPresent(_renderer);
+            Logger::Status(std::to_string(SDL_GetTicks()).c_str());
+        }
+    }
+
+    SDL_DestroyRenderer(_renderer);
+    SDL_DestroyWindow(_window);
+    TTF_CloseFont(_font);
+    SDL_DestroyTexture(_IntroTextT);
+
 }
