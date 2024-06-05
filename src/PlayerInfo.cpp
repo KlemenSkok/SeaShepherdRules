@@ -10,7 +10,6 @@ void PlayerInfo::Initialize() {
     for(int i = 0; i < 3; i++) {
         score[i] = 0;
     }
-    username[0] = '\0';
 
     Logger::Success("PlayerInfo initialized");
 
@@ -40,27 +39,34 @@ void PlayerInfo::Get() {
     }
 
     SDL_Color color = {0, 0, 0, 255};
-    SDL_Surface* surfaceMessage = TTF_RenderText_Solid(_font, "Enter your username:", color);
-    SDL_Texture* messageTexture = SDL_CreateTextureFromSurface(_renderer, surfaceMessage);
+    SDL_Surface* s_tmp = TTF_RenderText_Solid(_font, "Enter your username:", color);
+    SDL_Texture* introTexture = SDL_CreateTextureFromSurface(_renderer, s_tmp);
 
-    SDL_Rect messageRect;
-    messageRect.x = 20;
-    messageRect.y = 10;
-    messageRect.w = surfaceMessage->w;
-    messageRect.h = surfaceMessage->h;
+    SDL_Rect introTextureRect;
+    introTextureRect.x = 20;
+    introTextureRect.y = 10;
+    introTextureRect.w = s_tmp->w;
+    introTextureRect.h = s_tmp->h;
 
-    SDL_FreeSurface(surfaceMessage);
+    SDL_Color InputColor = {105, 105, 105, 255};
+
+    username[0] = '\0';
+    short cursor_pos = 0;
+
+    SDL_FreeSurface(s_tmp);
 
 
     // --- vnos besedila --- //
 
     SDL_Rect InputBox = {20, 45, 260, 40};
 
-    SDL_StartTextInput();
+    SDL_SetTextInputRect(&InputBox);
 
 
     SDL_Event e;
     bool running = true;
+    //std::string name = "";
+    SDL_StartTextInput();
 
     while (running) {
         while (SDL_PollEvent(&e)) {
@@ -70,29 +76,66 @@ void PlayerInfo::Get() {
             else if(e.type == SDL_WINDOWEVENT) {
                 if(e.window.event == SDL_WINDOWEVENT_CLOSE) {
                     if(e.window.windowID == SDL_GetWindowID(_window)) {
-                        running = false;
+                        // no escape :)
+                        //running = false;
                     }
+                }
+            }
+            else if(e.type == SDL_TEXTINPUT) {
+                //name += e.text.text;
+                strcpy(username + cursor_pos, e.text.text);
+                cursor_pos += strlen(e.text.text);
+                if(cursor_pos > max_username_length) {
+                    cursor_pos = max_username_length;
+                    *(username + max_username_length) = '\0';
+                }
+            }
+            else if(e.type == SDL_KEYDOWN) {
+                if(e.key.keysym.sym == SDLK_BACKSPACE && strlen(username) > 0) {
+                    cursor_pos--;
+                    *(username + cursor_pos) = '\0';
+                }
+                else if(e.key.keysym.sym == SDLK_RETURN && strlen(username) > 0) { // confirm username (ne sme bit prazen)
+                    running = false;
                 }
             }
         }
 
-        SDL_SetRenderDrawColor(_renderer, 255, 255, 255, 255);
-        SDL_RenderClear(_renderer);
-        SDL_RenderCopy(_renderer, messageTexture, NULL, &messageRect);
+        if(SDL_GetTicks() % FRAME_TARGET_TIME == 0) {
 
-        SDL_SetRenderDrawColor(_renderer, 0, 0, 0, 255);
-        SDL_RenderDrawRect(_renderer, &InputBox);
+            SDL_SetRenderDrawColor(_renderer, 255, 255, 255, 255);
+            SDL_RenderClear(_renderer);
 
+            SDL_RenderCopy(_renderer, introTexture, NULL, &introTextureRect); // "enter your username:"
+            
+            SDL_SetRenderDrawColor(_renderer, InputColor.r, InputColor.g, InputColor.b, InputColor.a);
+            SDL_RenderDrawRect(_renderer, &InputBox); // narisi input box
 
-        SDL_RenderPresent(_renderer);
+            // render read username
+            SDL_Surface *s = TTF_RenderText_Solid(_font, username, InputColor);
+            SDL_Texture *InputText = SDL_CreateTextureFromSurface(_renderer, s);
+            SDL_Rect InputTextRect = {InputBox.x + 5, InputBox.y + 5, 1, 1};
+            SDL_QueryTexture(InputText, NULL, NULL, &InputTextRect.w, &InputTextRect.h);
+            SDL_RenderCopy(_renderer, InputText, NULL, &InputTextRect);
+
+            SDL_FreeSurface(s);
+            SDL_DestroyTexture(InputText);
+
+            SDL_RenderPresent(_renderer);
+            
+        }
+
     }
 
     SDL_StopTextInput();
 
-    SDL_DestroyTexture(messageTexture);
+    SDL_DestroyTexture(introTexture);
     SDL_DestroyRenderer(_renderer);
-    SDL_DestroyWindow(_window);
     TTF_CloseFont(_font);
+    SDL_DestroyWindow(_window);
+
+    std::cout << "collected username: " << username << std::endl;
+
 }
 
 void PlayerInfo::Clean() {

@@ -8,6 +8,7 @@
 #include "Constants.hpp"
 
 #include <cstdint>
+#include <cstring>
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_Image.h>
 #include <SDL2/SDL_ttf.h>
@@ -15,7 +16,8 @@
 
 class PlayerInfo {
 
-    char username[26];
+    uint8_t max_username_length = 20;
+    char username[21];
     uint32_t score[3];
 
 
