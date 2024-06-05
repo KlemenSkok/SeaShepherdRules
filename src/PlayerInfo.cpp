@@ -8,7 +8,7 @@
 void PlayerInfo::Initialize() {
     
     for(int i = 0; i < 3; i++) {
-        score[i] = 0;
+        score[i] = 0.0f;
     }
 
     Logger::Success("PlayerInfo initialized");
@@ -139,6 +139,14 @@ void PlayerInfo::Get() {
 }
 
 void PlayerInfo::Clean() {
-    //SDL_DestroyTexture(_IntroTextT);
-    //TTF_CloseFont(_font);
+
+}
+
+void PlayerInfo::SetLevelScore(uint8_t levelNum, double time) {
+    if(levelNum < 3) {
+        score[levelNum] = time;
+    }
+    else {
+        Logger::Error("Invalid level number");
+    }
 }

@@ -18,7 +18,7 @@ class PlayerInfo {
 
     uint8_t max_username_length = 20;
     char username[21];
-    uint32_t score[3];
+    double score[3];
 
 
 public:
@@ -27,7 +27,7 @@ public:
     void Initialize();
     void Get();
     void Save();
-    void SetLevelScore(uint8_t levelNum, int score);
+    void SetLevelScore(uint8_t levelNum, double time);
     void Clean();
 
 };

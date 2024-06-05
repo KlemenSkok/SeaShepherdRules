@@ -38,8 +38,9 @@ int Game::run(int levelNum) {
 
     Logger::Status("Starting level");
 
-    info.Get();
-
+    if(_gameState == STATE_MAIN_MENU) { // prvic prebere username
+        info.Get();
+    }
 
 
 
@@ -91,6 +92,9 @@ int Game::run(int levelNum) {
         SDL_SetRenderDrawColor(Window::renderer, 255, 255, 255, 255);
     };
 
+    // start measuring elapsed time
+    auto start_time = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> elapsed_time = start_time - start_time;
 
     while(Game::_isRunning) { // main loop
 
@@ -137,7 +141,12 @@ int Game::run(int levelNum) {
 
             case STATE_PAUSE_MENU:
                 Logger::Status("Entered pause menu.");
+
+                // freeze duration counter
+                elapsed_time += std::chrono::high_resolution_clock::now() - start_time;
+
                 screen.pause_menu();
+                start_time = std::chrono::high_resolution_clock::now();
                 break;
 
             case STATE_GAME_SCREEN:
@@ -149,6 +158,12 @@ int Game::run(int levelNum) {
         }
         
     }
+
+    auto end_time = std::chrono::high_resolution_clock::now();
+    elapsed_time += end_time - start_time;
+
+    std::cout << "Elapsed time: " << elapsed_time.count() << "s" << std::endl;
+    info.SetLevelScore(levelNum, elapsed_time.count());
 
     level.Cleanup();
 
@@ -183,62 +198,4 @@ void Game::cleanup() {
     SDL_Quit();
     IMG_Quit();
     TTF_Quit();
-}
-
-
-void Game::get_username() {
-
-
-    SDL_Window *_window = SDL_CreateWindow("", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 250, 200, 
-        SDL_WINDOW_SHOWN /* |
-        SDL_WINDOW_ALWAYS_ON_TOP */);
-
-    SDL_Renderer *_renderer = SDL_CreateRenderer(_window, -1, SDL_RENDERER_ACCELERATED);
-    TTF_Font *_font = TTF_OpenFont("../../assets/fonts/LilitaOne-Regular.ttf", 20);
-    if(_font == nullptr) {
-        Logger::Error("Failed to load font");
-        return;
-    }
-
-    SDL_Texture *_IntroTextT = RenderText("Enter your username:", _font, {0, 0, 0, 255});
-    SDL_Rect IntroTextRect = {20, 20, 1, 1};
-    SDL_QueryTexture(_IntroTextT, NULL, NULL, &IntroTextRect.w, &IntroTextRect.h);
-
-    SDL_Rect inputRect = {20, 50, 210, 30};
-
-    bool exit = false;
-        while(!exit) {
-        SDL_Event e;
-        while(SDL_PollEvent(&e)) {
-            if(e.type == SDL_QUIT) {
-                exit = true;
-            }
-            else if(e.type == SDL_WINDOWEVENT) {
-                if(e.window.event == SDL_WINDOWEVENT_CLOSE) {
-                    if(e.window.windowID == SDL_GetWindowID(_window)) {
-                        exit = true;
-                    }
-                }
-            }
-        }
-        if(SDL_GetTicks() % FRAME_TARGET_TIME == 0) {
-            SDL_SetRenderDrawColor(_renderer, 255, 255, 255, 255);
-            SDL_RenderClear(_renderer);
-
-            SDL_RenderCopy(_renderer, _IntroTextT, NULL, &IntroTextRect);
-
-            SDL_SetRenderDrawColor(_renderer, 0, 0, 0, 255);
-            SDL_RenderDrawRect(_renderer, &inputRect);
-            
-
-            SDL_RenderPresent(_renderer);
-            Logger::Status(std::to_string(SDL_GetTicks()).c_str());
-        }
-    }
-
-    SDL_DestroyRenderer(_renderer);
-    SDL_DestroyWindow(_window);
-    TTF_CloseFont(_font);
-    SDL_DestroyTexture(_IntroTextT);
-
 }
