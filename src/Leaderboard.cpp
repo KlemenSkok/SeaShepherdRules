@@ -286,7 +286,7 @@ void Leaderboard::Display() {
             SDL_RenderCopy(Window::renderer, scoreTexture, NULL, &scoreRect);
 
             SDL_DestroyTexture(nameTexture);
-            SDL_DestroyTexture(scoreTexture);   
+            SDL_DestroyTexture(scoreTexture);
 
         }
         SDL_RenderPresent(Window::renderer);
