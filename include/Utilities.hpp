@@ -60,3 +60,15 @@ struct ReplayObject {
         uint8_t level;
         SDL_Rect container;
 };
+
+struct LeaderboardEntry {
+        char name[21];
+        double score[3]; // scores for each level
+
+        double totalScore() const {
+                return score[0] + score[1] + score[2];
+        }
+        LeaderboardEntry() {
+                score[0] = score[1] = score[2] = 0.0f;
+        }
+};

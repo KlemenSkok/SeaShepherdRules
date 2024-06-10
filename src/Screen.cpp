@@ -6,6 +6,7 @@
 #include "Constants.hpp"
 #include "Logger.hpp"
 #include "Replay.hpp"
+#include "Leaderboard.hpp"
 
 #include <SDL2/SDL.h>
 
@@ -22,6 +23,7 @@ Screen::~Screen() {
 }
 
 void Screen::main_menu() {
+
     texture = LoadTexture("../../assets/images/menus/main_menu.png");
     bool exit = false;
     SDL_Event e;
@@ -36,6 +38,9 @@ void Screen::main_menu() {
             else if(e.type == SDL_KEYDOWN) {
                 if(e.key.keysym.sym == SDLK_1) {
                     exit = true;
+                }
+                else if(e.key.keysym.sym == SDLK_2) {
+                    Leaderboard::Display();
                 }
             }
         }

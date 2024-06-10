@@ -26,9 +26,9 @@ void Game::init() {
     Logger::Success("Game initialized");
 
     // show main manu on start
-    screen.main_menu();
+    //screen.main_menu();
 
-    info.Initialize();
+    PlayerInfo::Initialize();
 
 }
 
@@ -36,13 +36,25 @@ int Game::run(int levelNum) {
 
     // -- INITIALIZE EVERYTHING -- //
 
-    Logger::Status("Starting level");
+    auto checkExit = [&]() {
+        SDL_Event e;
+        while(SDL_PollEvent(&e)) {
+            if(e.type == SDL_QUIT) {
+                return EXIT_CODE_QUIT;
+            }
+        }
+        return -1;
+    };
+    
+    if(levelNum == 1) { 
+        screen.main_menu();
+        if(checkExit() != -1) 
+            return EXIT_CODE_QUIT; // handle quit events before level setup
 
-    if(_gameState == STATE_MAIN_MENU) { // prvic prebere username
-        info.Get();
+        PlayerInfo::Get();
+        if(checkExit() != -1) 
+            return EXIT_CODE_QUIT;
     }
-
-
 
     Level level(levelNum);
     Game::_gameState = STATE_GAME_SCREEN;
@@ -65,7 +77,8 @@ int Game::run(int levelNum) {
         Replay::StartRecording();
     }
 
-    Logger::Success("--- START ---");
+    Logger::Success("STARTING LEVEL:");
+    std::cout << "\b\b\b\b" << levelNum << std::endl;
 
     auto drawLines = [=]() {
         SDL_SetRenderDrawColor(Window::renderer, 200, 200, 200, 255);
@@ -163,7 +176,7 @@ int Game::run(int levelNum) {
     elapsed_time += end_time - start_time;
 
     std::cout << "Elapsed time: " << elapsed_time.count() << "s" << std::endl;
-    info.SetLevelScore(levelNum, elapsed_time.count());
+    PlayerInfo::SetLevelScore(levelNum, elapsed_time.count());
 
     level.Cleanup();
 
@@ -175,6 +188,7 @@ int Game::run(int levelNum) {
                 return_code = screen.level_done();
             }
             else {
+                Leaderboard::AddEntry(PlayerInfo::dump());
                 return_code = screen.victory_screen();
             }
             break;

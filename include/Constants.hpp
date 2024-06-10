@@ -51,6 +51,7 @@
 #define STATE_MAIN_MENU 0x02
 #define STATE_VICTORY_SCREEN 0x03
 #define STATE_DEFEAT_SCREEN 0x04
+#define STATE_LEADERBOARD_SCREEN 0x05
 
 // main loop exit codes
 #define EXIT_CODE_CONTINUE 0x10
